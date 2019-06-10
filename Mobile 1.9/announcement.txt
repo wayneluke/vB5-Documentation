@@ -1,0 +1,26 @@
+We are proud to announce the release of the vBulletin Mobile Suite 1.9. This version is covers a number of issues for iOS compliance. There are a number of issues resolved for both the iOS and Android versions. The Mobile Suite is available for all versions of vBulletin that support the Mobile Api.
+
+iOS Improvements
+[VBI-879] - selecting post then pressing move in moderate options closes the app iOS vb3 1.4
+[VBI-1165] - In German language settings buttons are in french language
+[VBI-1171] - Formatting buttons are not visible/hidden
+[VBI-1173] - Some activity stream items don't load all the info
+[VBI-1194] - Create Thread Screen - View is not correct / Predictive Keyboard
+[VBI-1195] - Landscape Mode Alerts displayed incorrectly
+[VBI-1198] - Formatting buttons are not visible/hidden for small screens
+[VBI-1166] - iOS 8 Compliance
+
+Android Improvements
+[VBA-535] - Text in buttons are misaligned
+[VBA-559] - "Messages" option on the User Profile results confusing with the Private Messages
+[VBA-560] - "Unknown error. Error code - user_name_x_already_in_use_choose_different_one"
+[VBA-563] - Notices are not working
+[VBA-565] - The user avatar will not be displayed on the top
+[VBA-576] - Username prediction won't work for Private Messages
+[VBA-591] - The app version is not displayed correctly
+[VBA-596] - Remove JumpTap Library
+
+The Mobile Publisher has been updated to handle these changes. 
+
+-----------
+Each JIRA would link to the appropriate issue.

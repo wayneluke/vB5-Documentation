@@ -1,0 +1,103 @@
+<h1>vBulletin 5.5.1 Changes and Updates</h1>
+<p>vBulletin 5.5.1 is now available for testing by licensed download customers.</p>
+<h2>Front End Changes</h2>
+<h3>Responsive Editor Toolbar</h3>
+<p>The editor tool bar will automatically collapse and show the most used functionality based on your screen size. This change will allow more space to create posts and topics on devices with smaller screens. The hidden tools are still available by tapping on the ellipsis (…) at the end of the menu.</p>
+<p>Related Issues: <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-18981">VBV-18981</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19101">VBV-19101</a></p>
+<h3>Photo Gallery Layout</h3>
+<p>Photo Gallery content has been updated to use Flexbox CSS. This allows your device to format rows of images for a better presentation. This change allows your Photo Galleries to respond to your settings better. Instead of changing CSS to change the size of your thumbnails, you can simply change the thumbnail size and rebuild them. The benefit to your users is to be able to present Photo Gallery and Album content using larger images in the initial display.</p>
+<p>Related Issue: <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-17720">VBV-17720</a></p>
+<h3>Font Handling</h3>
+<p>Building on changes to font handling in the previous release (vBulletin 5.5.0), we have made further changes to support better customization.</p>
+<ul>
+<li>Line Height is now specified within Font style variables for easier maintenance.</li>
+<li>More areas of the site now work better with larger fonts (20 pixels and higher).</li>
+<li>When editing a font style variable, you can also specify the line height value for better layout and typography.</li>
+</ul>
+<p>Related Issues: <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-13877">VBV-13877</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19058">VBV-19058</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19060">VBV-19060</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19109">VBV-19109</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-18953">VBV-18953</a></p>
+<h2>Miscellaneous</h2>
+<ul>
+<li><a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-18024">VBV-18024: Add Template Hook for Categories in display_Forums_list</a></li>
+<li><a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-18874">VBV-18874: Add unread class to unread topic</a></li>
+<li><a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-8965">VBV-8965: Moderators lack the ability to view (frontend) user profiles under specific conditions</a></li>
+<li><a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-18899">VBV-18899: List and indent editor button images not displayed when editing a post in RTL</a></li>
+</ul>
+<hr>
+<h2>Back End / AdminCP Changes</h2>
+<h3>Performance</h3>
+<h4>Node Table</h4>
+<p>An index has been added to the <code>node</code> table. This index will increase performance when retrieving content after a new post has been created. Due to changing the <code>node</code> table, this change can take a significant amount of time on larger sites during the upgrade process.</p>
+<p>Related Issue: <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19073">VBV-19073</a></p>
+<h4>Upgrading</h4>
+<p>The upgrade scripts have been optimized to improve the performance of upgrading from vBulletin 3 and vBulletin 4.</p>
+<p>Relate Issues: <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19141">VBV-19141</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19140">VBV-19140</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19122">VBV-19122</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19097">VBV-19097</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19095">VBV-19095</a></p>
+<h3>IP Address Search</h3>
+<p>The functionality to search IP Addresses by User Name or IP Address has been returned to the AdminCP. This includes finding users and posts by IP Address.</p>
+<p>To access this functionality in the AdminCP go to <code>Users -&gt; Search IP Addresses</code></p>
+<p>Related Issues: <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-11918">VBV-11918</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19088">VBV-19088</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-18689">VBV-18689</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-1312">VBV-1312</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-14221">VBV-14221</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-13185">VBV-13185</a></p>
+<h3>Search Indexing</h3>
+<p>When indexing posts, the system will index words containing hyphens now. Previously if a word contained a hyphen it was broken into two words and each indexed separately. If one word was below the minimum character threshold, it was discarded. This made searching more difficult on some sites. Now the system will index each word segment along with the original hyphenated word.</p>
+<p>Examples:</p>
+<ul>
+<li>Previous versions: alpha-beta was indexed as two words alpha and beta.</li>
+<li>vBulletin 5.5.1: alpha-beta will be indexed as three words alpha, beta, and alpha-beta.</li>
+<li>Previous versions: z-wave was indexed as wave. The z will be discarded because it is less than 4 characters.</li>
+<li>vBulletin 5.5.1: z-wave will be indexed as wave, z-wave.</li>
+</ul>
+<p>In order to take advantage of this change, you will need to reindex your search engine in the AdminCP, using the PHP commandline script provided or within Sphinx. This will depend on your configuration.</p>
+<p>Related Issue: <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-12167">VBV-12167</a></p>
+<h3>Daily &amp; Weekly Email Digests</h3>
+<p>This functionality has been refactored for better reliability. The Scheduled Task for this fuctionality will work automatically now. We've also added the display of Topic Prefixes to the outgoing emails.</p>
+<p>Related Issues: <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-9476">VBV-9476</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-13074">VBV-13074</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19134">VBV-19134</a></p>
+<h3>XML Site Map</h3>
+<p>Updated the generation routines of the XML Site Map Generator to better account for recent changes to the vBulletin Routing API. This includes properly routing sub-content from a new home page and supporting the route by node functionality. A number of pages that shouldn't be indexed or viewable by guests have been removed from the generated files.</p>
+<p>Related Issuses: <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19154">VBV-19154</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19009">VBV-19009</a>, <a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-18319">VBV-18319</a></p>
+<h3>Scheduled Tasks</h3>
+<p>Some minor changes have been made to the scheduled task system in order to aid in troubleshooting issues.</p>
+<ul>
+<li><a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19132">Allow vbcron.php to run specified crons</a></li>
+<li><a href="https://tracker.vbulletin.com/vbulletin5/issues/VBV-19133">Log exceptions in the digest crons</a></li>
+</ul>
+<hr>
+<p>All Resolved Issues can be found in Bug Genie's <a href="https://tracker.vbulletin.com/vbulletin5/issues/find?fs%5Bproject_id%5D%5Bo%5D=%3D&amp;fs%5Bproject_id%5D%5Bv%5D=1&amp;fs%5Bissuetype%5D%5Bo%5D=%3D&amp;fs%5Bissuetype%5D%5Bv%5D=&amp;fs%5Bstatus%5D%5Bo%5D=%3D&amp;fs%5Bstatus%5D%5Bv%5D=&amp;fs%5Bcategory%5D%5Bo%5D=%3D&amp;fs%5Bcategory%5D%5Bv%5D=&amp;sortfields=issues.last_updated%3Dasc&amp;fs%5Btext%5D%5Bo%5D=%3D&amp;fs%5Btext%5D%5Bv%5D=&amp;scs_current_template=&amp;template=results_normal&amp;template_parameter=&amp;grouporder=asc&amp;groupby=&amp;issues_per_page=50&amp;fs%5Bmilestone%5D%5Bo%5D=%3D&amp;fs%5Bmilestone%5D%5Bv%5D=58&amp;filters_milestone_value_58=58">Roadmap</a>.</p>
+<h2>Additional Information</h2>
+<h3>Install / Upgrade</h3>
+<ul>
+<li><a href="https://www.vbulletin.com/forum/node/4391348">Installation Instructions</a></li>
+<li><a href="https://www.vbulletin.com/forum/node/4391346">Upgrade Instructions</a></li>
+</ul>
+<h3>File Cleanup</h3>
+<p>After upgrading your vBulletin system, you should delete any possible obsolete files. You can obtain more information on why this is needed and instructions on how to do this in this <a href="https://www.vbulletin.com/forum/node/4391346"><strong>topic</strong></a> in the vBulletin 5 Installs &amp; Upgrades forum.</p>
+<h3>System Requirements</h3>
+<h4>MySQL Deprecation</h4>
+<p>Versions of MySQL older than 5.6.10 and MariaDB older than 10.0.0 are now deprecated. Older versions of these database servers are no longer supported by their developers. While vBulletin will remain functional using these older versions for the time being, support for them may be dropped in the future without further notice. Please make plans to upgrade to a non-deprecated version.  vBulletin System Requirements have been updated to reflect this.</p>
+<h4>Minimum System Requirements</h4>
+<ul>
+<li>PHP Version: 7.1.0</li>
+<li>MySQL Version: 5.6.10
+<ul>
+<li>MariaDB Version (alternative to MySQL): 10.0.0</li>
+</ul>
+</li>
+</ul>
+<h4>Recommended System Requirements</h4>
+<ul>
+<li>PHP Version: 7.3.0 or higher</li>
+<li>MySQL Version: 8.0 or higher
+<ul>
+<li>MariaDB Version (alternative to MySQL): 10.3+</li>
+</ul>
+</li>
+</ul>
+<p>For more information see <a href="https://www.vbulletin.com/forum/node/4391344">vBulletin Connect System Requirements</a>.</p>
+<h3>Current Version Support Schedule</h3>
+<ul>
+<li>Active Version - 5.5.1</li>
+<li>Security Patch - 5.5.0</li>
+<li>Security Patch - 5.4.5</li>
+<li>No Patch Release - 5.4.4 or earlier.</li>
+</ul>
+<h3>Discussion</h3>
+<p>If you have any questions about these changes you may discuss them here: [node]4409010[/node]</p>
+<p>If you find an issue with the software or wish to place a feature request please visit our <a href="https://tracker.vbulletin.com">tracker</a>.</p>
+<p>In order to receive support for your vBulletin Product please visit our <a href="https://www.vbulletin.com/forum/">community forums</a>.</p>

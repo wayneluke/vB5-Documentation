@@ -1,0 +1,12 @@
+We are proud to announce the release of the vBulletin Mobile Suite 1.8. This version is covers a number of issues for iOS compliance. There are 8 issues resolved for the iOS version. The Mobile Suite is available for all versions of vBulletin that support the Mobile Api.
+
+iOS Improvements
+- Resolved issue with Ad APIs
+
+Android Improvements
+- No Issues Included
+
+The Mobile Publisher has been updated to handle these changes. 
+
+-----------
+This would be followed by a list of the issues fixed in JIRA.

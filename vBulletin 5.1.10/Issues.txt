@@ -1,0 +1,201 @@
+
+        Release Notes - vBulletin 5 - Version 5.1.10
+
+[h2]Improvement Request[/h2]
+[list]
+[*][url=http://tracker.vbulletin.com/browse/VBV-13015]VBV-13015[/url] -         Allow selecting *any* style in the Sitebuilder => Styles => Choose Theme interface (it currently only shows "themes", but no styles including any user-created styles)
+[*][url=http://tracker.vbulletin.com/browse/VBV-14735]VBV-14735[/url] -         User Profile > About Tab: Do not capitalize first letter
+[*][url=http://tracker.vbulletin.com/browse/VBV-14748]VBV-14748[/url] -         Include Script Name and Step Number in install/upgrade errors.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14757]VBV-14757[/url] -         Can Use HTML usergroup permission should have warning text below it warning against its use
+[*][url=http://tracker.vbulletin.com/browse/VBV-14914]VBV-14914[/url] -         Show all styles in Site Builder > Style > Themes, relabel "Themes" to "Styles"
+[*][url=http://tracker.vbulletin.com/browse/VBV-14950]VBV-14950[/url] -         Show JSON response in Debug Mode.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14981]VBV-14981[/url] -         Show DEBUG MODE notice at the top of the ADMINCP.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14993]VBV-14993[/url] -         Change how arguments are passed to vBulletin.errorAlert()
+[*][url=http://tracker.vbulletin.com/browse/VBV-14996]VBV-14996[/url] -         Import notifications folder's "dismiss &amp; autoload" feature into message center's Preview
+[/list]
+    
+[h2]New Feature[/h2]
+[list]
+[*][url=http://tracker.vbulletin.com/browse/VBV-14465]VBV-14465[/url] -         Need route repair utility
+[/list]
+        
+[h2]Task[/h2]
+[list]
+[*][url=http://tracker.vbulletin.com/browse/VBV-14844]VBV-14844[/url] -         Improve existing themes - theme support
+[*][url=http://tracker.vbulletin.com/browse/VBV-15247]VBV-15247[/url] -         Update vBulletin Team names
+[/list]
+		
+[h2]Bug[/h2]
+[list]
+[*][url=http://tracker.vbulletin.com/browse/VBV-1393]VBV-1393[/url] -         Re-authentication for inline moderation will lose selected option
+[*][url=http://tracker.vbulletin.com/browse/VBV-1521]VBV-1521[/url] -         Shouting prevention doesn't work
+[*][url=http://tracker.vbulletin.com/browse/VBV-3080]VBV-3080[/url] -         Remove "Special" channels from the Site Builder Channel Manager.
+[*][url=http://tracker.vbulletin.com/browse/VBV-4461]VBV-4461[/url] -         If you tag a post and click save right away, before the X shows, the tag isn't saved
+[*][url=http://tracker.vbulletin.com/browse/VBV-6832]VBV-6832[/url] -         Poll timeout 'i' icon explanation is incorrect
+[*][url=http://tracker.vbulletin.com/browse/VBV-8868]VBV-8868[/url] -         Post icon permissions not working
+[*][url=http://tracker.vbulletin.com/browse/VBV-9004]VBV-9004[/url] -         Post icons in menu don't appear when editing a starter
+[*][url=http://tracker.vbulletin.com/browse/VBV-11088]VBV-11088[/url] -         Post icon menu in new topic form displayed even if no icon is available
+[*][url=http://tracker.vbulletin.com/browse/VBV-11653]VBV-11653[/url] -         Attached images show as link rather than thumbnail in the attachment list
+[*][url=http://tracker.vbulletin.com/browse/VBV-12462]VBV-12462[/url] -         Private messaging loads in 24 seconds (or more)
+[*][url=http://tracker.vbulletin.com/browse/VBV-12478]VBV-12478[/url] -         APIs are NOT CSRF token protected!
+[*][url=http://tracker.vbulletin.com/browse/VBV-13705]VBV-13705[/url] -         @mentions: "@" doesn't show up in modules
+[*][url=http://tracker.vbulletin.com/browse/VBV-13748]VBV-13748[/url] -         Foreign language characters not displayed properly on error message pages
+[*][url=http://tracker.vbulletin.com/browse/VBV-14004]VBV-14004[/url] -         Poll bars are always filled completely
+[*][url=http://tracker.vbulletin.com/browse/VBV-14561]VBV-14561[/url] -         Return gallery (content type) information for the mobile app
+[*][url=http://tracker.vbulletin.com/browse/VBV-14725]VBV-14725[/url] -         Route/Page/PageTemplate system breaks on channel rename and on upgrade
+[*][url=http://tracker.vbulletin.com/browse/VBV-14747]VBV-14747[/url] -         Contact Us "Message" Textarea: Padding is missing
+[*][url=http://tracker.vbulletin.com/browse/VBV-14758]VBV-14758[/url] -         Expanding/Collapsing Advanced Options panel expands/collapses all panels on the page
+[*][url=http://tracker.vbulletin.com/browse/VBV-14802]VBV-14802[/url] -         MAPI needs to return data for link content type
+[*][url=http://tracker.vbulletin.com/browse/VBV-14810]VBV-14810[/url] -         blog_blog postcomment is not enabled
+[*][url=http://tracker.vbulletin.com/browse/VBV-14837]VBV-14837[/url] -         Mobile App does not show new notifications (part 1: visitormessage, subscription &amp; reply)
+[*][url=http://tracker.vbulletin.com/browse/VBV-14843]VBV-14843[/url] -         Display issue when you try to post too quickly between multiple users
+[*][url=http://tracker.vbulletin.com/browse/VBV-14891]VBV-14891[/url] -         Facebook Connect does not link 1st time account in mobile apps
+[*][url=http://tracker.vbulletin.com/browse/VBV-14918]VBV-14918[/url] -         The Denim Theme is broken in the Microsoft Edge browser
+[*][url=http://tracker.vbulletin.com/browse/VBV-14926]VBV-14926[/url] -         Cannot change "Enable Comment" setting for blog gallery
+[*][url=http://tracker.vbulletin.com/browse/VBV-14937]VBV-14937[/url] -         Load new posts iteration 3
+[*][url=http://tracker.vbulletin.com/browse/VBV-14938]VBV-14938[/url] -         Customers can have "Customized Templates" and be unable to update them.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14940]VBV-14940[/url] -         After running the "rebuild" tools in the admin cp, system cache should be cleared automatically
+[*][url=http://tracker.vbulletin.com/browse/VBV-14947]VBV-14947[/url] -         "For your information" block in Admin CP is messed up
+[*][url=http://tracker.vbulletin.com/browse/VBV-14951]VBV-14951[/url] -         Creation of a category in CMS => Got a packet bigger than 'max_allowed_packet' bytes
+[*][url=http://tracker.vbulletin.com/browse/VBV-14963]VBV-14963[/url] -         New Topics taking 20+ seconds
+[*][url=http://tracker.vbulletin.com/browse/VBV-14985]VBV-14985[/url] -         Users with periods in their names break routing.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14986]VBV-14986[/url] -         For blogs, the schema itemtype is output with html-escaped quotes, so the browser interprets the quotes as part of the URL and the attribute is unquoted and the URL incorrect
+[*][url=http://tracker.vbulletin.com/browse/VBV-14987]VBV-14987[/url] -         Homepage on vb.com, 15+ seconds to load
+[*][url=http://tracker.vbulletin.com/browse/VBV-14989]VBV-14989[/url] -         Confusing and mysterious number is referenced in the dialog for editing and creating ads.
+[*][url=http://tracker.vbulletin.com/browse/VBV-15007]VBV-15007[/url] -         Typo in setting_forumrunner_googleads_bottomthread_desc
+[*][url=http://tracker.vbulletin.com/browse/VBV-15018]VBV-15018[/url] -         CSRF in updateStatus
+[*][url=http://tracker.vbulletin.com/browse/VBV-15025]VBV-15025[/url] -         We show the referrals counter, but don't provide a referral link &amp; probably don't handle incoming referrals at all
+[*][url=http://tracker.vbulletin.com/browse/VBV-15033]VBV-15033[/url] -         Do not show image tag in attached files list if user does not have cangetimageattachment channel permission
+[*][url=http://tracker.vbulletin.com/browse/VBV-15049]VBV-15049[/url] -         API return for poll
+[*][url=http://tracker.vbulletin.com/browse/VBV-15051]VBV-15051[/url] -         Pass sessionhash during attachment.php to filedata/fetch redirect
+[*][url=http://tracker.vbulletin.com/browse/VBV-15056]VBV-15056[/url] -         Improve vb_api_vb4_showthread::fbconnect() error messages
+[*][url=http://tracker.vbulletin.com/browse/VBV-15066]VBV-15066[/url] -         Fatal error (undefined function) when moving a style (changing the style's parent style)
+[*][url=http://tracker.vbulletin.com/browse/VBV-15075]VBV-15075[/url] -         CLI upgrade can loop infinitely
+[*][url=http://tracker.vbulletin.com/browse/VBV-15106]VBV-15106[/url] -         Small formatting issue on registration page (template: widget_register): Only in effect when using optional fields. Shows incorrect formatting of a field, if one is place after the optional fields section.
+[*][url=http://tracker.vbulletin.com/browse/VBV-15143]VBV-15143[/url] -         Explain queries (?explain=1) doesn't work with routes that go through application light
+[*][url=http://tracker.vbulletin.com/browse/VBV-15144]VBV-15144[/url] -         Two Incorrect references to external.php in Admin CP help text
+[*][url=http://tracker.vbulletin.com/browse/VBV-15147]VBV-15147[/url] -         Cannot move avatars from database to file system
+[*][url=http://tracker.vbulletin.com/browse/VBV-15161]VBV-15161[/url] -         If the browser tab is not focused when loading a page, teh style chooser in the footer won't work (and the New Topic button as well)
+[*][url=http://tracker.vbulletin.com/browse/VBV-15191]VBV-15191[/url] -          Add Rebuild Style Information to the General Update Tools area in admincp
+[*][url=http://tracker.vbulletin.com/browse/VBV-15223]VBV-15223[/url] -         "Select from Photo Album" does not filter out non-image attachments, resulting in "broken images"
+[*][url=http://tracker.vbulletin.com/browse/VBV-15228]VBV-15228[/url] -         Wrong method names in exceptions in applicationlight
+[*][url=http://tracker.vbulletin.com/browse/VBV-15237]VBV-15237[/url] -         Quote link not displayed in your reply without refreshing page (regression)
+[*][url=http://tracker.vbulletin.com/browse/VBV-15250]VBV-15250[/url] -         Link to reset password in password reset email is broken (regression)
+[*][url=http://tracker.vbulletin.com/browse/VBV-15265]VBV-15265[/url] -         Potential Security Exploit
+[*][url=http://tracker.vbulletin.com/browse/VBV-15276]VBV-15276[/url] -         Wrong character in Special Thanks List
+[*][url=http://tracker.vbulletin.com/browse/VBV-15278]VBV-15278[/url] -         500 Internal server error when trying to activate sitebuilder
+[*][url=http://tracker.vbulletin.com/browse/VBV-15310]VBV-15310[/url] -         Spell issue in phrase
+[/list]
+    
+[h2]Feature Request[/h2]
+[list]
+[*][url=http://tracker.vbulletin.com/browse/VBV-12146]VBV-12146[/url] -         Add Vertical and Horizontal Positioning to Background Stylevars
+[*][url=http://tracker.vbulletin.com/browse/VBV-13879]VBV-13879[/url] -         Add a text-transform stylevar datatype
+[*][url=http://tracker.vbulletin.com/browse/VBV-13880]VBV-13880[/url] -         Add text-transform stylevars
+[*][url=http://tracker.vbulletin.com/browse/VBV-14412]VBV-14412[/url] -         Add primary Usergroup to body tag.
+[/list]
+        
+[h2]Improvement Request[/h2]
+[list]
+[*][url=http://tracker.vbulletin.com/browse/VBV-13015]VBV-13015[/url] -         Allow selecting *any* style in the Sitebuilder => Styles => Choose Theme interface (it currently only shows "themes", but no styles including any user-created styles)
+[*][url=http://tracker.vbulletin.com/browse/VBV-14735]VBV-14735[/url] -         User Profile > About Tab: Do not capitalize first letter
+[*][url=http://tracker.vbulletin.com/browse/VBV-14748]VBV-14748[/url] -         Include Script Name and Step Number in install/upgrade errors.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14757]VBV-14757[/url] -         Can Use HTML usergroup permission should have warning text below it warning against its use
+[*][url=http://tracker.vbulletin.com/browse/VBV-14914]VBV-14914[/url] -         Show all styles in Site Builder > Style > Themes, relabel "Themes" to "Styles"
+[*][url=http://tracker.vbulletin.com/browse/VBV-14950]VBV-14950[/url] -         Show JSON response in Debug Mode.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14981]VBV-14981[/url] -         Show DEBUG MODE notice at the top of the ADMINCP.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14993]VBV-14993[/url] -         Change how arguments are passed to vBulletin.errorAlert()
+[*][url=http://tracker.vbulletin.com/browse/VBV-14996]VBV-14996[/url] -         Import notifications folder's "dismiss &amp; autoload" feature into message center's Preview
+[/list]
+    
+[h2]New Feature[/h2]
+[list]
+[*][url=http://tracker.vbulletin.com/browse/VBV-14465]VBV-14465[/url] -         Need route repair utility
+[/list]
+        
+[h2]Task[/h2]
+[list]
+[*][url=http://tracker.vbulletin.com/browse/VBV-14844]VBV-14844[/url] -         Improve existing themes - theme support
+[*][url=http://tracker.vbulletin.com/browse/VBV-15247]VBV-15247[/url] -         Update vBulletin Team names
+[/list]
+        
+[h2]Sub-task[/h2]
+[list]
+[*][url=http://tracker.vbulletin.com/browse/VBV-14845]VBV-14845[/url] -         Improve the Cool Blue theme
+[*][url=http://tracker.vbulletin.com/browse/VBV-14846]VBV-14846[/url] -         Improve the Blue Green theme
+[*][url=http://tracker.vbulletin.com/browse/VBV-14847]VBV-14847[/url] -         Improve the Purple Orange theme
+[*][url=http://tracker.vbulletin.com/browse/VBV-14848]VBV-14848[/url] -         Improve the Red theme
+[*][url=http://tracker.vbulletin.com/browse/VBV-14849]VBV-14849[/url] -         Improve the Pink theme
+[*][url=http://tracker.vbulletin.com/browse/VBV-14850]VBV-14850[/url] -         Theme support modification: Underline active state for header nav tabs
+[*][url=http://tracker.vbulletin.com/browse/VBV-14851]VBV-14851[/url] -         Theme support modification: Button style active state for header nav tabs
+[*][url=http://tracker.vbulletin.com/browse/VBV-14852]VBV-14852[/url] -         Theme support modification: Style change for navigation lines
+[*][url=http://tracker.vbulletin.com/browse/VBV-14853]VBV-14853[/url] -         Theme support modification: Divider between header navigation items
+[*][url=http://tracker.vbulletin.com/browse/VBV-14854]VBV-14854[/url] -         Change the Black Red theme to use the text-transform stylevars
+[*][url=http://tracker.vbulletin.com/browse/VBV-14855]VBV-14855[/url] -         Change the Blue Yellow theme to use the text-transform stylevars
+[*][url=http://tracker.vbulletin.com/browse/VBV-14856]VBV-14856[/url] -         Change the Light Blue theme to use the text-transform stylevars
+[*][url=http://tracker.vbulletin.com/browse/VBV-14857]VBV-14857[/url] -         Change the Wood theme to use the text-transform stylevars
+[*][url=http://tracker.vbulletin.com/browse/VBV-14858]VBV-14858[/url] -         Provide a standard way to add full-width background image(s) and/or color(s) to the header
+[*][url=http://tracker.vbulletin.com/browse/VBV-14859]VBV-14859[/url] -         Change the Blue Yellow theme's full width header to use the standard method for full-width headers
+[*][url=http://tracker.vbulletin.com/browse/VBV-14860]VBV-14860[/url] -         Change the Denim theme's full width header to use the standard method for full-width headers
+[*][url=http://tracker.vbulletin.com/browse/VBV-14861]VBV-14861[/url] -         Change the Grey Stripes theme's full width header to use the standard method for full-width headers
+[*][url=http://tracker.vbulletin.com/browse/VBV-14862]VBV-14862[/url] -         Change the Grunge theme's header to use the standard method for header images that go behind the header, nav tabs and sub nav tabs
+[*][url=http://tracker.vbulletin.com/browse/VBV-14863]VBV-14863[/url] -         Change the Light Blue theme's full width header to use the standard method for full-width headers
+[*][url=http://tracker.vbulletin.com/browse/VBV-14864]VBV-14864[/url] -         Change the Old School theme's full width header to use the standard method for full-width headers
+[*][url=http://tracker.vbulletin.com/browse/VBV-14865]VBV-14865[/url] -         Change the Stripes theme's full width header to use the standard method for full-width headers
+[*][url=http://tracker.vbulletin.com/browse/VBV-14866]VBV-14866[/url] -         Change the Wood theme's full width header to use the standard method for full-width headers
+[*][url=http://tracker.vbulletin.com/browse/VBV-14895]VBV-14895[/url] -         Benchmark template inclusion process
+[*][url=http://tracker.vbulletin.com/browse/VBV-14958]VBV-14958[/url] -         Create library route
+[*][url=http://tracker.vbulletin.com/browse/VBV-14959]VBV-14959[/url] -         Create library page
+[*][url=http://tracker.vbulletin.com/browse/VBV-14960]VBV-14960[/url] -         Create library widget
+[*][url=http://tracker.vbulletin.com/browse/VBV-14961]VBV-14961[/url] -         Create library page template
+[*][url=http://tracker.vbulletin.com/browse/VBV-15008]VBV-15008[/url] -         Move to tools.php
+[*][url=http://tracker.vbulletin.com/browse/VBV-15009]VBV-15009[/url] -         Fix all node-type prefixes and regexes to match the channel tree.
+[*][url=http://tracker.vbulletin.com/browse/VBV-15010]VBV-15010[/url] -         Scan all channel and conversation routes and ensure page info is valid.
+[*][url=http://tracker.vbulletin.com/browse/VBV-15012]VBV-15012[/url] -         Change the Denim theme to use the text-transform stylevars
+[*][url=http://tracker.vbulletin.com/browse/VBV-15013]VBV-15013[/url] -         Change the Gradient theme to use the text-transform stylevars
+[*][url=http://tracker.vbulletin.com/browse/VBV-15014]VBV-15014[/url] -         Change the Grey Stripes theme to use the text-transform stylevars
+[*][url=http://tracker.vbulletin.com/browse/VBV-15015]VBV-15015[/url] -         Change the Grunge theme to use the text-transform stylevars
+[*][url=http://tracker.vbulletin.com/browse/VBV-15016]VBV-15016[/url] -         Change the Old School theme to use the text-transform stylevars
+[*][url=http://tracker.vbulletin.com/browse/VBV-15017]VBV-15017[/url] -         Change the Stripes theme to use the text-transform stylevars
+[*][url=http://tracker.vbulletin.com/browse/VBV-15021]VBV-15021[/url] -         Miscellaneous debugging and testing
+[*][url=http://tracker.vbulletin.com/browse/VBV-15070]VBV-15070[/url] -         Add full-width background color for the Cool Blue theme
+[*][url=http://tracker.vbulletin.com/browse/VBV-15072]VBV-15072[/url] -         Add full-width background color for the Purple Orange theme
+[*][url=http://tracker.vbulletin.com/browse/VBV-15073]VBV-15073[/url] -         Add full-width background color for the Pink theme
+[*][url=http://tracker.vbulletin.com/browse/VBV-15078]VBV-15078[/url] -         Change ajax/api/ handler to only accept POST request method to the API call (in application light)
+[*][url=http://tracker.vbulletin.com/browse/VBV-15079]VBV-15079[/url] -         Change ajax/apidetach/ to only pass POST data to the API call (in application light)
+[*][url=http://tracker.vbulletin.com/browse/VBV-15080]VBV-15080[/url] -         Remove the unused controller for ajax/api/ (since this now uses application light, and leaving it may cause a security problem in the future)
+[*][url=http://tracker.vbulletin.com/browse/VBV-15081]VBV-15081[/url] -         Ensure that the presentation layer runs the CSRF securitytoken verification on all POST requests
+[*][url=http://tracker.vbulletin.com/browse/VBV-15082]VBV-15082[/url] -         Change ajax/api/phrase/fetch (separate function in app light) to only pass POST data to the API call
+[*][url=http://tracker.vbulletin.com/browse/VBV-15083]VBV-15083[/url] -         Change ajax/api/options/fetchValues (separate function in app light) to only pass POST data to the API call
+[*][url=http://tracker.vbulletin.com/browse/VBV-15084]VBV-15084[/url] -         Change ajax/render/ handler to only pass POST data to the template render, since templates can call API methods (in application light)
+[*][url=http://tracker.vbulletin.com/browse/VBV-15085]VBV-15085[/url] -         Check if there are any other ways to access/call the API from an external request
+[*][url=http://tracker.vbulletin.com/browse/VBV-15086]VBV-15086[/url] -         Change all calls from JS to ajax/api* to use POST (this covers /api, /apidetach, and the phrase &amp; options methods); search JS &amp; templates (for the form action attr); search vBulletin.AJAX, $.ajax, $.get, ajaxForm.
+[*][url=http://tracker.vbulletin.com/browse/VBV-15087]VBV-15087[/url] -         Change all calls from JS to ajax/render to use POST
+[*][url=http://tracker.vbulletin.com/browse/VBV-15112]VBV-15112[/url] -         Check admin controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15113]VBV-15113[/url] -         Check activity controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15114]VBV-15114[/url] -         Check ajax controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15115]VBV-15115[/url] -         Check announcement controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15116]VBV-15116[/url] -         Check attachment controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15117]VBV-15117[/url] -         Check auth controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15118]VBV-15118[/url] -         Check bbcode controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15119]VBV-15119[/url] -         Check createcontent controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15120]VBV-15120[/url] -         Check external controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15121]VBV-15121[/url] -         Check filedata controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15122]VBV-15122[/url] -         Check hv controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15123]VBV-15123[/url] -         Check infraction controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15124]VBV-15124[/url] -         Check link controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15125]VBV-15125[/url] -         Check page controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15126]VBV-15126[/url] -         Check permission controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15127]VBV-15127[/url] -         Check poll controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15128]VBV-15128[/url] -         Check profile controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15129]VBV-15129[/url] -         Check registration controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15130]VBV-15130[/url] -         Check relay controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15131]VBV-15131[/url] -         Check report controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15132]VBV-15132[/url] -         Check search controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15133]VBV-15133[/url] -         Check style controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15135]VBV-15135[/url] -         Check uploader controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15136]VBV-15136[/url] -         Check video controller
+[*][url=http://tracker.vbulletin.com/browse/VBV-15138]VBV-15138[/url] -         Check any remaining $.get and $.ajax calls to see if they should use POST
+[*][url=http://tracker.vbulletin.com/browse/VBV-15139]VBV-15139[/url] -         Check for any remaining $.ajax calls that have type:'post' where POST is lowercase, and capitalize it
+[*][url=http://tracker.vbulletin.com/browse/VBV-15230]VBV-15230[/url] -         Add a way for QA to easily access ajax/api
+[/list]

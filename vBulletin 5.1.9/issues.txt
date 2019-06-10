@@ -1,0 +1,110 @@
+[h2]Feature Request[/h2]
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBV-8855]VBV-8855[/url]] - We need a tool / way to reset pages to the default
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14711]VBV-14711[/url]] - Add a &quot;filter&quot; input above the settings select menu, to quickly find a particular setting or setting group
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14797]VBV-14797[/url]] - New Themes (Theme set #3)
+[/list]
+        
+[h2]Improvement Request[/h2]
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBV-12053]VBV-12053[/url]] - Please add grey lines in lists (AdminCP)
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13881]VBV-13881[/url]] - Update webfont inclusion method for the first set of themes
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14013]VBV-14013[/url]] - Clicking on Background image in Content Slider should take you to the content.
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14124]VBV-14124[/url]] - Show current Page Template name when saving custom page.
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14623]VBV-14623[/url]] - Add last post info to topic list in smaller responsive sizes
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14710]VBV-14710[/url]] - Scroll to previous location when editing a template and using the &quot;Save &amp; Reload&quot; button
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14811]VBV-14811[/url]] - Rename &quot;Show All Moderators&quot; to &quot;Moderator Permissions&quot;
+[/list]
+            
+[h2]Task[/h2]
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14839]VBV-14839[/url]] - Change permission required for creating RSS feed
+[/list]
+
+    
+[h2]Bug[/h2]
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBV-2428]VBV-2428[/url]] - (Porting from vB4) Support for reverse proxy
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-7955]VBV-7955[/url]] - Flag Reports channel can be accessed only by administrators and super moderators
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-10438]VBV-10438[/url]] - Wrong phrase usage in privatemessage_foldersummary template
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-11339]VBV-11339[/url]] - Remove Custom Modules, until properly implemented 
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-11424]VBV-11424[/url]] - IE11 and beyond detection
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-11665]VBV-11665[/url]] - Article title not displayed after saving edits to an article
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-11948]VBV-11948[/url]] - All users show as online on profile page and posts even though they are not online
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-12249]VBV-12249[/url]] - User Session expires too quickly on mobile apps
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-12743]VBV-12743[/url]] - The quick setup panel does not show in iOS. (but the button does)
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13604]VBV-13604[/url]] - Required user profile fields causing problems for administrators, for some reason
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13715]VBV-13715[/url]] - Icons needed for several recent modules that don't have an icon
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13822]VBV-13822[/url]] - Occasional tmp_nodestats error - BIGINT UNSIGNED value is out of range
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14130]VBV-14130[/url]] - Custom language importer should not set default language on UPGRADE
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14229]VBV-14229[/url]] - Upgrade from 4.2.2 - Statistics posts = 0 in statistics module
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14246]VBV-14246[/url]] - Change upgrader to overwrite themes every time
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14353]VBV-14353[/url]] - Custom logo not showing for non-admins when site is turned off
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14445]VBV-14445[/url]] - If DST Correction is set to Automatically detect, it may cause the site to constantly refresh
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14544]VBV-14544[/url]] - Topic Titles are not censored 
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14655]VBV-14655[/url]] - vB_Api::instanceInternal('content_channel') in vB_Api_Content_Channel
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14672]VBV-14672[/url]] - Final Upgrade Import XML Step 20/20 Frequently Times out on Shared Hosting.
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14696]VBV-14696[/url]] - Forum Category Channels does not expose nodeid as a CSS ID.
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14697]VBV-14697[/url]] - Session not maintained between MAPI &amp; filedata/fetch, causing image issues in mobile apps if guests cannot view image attachments
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14713]VBV-14713[/url]] - Upgrade fails with &quot;Non-unique widget GUID&quot; if having custom modules
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14714]VBV-14714[/url]] - Replace broken images with links when user is not able to view the image (for example due to permission checks)
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14726]VBV-14726[/url]] - Module icons needed for content slider &amp; tag naviation
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14730]VBV-14730[/url]] - Redundant options call in vB_String::fetchCensoredText
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14750]VBV-14750[/url]] - Message Center: Wrong phrase (post) is being used in the filter
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14764]VBV-14764[/url]] - Show all sub-channels of Special.
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14765]VBV-14765[/url]] - Bug in secure route parsing
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14766]VBV-14766[/url]] - Security token not appended to blueimp form data in IE when uploading new logo image
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14774]VBV-14774[/url]] - Phrase no_permission_page_href_x_y_href_z sends Guest Users to Private Messages not the Contact form.
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14803]VBV-14803[/url]] - Search is returning stale data when a new post is added by another user.
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14825]VBV-14825[/url]] - Installing a new products sets all widgets to belong to this product
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14840]VBV-14840[/url]] - Typo in makeconfig.php
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14892]VBV-14892[/url]] - Wrong informations in header files
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14909]VBV-14909[/url]] - Many popups have grey background (regression)
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14922]VBV-14922[/url]] - System modules can be deleted
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14925]VBV-14925[/url]] - Style manager shows dupes for master style
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14928]VBV-14928[/url]] - Load new post race condition fix re-fix
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14955]VBV-14955[/url]] - Visual issue at last page of private message
+
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14967]VBV-14967[/url]] - Notice: ob_end_flush(): failed to delete and flush buffer. No buffer to delete or flush
+
+[/list]
+    

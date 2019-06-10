@@ -1,0 +1,27 @@
+vBulletin Mobile 1.18 is now available to all customers. To obtain the new build, you need to visit the Mobile Publisher in your Member's Area. Rebuild your apps to apply the changes. This new version includes new features and bug fixes.
+
+Calendar 
+Event support for sites running vBulletin 5.3.4 and higher has been added. Users will be able to export calendar events into their device's calendar app.
+
+User Banning
+Administrators and Moderators can now ban troublesome users directly from the App. This should allow you to maintain your site better while on the go.
+
+Automatic Logout
+All users will need to log into your app again after the update is applied.
+
+Fixed issues
+Android
+[VBA-739] - Allow moderator & admin users to block others in app
+[VBA-717] - Calendar
+[VBA-740] - Force logout upon 1.18 upgrade
+
+iOS
+[VBI-1403] - Profile - Skype displays as "Skype&trade;"
+[VBI-1413] - Calendar option should not be available on vB3&4 app's Main menu
+[VBI-1353] - Calendar
+[VBI-1407] - Allow moderator & admin users to block others in app (Apple Requirement)
+[VBI-1409] - Force logout upon 1.18 upgrade
+
+Mobile Publisher
+[VBMP-426] - Build completion email is not sent
+[VBMP-428] - Wrong test user message should be explicit

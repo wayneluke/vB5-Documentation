@@ -1,0 +1,37 @@
+
+
+## System Requirements
+Minimum PHP Version: 5.6.30
+Minimum MySQL Version: 5.5.8
+
+Recommended PHP Version: 7.1 or higher
+Recommended MySQL Version: 5.7.7 or higher
+Recommended MariaDB Version: 10+
+
+## Current Version Support Schedule
+All customers are encouraged to upgrade to the latest version.
+
+- Active Version - 5.5.0
+- Security Patch - 5.4.5
+- Security Patch - 5.4.4
+- No Patch Release - 5.4.3 or earlier.
+
+
+[h=2]Discussion[/h]
+If you have any questions about these changes you may discuss them here: [node]4400636[/node]
+
+If you find an issue with the software or wish to place a feature request please visit our [url=https://tracker.vbulletin.com]tracker[/url].
+
+In order to receive support for your vBulletin Product please visit our [url=https://www.vbulletin.com/forum/]community forums[/url].
+
+
+
+
+
+
+-----------------
+Future post once this functionality is available on vb.com
+
+### Introducing PHAR
+
+PHP contains a feature called PHAR, which stands for **PH**p **AR**chive, that allows developers to package entire directories or applications into a single file. PHAR is similar to a ZIP or TAR file but includes executable PHP. This functionality is being added to vBulletin 5.4.5. In this version, we have added a download option to have the `/core/vb/` directory converted into a PHAR file. This saves several megabytes from the total space needed for files and allows easier uploads to your server.

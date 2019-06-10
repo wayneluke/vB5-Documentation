@@ -1,0 +1,18 @@
+vBulletin Mobile 1.15 is now available to all customers. To obtain the new build, you need to visit the Mobile Publisher in your Member's Area. Rebuild your apps to apply the changes. This new version includes new features and bug fixes.
+
+Suppport to display vBUlletin 5 Event data
+Articles for vBulletin 5 (requires vBulletin 5.3.1 or higher)
+General Bug fixing.
+
+
+[h2]Android issues resolved[/h2]
+[jira]VBA-703[/jira] - Share button problem
+[jira]VBA-704[/jira] - Cannot change CMS article category (& other options)
+[jira]VBA-705[/jira] - SearchCmsProcessServerRequest.createRequestParams() hard-codes "type" to array(18)
+[jira]VBA-707[/jira] - Setpublish is incorrect for CmsEditArticleServerRequest & CmsEditContentServerRequest
+[jira]VBA-698[/jira] - Display Event info
+[jira]VBA-701[/jira] - Verify the CMS API methods & parameters
+
+[h2]Apple iOS issues resolved[/h2]
+[jira]VBI-1340[/jira] - Cookie being set for filedata/fetch call for attachments with sessionhash (s=) URL parameter
+[jira]VBI-1329[/jira] - Display Event info

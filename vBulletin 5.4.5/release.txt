@@ -1,0 +1,112 @@
+
+vBulletin 5.4.5 Connect is now available to all customers.
+
+[h=2]Phrase System Updates[/h]
+We have added a variety of shortcodes to the phrasing system. These allow you to insert additional information into all phrases as a means to further customize your site. To use the shortcodes, simply insert them into your phrase translation where you want their information to appear. At this time, these shortcodes are supported:
+[list]
+    [*]{sitename}: The name of your site from Settings -> Options -> Site Name / URL / Contact Details. 
+    [*]{userid}: The numerical User ID of the current user or email recipient.
+    [*]{username}: The username of the current user or email recipient
+    [*]{musername}: The current username with usergroup markup applied.
+    [*]{homeurl}: The front page of your vBulletin Site.
+    [*]{registerurl}: The URL of your registration page.
+    [*]{activationurl}: The link to the account activation page.
+    [*]{helpurl}: A link to the User Manual on the site.
+    [*]{contacturl}: This provides the URL to your Contact Us page. 
+    [*]{date} - Current date using language settings
+[/list]
+
+[note]When using the URL shortcodes, if you want to make an active link they should be used within the HTML <A> tag. i.e. <a href="{contactutl}">Contact Us</a>[/note]
+
+[h=2]Media Files[/h]
+The handling of Media Files with a proper mimetype has been updated. These files will be sent to the user's device with Byte Range Headers. This allows Audio and Video files to play directly while they are still downloading. This is a specific requirement to play media on an iOS device but may improve handling on other devices. Please note, this should not be considered to be a streaming system and there is no buffering provided by vBulletin. 
+
+[h=2]Node Tools[/h]
+The Node Tools within the AdminCP have been expanded. 
+[list]
+    [*] Move Nodes: A tool to mass move nodes between channels has been added to the AdminCP. With Mass Move, you can easily move large numbers of topics from one location to another. The tool can move Topics, Articles, and Blog Entries, and Social Group Discussions among the appropriate channels. Mass Move can be accessed in the AdminCP under the Node Tools Menu.
+    [*] User ID Search: On both Prune Nodes and Move Nodes, we have provided the ability to search by User ID in addition to Username. Searching by the User ID of 0 will allow you to find all "Guest" posts within your site for easier management.
+[/list]
+
+[h=2]Improved Upgrade Handling[/h]
+We have made several changes to the Upgrade Handling in vBulletin 5.4.5. These changes are to improve the robustness of the scripts in both Web and CLI modes.
+
+[b]Upgrade Memory Handling[/b]
+An issue was discovered that could allow the upgrade script to run out of memory on large sites when using the Command Line upgrade. We have refactored how the upgrade system handles memory to account for this. This should allow for a smoother upgrade process.
+
+[b]Removed Files[/b]
+We've removed a large number of unnecessary files from the upgrade system. The system allows you to upgrade from 3.6.0 to vBulletin 5.4.5. That is almost 550 upgrade scripts that have been released over the years. Many of these files didn't have any upgrade steps in them and just progressed the version number. We've eliminated almost half of the upgrade files with this update.
+
+[h=2]vBulletin AI Suite: Related Topics[/h]
+Several updates have been made to enable better control over the related topics module on vBulletin Cloud. These changes will allow you to fine-tune the related topics returned by the module. These include:
+[list]
+    [*] Channel Limits: Limit the results so that they originate from specific channels.
+    [*] Similarity Threshold: You can set the level of similarity or specificity on the results returned. 
+    [*] Placement Error: The Related Topics module can only be properly placed on pages with a Node ID. The system has been updated to provide Administrators with a more user-friendly message when this requirement is not met.
+[/list]
+
+
+[h=2]Other Issues[/h]
+[list]
+    [*] VBV-18793 - 404 not found request to ckeditor/skins/moono/icons.png
+    [*] VBV-18831 - Regression: CKEditor icons do not show in Responsive.
+    [*] VBV-18811 - Password displayed in plain text in error
+    [*] VBV-18802 - Incomplete table in payment test communication page
+    [*] VBV-18752 - Date Filter on Moderator Log does not work properly.
+    [*] VBV-18642 - Can't see attached photos on the edit form
+[/list]
+
+All resolved issues can be viewed in the Bug Genie [url=https://tracker.vbulletin.com/vbulletin5/roadmap#roadmap_milestone_45]Roadmap[/url].
+
+
+[h=2]Suspect File Diagnostics[/h]
+From time to time, we determine that a specific file within the vBulletin System is no longer useful. Either its functionality has been refactored into other files or the functionality simply isn't used anymore. Due to the standard method of upgrading vBulletin, these unnecessary files can accumulate on your server. It is recommended that you run the Suspect File Diagnostics tool after upgrading to list these files. The tool will list them as "Not part of vBulletin.
+
+
+[h=2]PHP Support[/h]
+Due to upcoming changes in the PHP Support Cycle, we recommend that customers upgrade to PHP 7.1 or higher as soon as possible.
+[list]
+    [*]PHP 5.6 - PHP 5.6 will reach End of Life status on December 31st, 2018. We will be dropping support for PHP 5.6.X with the release of vBulletin 5.5.0. This coincides with the end of life status of PHP 5.6.X. 
+    [*]PHP 7.0 - PHP 7.0 will reach End of Life status on December 3rd, 2018. As such, we will be dropping support for this version in vBulletin 5.5.0.
+    [*]PHP 7.3 - vBulletin 5.4.5 and higher supports PHP 7.3. If you encounter any issues on this version of PHP, please create a new [url=https://tracker.vbulletin.com/vbulletin5/]bug report[/url].
+[/list]
+
+[h=2]System Requirements[/h]
+[list]
+    [*]Minimum PHP Version: 5.6.30
+    [*]Minimum MySQL Version: 5.5.8
+[/list]
+
+[list]
+    [*]Recommended PHP Version: 7.1 or higher
+    [*]Recommended MySQL Version: 5.7.7 or higher
+    [*]Recommended MariaDB Version: 10+
+[/list]
+
+[h=2]Current Version Support Schedule[/h]
+All customers are encouraged to upgrade to the latest version.
+[list]
+    [*]Active Version - 5.4.5
+    [*]Security Patch - 5.4.4
+    [*]Security Patch - 5.4.3
+    [*]No Patch Release - 5.4.2 or earlier.
+[/list]
+
+[h=2]Discussion[/h]
+If you have any questions about these changes you may discuss them here: [node]4400636[/node]
+
+If you find an issue with the software or wish to place a feature request please visit our [url=https://tracker.vbulletin.com/vbulletin5]tracker[/url].
+
+In order to receive support for your vBulletin Product please visit our [url=https://www.vbulletin.com/forum/]community forums[/url].
+
+
+
+
+
+
+-----------------
+Future post once this functionality is available on vb.com
+
+### Introducing PHAR
+
+PHP contains a feature called PHAR, which stands for **PH**p **AR**chive, that allows developers to package entire directories or applications into a single file. PHAR is similar to a ZIP or TAR file but includes executable PHP. This functionality is being added to vBulletin 5.4.5. In this version, we have added a download option to have the `/core/vb/` directory converted into a PHAR file. This saves several megabytes from the total space needed for files and allows easier uploads to your server.

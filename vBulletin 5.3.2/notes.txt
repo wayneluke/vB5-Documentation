@@ -1,0 +1,12 @@
+I wanted to run down my thinking on the login work I'm doing.  First off I'm focusing on AJAX calls and, in particular, content entry since that was identified as the main use case.  I've added logic to return the userid from the server with an error return.  Then when we make an ajax call that gets an error if:
+* The browser thinks the user is logged in and
+* The server thinks the user is logged out and
+* The error appears to be one that might be resolved by fixing this
+
+Then we will prompt the user to log in and then automatically retry the ajax call.
+
+The reason for this approach is that we don't want to prompt a guest for login in some cases and it's not clear that they have an account to log into.  We can probably do something with this case, but it's going to be a fair amount of work all its own and I think dealing with logged in but expired sessions is more critical.
+
+There are also some cases where logging in may not fix the error.  Most notably if we require humanverify for regular users and allow guests to post with "humanverify" then we'll log the user in but they'll still get the human verification error because its still required (and they didn't fill it in).  I flag human verify as a "login" error because if guests are allowed to post but require HV then that's an error you can't get when posting on an "expired" login (and you won't even have the UI).
+
+There are a lot of moving parts here and things aren't as unified as they should be.  So it's almost certain that I'm going to miss something in the first try at this.  Generally speaking cleaning up additional cases should be fairly easy once we identify them.  Right now my focus on getting something done that's better than what we have now.

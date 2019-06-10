@@ -1,0 +1,12 @@
+5.3.3 will require that sphinx users update their sphinx config and rebuild the index to pick up some new fields.
+
+New Module - Trending Topics. 
+New type of search module that will keep your currently active topics at the top. Replaces the latest topics module on the forum home page. Can be placed on any channel.
+
+Social Sharing
+Share topics, blogs, articles, and group discussions with Facebook and Twitter. vBulletin 5 shows buttons to share content. Additional social networks can be added via template hooks and extensions.
+
+Memberlist Responsive.
+The Member List has been reworked to be usable in Responsive modes. vBulletin Messenger buttons have been added for each member.
+
+Push Notifications have been expanded for the Mobile Suite. ---

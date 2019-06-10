@@ -1,0 +1,12 @@
+Security Patch Released for vBulletin 5.3.2, 5.3.3, and 5.3.4
+
+A security issue has been found in the template rendering functionality of vBulletin 5.3.2 and higher. We have applied a fix for the issue.
+
+It is recommended that you apply this patch as soon as possible. To do so, download the patch for your version from https://members.vbulletin.com/patches.php and upload the files to your server. Overwrite the existing files with the new ones. If you have not upgraded to 5.3.4 yet, it is recommended that you do a full upgrade to vBulletin 5.3.4 Patch Level 1.
+
+Patches Released:
+vBulletin 5.3.4 Patch Level 1
+vBulletin 5.3.3 Patch Level 1
+vBulletin 5.3.2 Patch Level 2
+
+If you are using an older version of vBulletin, you should upgrade to vBulletin 5.3.4 Patch Level 1 as soon as possible.

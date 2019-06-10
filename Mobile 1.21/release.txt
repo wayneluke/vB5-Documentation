@@ -1,0 +1,47 @@
+vBulletin Mobile Suite 1.21 is now available to all licensed customers. This release includes a number of changes including compliance with updated requirements from both Google and Apple. If you have any questions please open a topic in the Mobile Suite forum.
+
+Note: In order to use the privacy functionality of the Apps, you must be using vBulletin 5.4.3 or higher. 
+
+[h=2]Android Enhancements and Bug Fixes[/h]
+[b]Enhancements[/b]
+Collect privacy consent for EU Guest users
+Collect privacy consent for EU users during Login
+Collect privacy consent for EU users during Registration
+Increase TagetSDKversion to 26
+Bottom bar layout not fit parent width
+Handle application permission access
+Screen notes show same color as background color
+Add "Ignore" user feature
+Implement a Utility phrase class
+
+[b]Bug Fixes[/b]
+Clicking the Privacy link in any privacy consent text crashes the app
+Error viewing another user profile
+
+
+[h=2]iOS Enhancements and Bug Fixes[/h]
+[b]Enhancements[/b]
+Collect privacy consent for EU Guest users
+Collect privacy consent for EU users during Login
+Collect privacy consent for EU users during Registration
+Add "Ignore" user feature
+Support Super Retina display of iPhone X
+
+[b]Bug Fixes[/b]
+vB5 Blog - Tapping avatar on blog view crashes the app
+vB5 Message Post View - Bottom buttons missing
+vB5 Login - Skip for Now not working
+vB5 New Content Page - Image attachments displayed incorrectly
+vB5 User Profile - Labels cuts off
+vB4 Registration - Agreement toggle does not work
+vB4 - Navigating to Photos using the top navigation crashes the app
+vB4 Activity Stream - Added photos as displayed incorrectly
+vB3 app: login/skip login crashes the app
+Poll issues with auto layout
+Forum page number highlighted is -1 from actual page
+Soft Deleted threads are not dark grey
+Calendar crashes iOS app
+Unable to upload avatars
+App crashes when select to list popular Articles
+Broken menu bar item for Guest users
+

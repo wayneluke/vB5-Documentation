@@ -1,0 +1,44 @@
+vBulletin Mobile Suite 1.19 is now available to all customers. The following issues and improvements have been resolved for the apps. You can build the new versions in the Mobile Publisher in your Member's Area.
+
+[h2]Android[/h2]
+Feature Request
+[VBA-738] - Support vB5 forum comments
+[VBA-763] - Support "Comment' notifications
+[VBA-764] - Support "Comment in topic' notifications
+[VBA-762] - Support flag notification for comment in Notifications Feature.
+
+Improvement Request
+[VBA-741] - Handle "SHOW_COMMENT_ACTION" push notifications
+[VBA-742] - Flag report & Moderation options for vB5 Forum Comments
+[VBA-746] - Improve report post prompt
+[VBA-747] - Add Report action to Blog's comment
+
+Bugs Resolved
+[VBA-748] - Wrong colour of the titles in the Android App
+[VBA-759] - attachement images non appear in private messages
+[VBA-760] - Private Message "Move" actually tries to send a flag report
+[VBA-761] - Inline image does not show
+
+[h2]iOS (Apple)[/h2]
+Feature Request
+[VBI-1408] - Support vB5 forum comments
+[VBI-1425] - Support "Comment in topic' notifications
+[VBI-1426] - Support "Comment' notifications
+[VBI-1427] - Support flag notification for comment in Notifications Feature
+
+Improvement Request
+[VBI-1410] - Handle "SHOW_COMMENT_ACTION" push notifications
+[VBI-1412] - Flag report & Moderation options for vB5 Forum Comments
+[VBI-1414] - Add Report action to Blog's comment
+
+Bugs Resolved
+[VBI-1332] - Blogs - Comments with line breaks will hide a portion of the text
+[VBI-1335] - Quote - Unable to quote posts
+[VBI-1337] - Using long usernames leads to a not translated phrase in response
+[VBI-1397] - Blogs - Blog posts by user displaying template instead of data
+[VBI-1417] - Quick Reply button does not allow user to reply to post
+[VBI-1418] - New Content Page - Attached images in Forum posts showing as blank
+[VBI-1435] - Cannot publish article
+[VBI-1438] - Blogs - Cannot comment on Blogs that allow comments
+[VBI-1444] - Calendar appears in menu and causes app to crash when pressed
+[VBI-1447] - Logging out of app results in incorrect message

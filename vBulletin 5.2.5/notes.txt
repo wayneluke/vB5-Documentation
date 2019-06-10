@@ -1,0 +1,34 @@
+vBulletin Messaging -
+Admins can control how many chats are listed on the messaging drop down menu.
+
+Image Uploads
+All Images will be rewritten on upload to remove invalid Metadata. This is to preserve the security of your system. This
+PHP GD does not support Animated GIFs so this is skipped. If you need this security, use ImageMagick.
+
+AdminCP -
+Site Off Indicator added to header.
+
+3rd Party Development -
+Hook added to routing.php to handle 404 errors.
+
+Code Cleanup -
+Obsolete functions have been removed from the system. 
+CSS and Javascript have been cleaned up to remove obsolete classes and functions.
+
+Functions removed from functions.php:
+split_string
+to_ascii
+fetch_soft_break_string
+construct_window_page_nav
+fetch_lastposter_userinfo
+vbmail (also removed the last reference to it)
+fetch_profilefield_display
+vbheaders_sent
+exec_switch_bg (also removed some stray references to it)
+fetch_start_end_total_array
+print_standard_error
+add_query
+convert_int_to_utf8 (removed remaining reference to it)
+convert_unicode_char_to_charset
+
+Also removed the last reference to vB_Legacy_CurrentUser and removed all of the classes in core/vb/legacy

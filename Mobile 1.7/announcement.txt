@@ -1,0 +1,14 @@
+We are proud to announce the release of the vBulletin Mobile Suite 1.7. This version is covers a number of issues for iOS compliance. There are 35 issues resolved for the iOS version and one issue resolved for the Android version. The Mobile Suite is available for all versions of vBulletin that support the Mobile Api.
+
+iOS Improvements
+- Compiled with xCode 5.1.1
+- iOS 7 compliance issues fixed.
+- Facebook Handling Improved for better security.
+
+Android Improvements
+- Facebook Handling Improved for better Security.
+
+The Mobile Publisher has been updated to handle these changes. 
+
+-----------
+This would be followed by a list of the issues fixed in JIRA.

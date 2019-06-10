@@ -1,0 +1,39 @@
+New Modules in vBulletin 5.1.5
+
+vBulletin Connect 5.1.5 introduces two new modules that you can use on your pages. New installations also receive two new search modules placed on the Blog and Group pages to show your blog and group activity.  I'll go over how to create these search modules on your pre-existing installation later.
+
+Content Slider Module
+This module was requested a lot by vBulletin 5 customers. By default it allows you to show featured content anywhere on your site in an image slideshow format. Currently this is very easy to setup with few options but those can be expanded in the future if there is demand.
+
+First we need to feature some content. Go to an article, topic or blog entry and you can feature content by using the inline moderation tools. Select the Topic menu and click on the "Feature Topic". See the screenshot below.
+
+
+
+Once you have a few topics featured enter Site Builder and edit the page where you want to add your Content Slider. Drag the content slider to the location you want to place it on your page at. We recommend a wide or 100% column. Once placed, it should look like the image below:
+
+Advanced Settings
+You can configure this using a JSON Search String. These can be created by typing out the JSON string or using a search module to configure your options and then clicking the advanced tab to get the string. We hope to improve the functionality for this module in the future.
+
+Statistics Module
+The statistics module from vBulletin 4 and earlier has been recreated to fit in with Site Builder. You can place this module wherever modules can be placed. The statistics module does not have any specific options at this time except for the ability to give it a custom title. It does share the hide title option with all other modules though.1
+
+My Groups and My Blogs
+With the default installation, two new modules are added. One for blogs and one for groups. They are designed to show the blogs and groups that you own. There are instructions on how to recreate these modules for upgrades below. The modules themselves are simply searches built using JSON search strings. However they use new filters made available in vBulletin 5.1.5 to achieve their affect.
+
+
+To create these modules on existing forums that are upgraded, follow these steps:
+1) Using Site Builder edit the page you want to place the modules on. By design, these would be either the Blog or Group pages.
+2) Add a Search Module.
+3) Edit the module and click the "Switch to Advanced Editor" link at the top.
+4) Choose your options:
+Blog:
+Title: My Blogs
+Results: 5
+JSON: {"my_channels":{"type":"blog"},"sort":{"lastcontent":"desc"}}
+
+Groups:
+Title: My Groups
+Results: 5
+JSON: {"my_channels":{"type":"group"},"sort":{"lastcontent":"desc"}}
+
+5) Save the module and then save the page.

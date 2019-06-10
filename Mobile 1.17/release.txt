@@ -1,0 +1,44 @@
+vBulletin Mobile 1.17 is now available to all customers. To obtain the new build, you need to visit the Mobile Publisher in your Member's Area. Rebuild your apps to apply the changes. This new version includes new features and bug fixes.
+
+[h2]Push Notifications[/h2]
+When used with vBulletin 5.3.3 and higher, Push Notifications have been expanded to cover replies, subscriptions, and flagged topic reports. 
+
+
+[h2]Android issues resolved[/h2]
+Bug
+[VBA-718] - Facebook Button showing when Facebook disabled in Settings
+[VBA-719] - Event widget randomly appears in other posts in an event thread
+[VBA-725] - Activity stream title has white color
+[VBA-731] - Users get logged out after the first login
+[VBA-734] - Facebook login button missing in the first login after installation
+[VBA-735] - Blank Reply & Subscriptions notifications page
+Feature Request
+[VBA-730] - Flag reports actions
+Improvement Request
+[VBA-716] - Push Notifications for "Subscription" & "Reply" notification types
+[VBA-720] - Push Notifications for visitor message
+[VBA-723] - Push notifications for "Flag Reports"
+[VBA-724] - Support "Flag Reports" in Notifications feature
+[VBA-727] - call "notification_dismissvms" every time Wall post screen is loaded
+[VBA-732] - Push notification for Flag report of visitor message
+
+[h2]Apple iOS issues resolved[/h2]
+Bug
+[VBI-1356] - Facebook Button showing when Facebook disabled in Settings
+[VBI-1373] - Add usage description for NSCalendar
+[VBI-1375] - App does not work with iOS 9 any longer
+[VBI-1386] - Changing avatar by taking a photo with camera crashes app on iOS 10 and 11
+[VBI-1388] - Navigating to My Profile then logging out crashes the app
+[VBI-1390] - Facebook Login button missing
+[VBI-1392] - Upload photo from camera crashes the app
+[VBI-1393] - Logout crashes app
+[VBI-1404] - Moderate option shouldn't be available in Topic Replies & Subscription notifications
+Feature Request
+[VBI-1371] - Flag reports actions
+Improvement Request
+[VBI-1350] - Push Notifications for "Subscription" & "Reply" notification types
+[VBI-1367] - Push Notifications for visitor message
+[VBI-1368] - call "notification_dismissvms" every time Visitor message screen is loaded
+[VBI-1369] - Push notifications for "Flag Reports"
+[VBI-1370] - Support "Flag Reports" in Notifications feature
+[VBI-1372] - Push notification for Flag report of visitor message

@@ -1,0 +1,18 @@
+varname	version
+notice_1_html
+styles_and_templates
+deleted_x_pms
+image_extension_but_wrong_type
+node_permission
+node_permission_section
+node_permission_user
+replacmentvar_template_x_exists
+advanced_options
+content_quote
+guest_quoted_you_in_post
+have_x_posts_in_topic_last_y_z
+new_posts
+replacementvar_x_exists
+x_only
+x_quoted_you_in_post
+usersetting_emailnotification_general_quote

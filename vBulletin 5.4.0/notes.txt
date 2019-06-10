@@ -1,0 +1,41 @@
+# Sprite Image.
+The sprite for most icons used in a vBulletin Style has been converted to the SVG Image Format and stored as a template in the Style System. 
+Advantages of SVG
+- Vector Images - They should work equally well at different screen sizes without the need for multiple image files.
+- As a vBulletin Administrator you can change the colors of the icons to match your Style using Style Variables.
+- Each image can be referenced by a unique ID.
+- Sprites are actually XML files so you can easily update images in the download version.
+
+## New Style Variables
+New style variables have been added to the system to control the colors of the SVG icons. These are:
+- icon_color_1
+- icon_color_2
+
+# Tabbed Navigation
+The way vBulletin chooses which tab to highlight is based on the URL used by the page. In previous versions, this only handled a few distinct URLs. This means the tab highlighting didn't work on custom pages or "sub-pages" all the time. There can also be problems if you change the default page of your vBulletin Site.
+
+The system has been updated to handle these issues. This allows you to show highlight tabs and show sub-navigation for your custom pages. To do this, the url of your pages should match these formats:
+
+/custompage - highlights the tab assigned to this url. The appropriate sub-navigation will appear as well.
+/custompage/subpage - looks for a tab assigned to this URL. If not found, will highlight the tab assigned to the parent "/custompage". If found, it will highlight the tab and show the appropriate sub-navigation.
+
+Google Recaptcha
+Google has announced that Recaptcha version 1 will be shut down on March 31, 2018.  We encourage people who are still using it to upgrade to Recaptcha version 2 (https://www.google.com/recaptcha/intro/) as soon as possible.  Recaptcha version 1 will be removed from vBulletin starting in the 5.3.5 release.
+
+# Pagination
+Pagination has been fixed in blogs and notifications. More information needed.
+
+
+Style Sharing
+
+
+## Unused Tables
+The following tables will be removed from your database on upgrade to 5.3.5:
+- action
+- apipost
+- block
+- blockconfig
+- blocktype
+- blog_userread
+- contentread
+- dbquery

@@ -1,0 +1,28 @@
+vBulletin Mobile 1.16 is now available to all customers. To obtain the new build, you need to visit the Mobile Publisher in your Member's Area. Rebuild your apps to apply the changes. This new version includes new features and bug fixes.
+
+[h2]Push Notifications[/h2]
+Both iOS and Android support Push Notifications with vBulletin 5.3.2 and higher. This allows users to be notified about new content while on the go. To configure your server to set up Push Notifications visit this article:
+https://www.vbulletin.com/forum/articles/vbulletin-5-connect-aa/vbulletin-5-tutorials-aa/4374510-enabling-push-notifications-in-vbulletin-5-3-2-and-mobile-suite-1-16
+
+Users can enable the Push Notifications in the Notifications area of their device settings.
+
+[h2]Apple Submission[/h2]
+Resigning the App for submission to the iOS App Store has been improved. Please review the documentation included in the iOS download package for the updated process.
+
+
+[h2]Android issues resolved[/h2]
+[jira]VBA-712[/jira] - Double ads banner in Private Message Details view
+Improvement Request
+[jira]VBA-700[/jira] - Push Notifications
+[jira]VBA-713[/jira] - Add navigation menu button in Private Message Details view
+[jira]VBA-714[/jira] - Force logout upon 1.16 upgrade
+
+[h2]Apple iOS issues resolved[/h2]
+[jira]VBI-1325[/jira] - Message subject disappear after read
+[jira]VBI-1345[/jira] - Using Pinch/Zoom on the iPhone pops up a dialog box. Clearing dialog box removes the content on the screen.
+[jira]VBI-1355[/jira] - App crashes trying to load Activity Stream (for vB3 sites)
+[jira]VBI-1358[/jira] - The app will crash when tapping on the "Create an account" button
+[jira]VBI-1359[/jira] - The app will crash when attempting to attach an image from the phone library
+Improvement Request
+[jira]VBI-1352[/jira] - vBulletin re-sign 2.0
+[jira]VBI-1326[/jira] - Push Notification

@@ -1,0 +1,20 @@
+While management has it in their mind that themes are a totally new and amazing thing, you've probably noticed that its just a fancy UI to set the default style -- since the functionality they wanted has mostly been in the product since vb3, they just aren't very familiar with it.  
+
+Introducing Themese
+
+What are Themes? 
+Themes are an expansion of the vBulletin Style system. They are designed to make distribution and installation of new styles easier and more compatible with vBulletin Cloud. Most themes will be a single file.
+
+Creating a New Theme
+
+So much of the process of creating a theme isn't at all new.  The only new bits are 
+* theme guid
+* icon image
+* preview image
+
+These only show up as options to set/change in debug mode.  If you are in debug mode you can set these for any style (and edit theme styles which is restricted in normal mode).   If a style has a theme guid then its a theme and appears in the theme selector.  It is advisable, but not mandatory to set the images for a theme (we'll provide default images if they aren't).
+
+There are some special rules for theme handling (you can only have one copy of a given theme in database and importing a theme that already exists will update the theme).  They are listed in the theme proposal document I passed around (I can provide you another copy if you need it).
+[11:34:28 AM] Kevin Sours: Anything you can do in styles you can do in a theme.  We limit our own styles to stylevar edits (with on small exception) to reduce the potentail for breakage between versions but there is no reason why a theme can't alter the templates.
+
+Lastly we added some minor bits for handling additional fonts.  This is not anything particularly new.  We added a css template specifically for font definitions which is has invocations for the fonts that that theme uses.  The fonts themselves need to be installed manually, we don't provide an import function to handle that (it came up too late in the process for that).  For our themes the fonts are part of the download package.  David can fill you in on the details of how that all works, but the css is basically just standard stuff for dealing with fonts (though its fairly complicated because of a bunch of weird cross browser problems).

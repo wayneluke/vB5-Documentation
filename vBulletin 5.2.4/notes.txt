@@ -1,0 +1,33 @@
+PHP Minimum Version 5.5.0
+
+AdminCP -
+Both Recaptcha 1 and Recaptcha 2 are currently available. Recaptcha 1 is deprecated and considered obsolete by Google. It is recommended to use Recaptcha 2.
+Recaptcha 2 must have its uniquely generated keys.
+Remove Recaptcha 1 in 5.2.6.
+
+Cookies - 
+A number of cookie related issues have been fixed: 
+Fixed all session cookies to actually be session only.
+Fixed the expiry of remember me to be 365 (except Facebook, thats still 30).
+Fixed the http only to be consistant.
+Fixed ForumRunner to delete cookies on logout.
+Fixed the overwriting of the remember me cookies.
+
+Blogs & Social Groups -
+On the Blog or Group overview page, Avatars of owners, contributors, and members should now properly display when avatars are stored in the file system.
+
+Editor and BBCode
+Advanced Image Resizing in CKEDITOR.
+The option to show avatars in the @mention and [user] BBCodes is enabled by default on new installs and fresh upgrades.
+<font> tag parsing has been restored to HTML. These should be properly converted handled the same as standards compliant <span> tags when saving content.
+
+- Responsive
+New Menu Component that is more Responsive Friendly. Dropdowns require click to activate in order to better support mobile. 
+Conversation toolbar updated to better fit small screens.
+
+- Topics
+Topic Previews have been updated to lessen the occurence of requiring a double click to enter a topic.
+
+Add notes about removing "Mark Channels Read" from the navigation.
+
+

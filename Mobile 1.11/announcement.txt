@@ -1,0 +1,114 @@
+We are proud to announce the release of the vBulletin Mobile Suite 1.11. This version of the app fixes a wide number of customer facing issues. The Mobile Suite is available for all versions of vBulletin that support the Mobile Api.
+
+[b]YouTube Uploading[/b]
+Due to a number of changes to the API deployed by YouTube, uploading videos to the service from the Mobile Apps has been removed. We are sorry for any inconvenience this may cause.
+
+[b]Facebook Connect[/b]
+Due to changes in the Facebook API, in order to use Facebook Connect with the Mobile Apps, you must run vBulletin under SSL on your webserver. If you have any questions regarding this, please contact our support team.
+
+[size=16][b]iOS[/b][/size]
+[h2]Bug[/h2]
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBI-886]VBI-886[/url]] - No error message for posting resrictions
+[*][[url=http://tracker.vbulletin.com/browse/VBI-949]VBI-949[/url]] - Attachments disappear if they exceed file size or resolution limitation
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1032]VBI-1032[/url]] - Not able access a poll page to either see votes or cast a vote
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1129]VBI-1129[/url]] - Blogs: Comments are disabled for every blog even if the blog allows comments
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1186]VBI-1186[/url]] - No way to show complete question description
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1190]VBI-1190[/url]] - Photo Comments Feedback
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1191]VBI-1191[/url]] - Message Detail Screen Alert Message Incorrect
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1208]VBI-1208[/url]] - Long fields in Profile overlap into other fields and Long labels get cut off
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1211]VBI-1211[/url]] - No error message text for long post titles
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1214]VBI-1214[/url]] - Facebook Connect button does not link account
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1217]VBI-1217[/url]] - Clicking Front Page button while on the Front Page of Articles will cause the app to load indefinitely
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1227]VBI-1227[/url]] - Attached link/ video link does not appear in post
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1229]VBI-1229[/url]] - Notifications do not work for replies to subscriptions in vB5
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1231]VBI-1231[/url]] - It takes 5-10 minutes for new post to appear on the app
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1233]VBI-1233[/url]] - Cannot view existing gallery type image 
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1235]VBI-1235[/url]] - Viewing an attached image in post is broken
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1237]VBI-1237[/url]] - App crashes when filtering activity stream by subscription
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1238]VBI-1238[/url]] - Selecting a post and clicking Move will crash the app
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1239]VBI-1239[/url]] - App crashes when scrolling quickly through article comments
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1241]VBI-1241[/url]] - Previously attached images are added to the new post when attach new images
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1247]VBI-1247[/url]] - Search site wide does not work
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1248]VBI-1248[/url]] - Search specific channel does not work
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1250]VBI-1250[/url]] - Typo: &quot;as_uploaded_photo&quot;
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1264]VBI-1264[/url]] - Birthday selector does not show date, only Month and Year
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1265]VBI-1265[/url]] - Cannot create account if forum requires birthday
+[/list]
+            
+[h2]Improvement Request[/h2]
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1240]VBI-1240[/url]] - Change the way ThreadView List display inline attached image file name
+[/list]
+            
+[h2]Task[/h2]
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1242]VBI-1242[/url]] - Compile translated Mobile phrases
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1254]VBI-1254[/url]] - Investigate FB Connect security flaw
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1262]VBI-1262[/url]] - Create vBcom app with new API key
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1263]VBI-1263[/url]] - Make birthday optional for registration to comply with iOS app store
+[/list]
+        
+[h2]Sub-task[/h2]
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1243]VBI-1243[/url]] - Compile translated 1.10 iOS phrases into the app
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1244]VBI-1244[/url]] - Generate 1.11 iOS changed phrases files
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1245]VBI-1245[/url]] - Compile translated 1.11 iOS phrases into the app
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1249]VBI-1249[/url]] - Notifications - Requirements &amp; UI design mockups
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1251]VBI-1251[/url]] - Poll Use Case
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1252]VBI-1252[/url]] - Poll UI design
+[*][[url=http://tracker.vbulletin.com/browse/VBI-1253]VBI-1253[/url]] - Poll Development
+[/list]
+
+
+
+
+[size=16][b]Android[/b][/size]
+[h2]Bug[/h2]
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBA-481]VBA-481[/url]] - No error message for posting resrictions
+[*][[url=http://tracker.vbulletin.com/browse/VBA-558]VBA-558[/url]] - Unable to make comments to blog entries
+[*][[url=http://tracker.vbulletin.com/browse/VBA-595]VBA-595[/url]] - Facebook Connect is not working due to improper Android Hash Key Support
+[*][[url=http://tracker.vbulletin.com/browse/VBA-605]VBA-605[/url]] - Create account button missing
+[*][[url=http://tracker.vbulletin.com/browse/VBA-606]VBA-606[/url]] - Spelling error on Activity Page &quot;sing in&quot; instead of &quot;sign in&quot;
+[*][[url=http://tracker.vbulletin.com/browse/VBA-614]VBA-614[/url]] - Cannot log out without leaving the app
+[*][[url=http://tracker.vbulletin.com/browse/VBA-615]VBA-615[/url]] - vB4 should not have an 'upload video' option
+[*][[url=http://tracker.vbulletin.com/browse/VBA-616]VBA-616[/url]] - Image does not upload when editing a post
+[*][[url=http://tracker.vbulletin.com/browse/VBA-620]VBA-620[/url]] - Threadprefix doesn't display properly
+[*][[url=http://tracker.vbulletin.com/browse/VBA-630]VBA-630[/url]] - Notifications do not work for replies to subscriptions in vB5 
+[*][[url=http://tracker.vbulletin.com/browse/VBA-632]VBA-632[/url]] - First time Facebook &amp; Forum account cannot be linked in app
+[*][[url=http://tracker.vbulletin.com/browse/VBA-634]VBA-634[/url]] - Cannot view existing gallery type image
+[*][[url=http://tracker.vbulletin.com/browse/VBA-635]VBA-635[/url]] - Attached link/ video link does not appear in post
+[*][[url=http://tracker.vbulletin.com/browse/VBA-640]VBA-640[/url]] - Cannot post attached image from Android phone
+[*][[url=http://tracker.vbulletin.com/browse/VBA-646]VBA-646[/url]] - Search site wide does not work correctly
+[*][[url=http://tracker.vbulletin.com/browse/VBA-647]VBA-647[/url]] - Search specific channel does not work correctly
+[*][[url=http://tracker.vbulletin.com/browse/VBA-651]VBA-651[/url]] - Previously attached images are added to the new post when attach new images
+[*][[url=http://tracker.vbulletin.com/browse/VBA-653]VBA-653[/url]] - Subsequent facebook login does not give forum user permission
+[*][[url=http://tracker.vbulletin.com/browse/VBA-654]VBA-654[/url]] - Facebook connect button in profile does not correctly reflect the connected state
+[/list]
+            
+[h2]Improvement Request[/h2]
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBA-380]VBA-380[/url]] - Polls voting in Mobile suite
+[*][[url=http://tracker.vbulletin.com/browse/VBA-633]VBA-633[/url]] - Change the way ThreadView List display inline attached image file name
+[/list]
+            
+[h2]Task[/h2]
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBA-641]VBA-641[/url]] - Compile translated Mobile phrases
+[*][[url=http://tracker.vbulletin.com/browse/VBA-650]VBA-650[/url]] - Investigate FB Connect security flaw
+[*][[url=http://tracker.vbulletin.com/browse/VBA-663]VBA-663[/url]] - Create vBcom app with new API key
+[/list]
+        
+[h2]Sub-task[/h2]
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBA-636]VBA-636[/url]] - Create Guidance documentation on how to setup FB developers setting for Android app
+[*][[url=http://tracker.vbulletin.com/browse/VBA-637]VBA-637[/url]] - Generate API requirements for poll
+[*][[url=http://tracker.vbulletin.com/browse/VBA-638]VBA-638[/url]] - Poll UI design
+[*][[url=http://tracker.vbulletin.com/browse/VBA-639]VBA-639[/url]] - Poll Use Case
+[*][[url=http://tracker.vbulletin.com/browse/VBA-642]VBA-642[/url]] - Poll Development
+[*][[url=http://tracker.vbulletin.com/browse/VBA-643]VBA-643[/url]] - Compile translated 1.10 Android phrases into the app
+[*][[url=http://tracker.vbulletin.com/browse/VBA-644]VBA-644[/url]] - Generate 1.11 Android changed phrases files
+[*][[url=http://tracker.vbulletin.com/browse/VBA-645]VBA-645[/url]] - Compile translated 1.11 Android phrases into the app
+[*][[url=http://tracker.vbulletin.com/browse/VBA-648]VBA-648[/url]] - Notifications - Requirements and design mockups
+[/list]

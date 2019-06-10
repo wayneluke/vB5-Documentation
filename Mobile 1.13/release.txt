@@ -1,0 +1,40 @@
+Version 1.1.3 of the Mobile Suite is now available to all qualified customers. The suite includes apps for the Android and iOS platforms. In order to download the upgraded apps, you need to enter the Mobile Publisher and rebuild your apps for download.
+
+[h2]What's New[/h2]
+[ul]
+[*]Improved our iOS app to be compliant with Apple's App Transport Security (ATS) requirements. 
+[*]We also improved the display of image attachments in the Android app 
+[*]Improved the handling of special HTML entities and rich format of various contents across both iOS and Android apps. 
+[*]Miscellaneous bug fixes.
+[/ul]  
+
+[h2]Apple App Transport Security[/h2]
+App Transport Security (ATS) enforces best practices in the secure connections between an app and its back end.  As of January 1st 2017, all apps submitted to the Apple App Store must comply with ATS. 
+
+[h2]Resolved Android Issues[/h2] 
+[VBA-673] - Thread title does not render language HTML entities in Thread List View
+[VBA-674] - Thread title does not render language HTML entities in Post List View
+[VBA-680] - Title in Post View does not render language HTML entities
+[VBA-685] - Thread view does not render language HTML entities in Post content
+[VBA-686] - Activity view does not render HTML entities
+[VBA-687] - HTML entities not displayed properly in topic titles in your subscriptions
+[VBA-693] - Customer's Android "versioncode" not automatically updating, unable to upload updated APK file
+[VBA-670] - Main Navigation Menu should be available to all levels of Forum Views
+[VBA-675] - Color prefix in thread list view
+[VBA-677] - Long list of Attachment images not scrolling
+[VBA-681] - Upgrade admobs SDK to at least ver 7.0
+[VBA-689] - RU - Russian mobile language pack for Android
+
+[h2]Resolves iOS Issues[/h2]
+[VBI-1292] - Submit New Thread produces a non-descriptive OK popup and appears stuck
+[VBI-1297] - Thread Title does not convert HTML
+[VBI-1298] - Prefix does not show correct color
+[VBI-1302] - Activity View does not render HTML entities
+[VBI-1303] - Post List View does not render HTML entities in post content
+[VBI-1305] - The app will crash when refreshing a thread
+[VBI-1306] - The app crashes when posting a response to a thread
+[VBI-1308] - HTML entities not displayed properly in topic titles in your subscriptions
+[VBI-1294] - Make app comply with ATS requirements by default
+[VBI-1295] - Make sure iOS admob SDK is at least v.6.12.0 or later
+[VBI-1317] - RU - Russian mobile language pack for iPhone
+[VBI-1300] - Set build script to disable bitcode

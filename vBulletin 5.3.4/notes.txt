@@ -1,0 +1,67 @@
+vBulletin 5.3.4 Connect packs a lot of changes in a smaller package. In addition to resolving many issues reported by customers, the following enhancements have been added to the software.
+
+[h2]A Smaller Download Package[/h2]
+A number of unused font files have been removed from the download package. This change removes approximately 10 Megabytes from the size of the download package. This will save time in uploading the new version as well as storage space on the server if you delete the unused files. The easiest way to delete the unused font files is to delete the [dfn='This is the directory where you installed vBulletin. Example: /public_html/forums']vbulletin_root[/dfn]/fonts directory on your server before uploading the new version.
+
+[h2]Site Builder[/h2]
+* The Site Builder menu has been reworked and separated from the User Menu. Now it will appear on top of the entire page. This will allow the menu to be used at more resolutions without wrapping. When one of the Site Builder panels is active on the screen, the User Menu will no longer be shown on the screen.
+* Administrators can now set permissions to restrict the viewing of modules to specific usergroups. This is handled in the configuration of individual modules.
+
+[h2]Events[/h2]
+* Google Map for event locations. When entering a landmark name or address as the event location the system will give the option to embed a Google Map for users. Maps can be previewed before saving the event. This feature requires an API Key from Google. (https://developers.google.com/maps/documentation/javascript/get-api-key)
+* Events that span the end of the month will properly appear in the Calendar module.
+
+[h2]Responsive[/h2]
+* The Subscription Page has been updated so that it works properly in Responsive.
+* Sorting on the Member's List is now easier to use within Responsive.
+
+[h2]Performance[/h2]
+* Updated the handling of the searchlog table in order to control its size. This will help prevent performance issues with building pages and creating new content.
+* Added an external file that allows the running of Scheduled Tasks via the server's cron/scheduled task system. This will allow separation of these tasks from the web server.
+
+[h2]Search[/h2]
+* Search has been refactored so that results will reflect recent activity more accurately.
+* The name of the channel that contains the search result has been added to search result pages.
+* SphinxSearch - 
+    * Due to field changes, 5.3.4 will require that sphinx users update their sphinx config and rebuild their indexes.
+
+[h2]PHP Compatibility[/h2]
+* The software has been updated to be compatible with PHP 7.2.0. If you are planning on using the PHP 7.2.X branch, you must use PHP 7.2.0 RC5 or higher to mitigate a bug with PHP's opcache library.
+
+[h2]Mobile Suite[/h2]
+* vBulletin can now send Event Lists and Calendar information to the Mobile Apps. Mobile Apps will support this in the next version of the Mobile Suite.
+
+[h2]Security[/h2]
+* We've added several lines to the .htaccess file to prevent specific types of files from being accessed directly. This is based on file name matching and includes .bak, .zip, .sql, .gz, .tar and others. If you have modified your .htaccess file, you can compare your file with the new file to add the changes manually. Please note, this doesn't affect attachments stored in the file system. We access these files through the vBulletin system and they are not accessed directly. If your Attachment directory is within your web_root directory, then you should block web access via the server.
+
+[h2]Other[/h2]
+* Open Graph meta tags have been added. 
+* Resolved an issue that prevented moving posts to an existing topic.
+* Resolved an issue that prevented access to the install/upgrade system if the database credentials were incorrect.
+* Debug information viewed by guest users will no longer be cached.
+* Several obsolete settings have been removed from the AdminCP. 
+* Updated RSS Imports in order to provide better support of some URL formats.
+* The dimensions for uploading images have been updated in the /core/includes/config.php file.
+* Merging users with votes on polls will retain the destination user's votes. 
+* See the full list of issues here: http://tracker.vbulletin.com/secure/ReleaseNote.jspa?projectId=10091&version=11669
+
+[h2]System Requirements[/h2]
+Minimum PHP Version: 5.6.0
+Minimum MySQL Version: 5.5.0
+
+Recommended PHP Version: 7.1 or higher
+Recommended MySQL Version: 5.7.0 or higher
+Recommended MariaDB Version: 10+
+
+[h2]Current Version Support Schedule[/h2]
+[list]
+    [*]Active Version - 5.3.3
+    [*]Security Patch - 5.3.2
+    [*]Security Patch - 5.3.1
+    [*]No Patch Release - 5.3.0 or earlier.
+[/list]
+
+[h2]Discussion[/h2]
+If you have any questions about these changes you may discuss them here: [node]4379200[/node]
+
+[note]Cloud Sites will be upgraded automatically after the release of the software. Customers will be emailed a notice about their upgrade schedule.[/note]

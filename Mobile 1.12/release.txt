@@ -1,0 +1,12 @@
+vBulletin Mobile 1.1.2 is now available to all Mobile Customers. In order to download the upgraded apps, you need to enter the Mobile Publisher and rebuild the Apps for download.
+
+The following issue has been resolved for Android:
+[jira]VBA-667[/jira] - Change the UI & UX of Navigation button to be consistent app wide
+
+The following issues have been resolved for iOS:
+[jira]VBI-1266[/jira] - Build for Emulator throws error
+[jira]VBI-1270[/jira] - Notifications details do not show correctly
+
+In order to use the Apps to their full potential, it is recommended that the main site is upgraded to vBulletin 4.2.3 Beta 4 or vBulletin 5.2.3, which will become available soon.
+
+The included documentation for submitting your Apps to the Google Play and Apple App Stores have been updated due to process changes. Please follow the updated steps when submitting your Apps..

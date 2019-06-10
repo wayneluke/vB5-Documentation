@@ -1,0 +1,100 @@
+[b]Feature Request[/b]
+[list]
+[*][url=http://tracker.vbulletin.com/browse/VBV-3889]VBV-3889[/url] - Send notification to end user on content quote
+[*][url=http://tracker.vbulletin.com/browse/VBV-4849]VBV-4849[/url] - Indicator in which topics user has posted
+[/list]
+
+[b]Improvement Request[/b]
+[list]
+[*][url=http://tracker.vbulletin.com/browse/VBV-7616]VBV-7616[/url] - Front End Interface for HTML State
+[*][url=http://tracker.vbulletin.com/browse/VBV-9070]VBV-9070[/url] - &quot;subscription_viewsubscription&quot; response doesn't include subscribed blogs
+[*][url=http://tracker.vbulletin.com/browse/VBV-9449]VBV-9449[/url] - (mobile) Only ten private messages display in the apps.
+[*][url=http://tracker.vbulletin.com/browse/VBV-11466]VBV-11466[/url] - Install with GZIP compression off by default.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14145]VBV-14145[/url] - Change colour of postbit userinfo section in Gradient theme
+[*][url=http://tracker.vbulletin.com/browse/VBV-14524]VBV-14524[/url] - Add avatar to topic list in smaller responsive sizes
+[*][url=http://tracker.vbulletin.com/browse/VBV-14530]VBV-14530[/url] - Change Style &amp; Templates navigation block to Styles &amp; Themes
+[*][url=http://tracker.vbulletin.com/browse/VBV-14651]VBV-14651[/url] - 'Posted' status indicator: Add time (hour, minutes) to the last post info
+[*][url=http://tracker.vbulletin.com/browse/VBV-14673]VBV-14673[/url] - Support MariaDB
+[/list]
+
+[b]Bug[/b]
+[list][*][url=http://tracker.vbulletin.com/browse/VBV-371]VBV-371[/url] - Upgrade Script Step Numbering is incorrect for some steps
+[*][url=http://tracker.vbulletin.com/browse/VBV-996]VBV-996[/url] - Admin CP date pickers are broken
+[*][url=http://tracker.vbulletin.com/browse/VBV-5591]VBV-5591[/url] - Broken UTF-8 sequences cause AJAX requests to fail
+[*][url=http://tracker.vbulletin.com/browse/VBV-8072]VBV-8072[/url] - Cannot delete PMs via admincp
+[*][url=http://tracker.vbulletin.com/browse/VBV-9265]VBV-9265[/url] - Photos add to albums are not displayed in activity stream.
+[*][url=http://tracker.vbulletin.com/browse/VBV-9329]VBV-9329[/url] - searching blog comments also searches blog entries.
+[*][url=http://tracker.vbulletin.com/browse/VBV-9489]VBV-9489[/url] - private_insertpm strips line breaks on submit
+[*][url=http://tracker.vbulletin.com/browse/VBV-9680]VBV-9680[/url] - Messages Sidebar css is using the wrong stylevar
+[*][url=http://tracker.vbulletin.com/browse/VBV-10309]VBV-10309[/url] - When open_basedir restrictions are in effect, we cannot use chdir('./../'); it will cause a permissions error
+[*][url=http://tracker.vbulletin.com/browse/VBV-10556]VBV-10556[/url] - Fix old nodes rawtext with incorrect [attach] and filedataid [img]
+[*][url=http://tracker.vbulletin.com/browse/VBV-10686]VBV-10686[/url] - Inserted images on a blog are not included in the response of blog_blog
+[*][url=http://tracker.vbulletin.com/browse/VBV-10693]VBV-10693[/url] - (Mobile) Code, PHP, and HTML BB Codes - Tag is missing before content block
+[*][url=http://tracker.vbulletin.com/browse/VBV-10740]VBV-10740[/url] - Subscription notification text does not wrap/truncate in responsive view
+[*][url=http://tracker.vbulletin.com/browse/VBV-11829]VBV-11829[/url] - If you insert the same image into a post more than once, it will only show the image once
+[*][url=http://tracker.vbulletin.com/browse/VBV-12051]VBV-12051[/url] - Attachments inserted inline are not clickable and duplicated in the attachment box
+[*][url=http://tracker.vbulletin.com/browse/VBV-12061]VBV-12061[/url] - Can't delete Replacement Variables when not having canadmintemplates admin permission
+[*][url=http://tracker.vbulletin.com/browse/VBV-12254]VBV-12254[/url] - Filter by Subscriptions won't return any result
+[*][url=http://tracker.vbulletin.com/browse/VBV-12255]VBV-12255[/url] - Attempting to upload smilie in Admin CP of vBCloud fails with Invalid File Path Specified error
+[*][url=http://tracker.vbulletin.com/browse/VBV-12257]VBV-12257[/url] - Attaching a picture to a reply will produce &quot;Connection error. Please try again later&quot;
+[*][url=http://tracker.vbulletin.com/browse/VBV-12258]VBV-12258[/url] - Blogs Popular tab doesn't seem to display only popular posts
+[*][url=http://tracker.vbulletin.com/browse/VBV-12473]VBV-12473[/url] - requests to mobile api call activity fail
+[*][url=http://tracker.vbulletin.com/browse/VBV-12606]VBV-12606[/url] - api_init should return &quot;BlogEntry&quot; value in contenttypes
+[*][url=http://tracker.vbulletin.com/browse/VBV-12660]VBV-12660[/url] - newreply_newreply is missing &quot;checked&quot; block in JSON
+[*][url=http://tracker.vbulletin.com/browse/VBV-13017]VBV-13017[/url] - After changing logo image, started getting an undefined index message on home page
+[*][url=http://tracker.vbulletin.com/browse/VBV-13444]VBV-13444[/url] - Mobile API may be returning incorrect data for image attachments/apps
+[*][url=http://tracker.vbulletin.com/browse/VBV-13562]VBV-13562[/url] - When Logo is uploaded, it won't be resized if its over the limit
+[*][url=http://tracker.vbulletin.com/browse/VBV-13928]VBV-13928[/url] - When creating a topic, the tagging UI is removed in responsive and not restored when exiting responsive mode
+[*][url=http://tracker.vbulletin.com/browse/VBV-14256]VBV-14256[/url] - Following and accepted follow notifications are not deleted if the sender is deleted
+[*][url=http://tracker.vbulletin.com/browse/VBV-14258]VBV-14258[/url] - Deleting an user does not delete notification records of notifications they received
+[*][url=http://tracker.vbulletin.com/browse/VBV-14259]VBV-14259[/url] - Deleting an user does not update the sender ID in the notification table to 0
+[*][url=http://tracker.vbulletin.com/browse/VBV-14306]VBV-14306[/url] - tools.php login screen doesn't load proper logo if tools.php is accessed via /admincp/tools.php
+[*][url=http://tracker.vbulletin.com/browse/VBV-14307]VBV-14307[/url] - After logging into tools.php, there is no CSS on the resulting page if accessing via /admincp/tools.php
+[*][url=http://tracker.vbulletin.com/browse/VBV-14401]VBV-14401[/url] - &quot;Template Overwrite&quot; option missing in sitebuilder in some cases
+[*][url=http://tracker.vbulletin.com/browse/VBV-14423]VBV-14423[/url] - Sometimes admin gets logged out of admincp and gets not_logged_no_permission error
+[*][url=http://tracker.vbulletin.com/browse/VBV-14440]VBV-14440[/url] - &quot;Birthday&quot; phrase uses wrong phrase varname in profile About tab
+[*][url=http://tracker.vbulletin.com/browse/VBV-14441]VBV-14441[/url] - Clean up CSS for interconnected widgets, specifically for widget borders on the message center &amp; user profile pages
+[*][url=http://tracker.vbulletin.com/browse/VBV-14448]VBV-14448[/url] - Datastore Row Size Too Large when you have relatively small number of themes/styles.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14462]VBV-14462[/url] - User Profile: Phrase for filter user only
+[*][url=http://tracker.vbulletin.com/browse/VBV-14502]VBV-14502[/url] - Update Exception Thrown in vb5/route/channel/php lines 21-24
+[*][url=http://tracker.vbulletin.com/browse/VBV-14527]VBV-14527[/url] - Incorrect Path in Install/Upgrade Phrases.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14539]VBV-14539[/url] - Themes in theme selector show in a vertical stack
+[*][url=http://tracker.vbulletin.com/browse/VBV-14540]VBV-14540[/url] - Get rid of old, unused frontend files
+[*][url=http://tracker.vbulletin.com/browse/VBV-14551]VBV-14551[/url] - CSS Class filter-header is using the wrong style variable.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14554]VBV-14554[/url] - 404 for css_b_content_slider_wrapper.css
+[*][url=http://tracker.vbulletin.com/browse/VBV-14556]VBV-14556[/url] - Error in Channel XML Files.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14559]VBV-14559[/url] - Images added via camera in mobile APP is missing filename, causes permission errors when viewing as a regular user because the extension check uses the filename
+[*][url=http://tracker.vbulletin.com/browse/VBV-14560]VBV-14560[/url] - PHP Fatal error:  Class 'vB5_Exception_404' not found in core/attachment.php
+[*][url=http://tracker.vbulletin.com/browse/VBV-14562]VBV-14562[/url] - Forum Status Icon shows 'new posts' on forum with no permission to view
+[*][url=http://tracker.vbulletin.com/browse/VBV-14582]VBV-14582[/url] - Map &quot;not_logged_no_permission&quot; mapi error to &quot;nopermission_loggedout&quot;
+[*][url=http://tracker.vbulletin.com/browse/VBV-14587]VBV-14587[/url] - Content Slider paragraph section may cause CSS styling issues due to invalid HTML
+[*][url=http://tracker.vbulletin.com/browse/VBV-14591]VBV-14591[/url] - &quot;Relevance&quot; phrase variable has a capital letter in conversation_toolbar (causes hardcoded phrase)
+[*][url=http://tracker.vbulletin.com/browse/VBV-14601]VBV-14601[/url] - Debug options not working in admincp
+[*][url=http://tracker.vbulletin.com/browse/VBV-14602]VBV-14602[/url] - The slider clutters the web on mobiles.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14609]VBV-14609[/url] - Youtube short urls not embedding- only showing as a link.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14612]VBV-14612[/url] - comments_total return field for blog searchbits missing in search_showresults
+[*][url=http://tracker.vbulletin.com/browse/VBV-14613]VBV-14613[/url] - api_init should return &quot;Article&quot; value in contenttypes
+[*][url=http://tracker.vbulletin.com/browse/VBV-14618]VBV-14618[/url] - Double encoding on topic titles in the content slider
+[*][url=http://tracker.vbulletin.com/browse/VBV-14633]VBV-14633[/url] - Undefined index notices in attach api &amp; lib
+[*][url=http://tracker.vbulletin.com/browse/VBV-14637]VBV-14637[/url] - View count is wrong on MAPI thread return
+[*][url=http://tracker.vbulletin.com/browse/VBV-14644]VBV-14644[/url] - MAPI incorrectly returns nopermission_loggedin when user is logged out.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14646]VBV-14646[/url] - HTML code is converted to BB code when posted with the app
+[*][url=http://tracker.vbulletin.com/browse/VBV-14647]VBV-14647[/url] - Content slider resized incorrectly when switching orientation on mobile
+[*][url=http://tracker.vbulletin.com/browse/VBV-14650]VBV-14650[/url] - 'Posted' status indicator: phrase_today_0 on mouseover
+[*][url=http://tracker.vbulletin.com/browse/VBV-14652]VBV-14652[/url] - Groups: Description in Post Settings/Subscriber Requests has wrong formatting
+[*][url=http://tracker.vbulletin.com/browse/VBV-14653]VBV-14653[/url] - Database error when invalid channelid passed to search
+[*][url=http://tracker.vbulletin.com/browse/VBV-14657]VBV-14657[/url] - Blogs will not show in the mobile APP
+[*][url=http://tracker.vbulletin.com/browse/VBV-14659]VBV-14659[/url] - Facebook connect doesn't work on mobile apps
+[*][url=http://tracker.vbulletin.com/browse/VBV-14661]VBV-14661[/url] - Missing functions in vB_Api_Vb4_Album
+[*][url=http://tracker.vbulletin.com/browse/VBV-14665]VBV-14665[/url] - &quot;There appears to be a connection issue between your device and..&quot; error on My profile
+[*][url=http://tracker.vbulletin.com/browse/VBV-14669]VBV-14669[/url] - Facebook connect and disconnect do not work in mobile App
+[*][url=http://tracker.vbulletin.com/browse/VBV-14676]VBV-14676[/url] - Attachment images inserted into page 2+ in articles show up in the attachments list on page 1
+[*][url=http://tracker.vbulletin.com/browse/VBV-14683]VBV-14683[/url] - mariadb gives rise to a bug in version checking
+[*][url=http://tracker.vbulletin.com/browse/VBV-14727]VBV-14727[/url] - (Regression) PHP Fatal error:  Call to undefined function check_template_errors() in core\vb\library\template.php on line 765
+[*][url=http://tracker.vbulletin.com/browse/VBV-14745]VBV-14745[/url] - Notifications for Visitor Messages are linking incorrectly.
+[*][url=http://tracker.vbulletin.com/browse/VBV-14769]VBV-14769[/url] - Subscription/Subscribers page styling broken in user profiles (regression)
+[*][url=http://tracker.vbulletin.com/browse/VBV-14770]VBV-14770[/url] - Advanced Search page shows 3 extraneous content types (regression)
+[/list]
+
+
+

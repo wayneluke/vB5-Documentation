@@ -1,0 +1,29 @@
+vBulletin Mobile 1.1.4 is now available to all customers. To obtain the new build, you need to visit the Mobile Publisher in your Member's Area. Rebuild your apps to apply the changes. This new version includes a variety of upgrades such as: 
+
+rich in-post content is now displayed in the mobile apps similar to the web experience
+the mobile apps now support private messaging compatible with vBulletin's PM chat
+the Android app's compatibility with TLS 1.1 & 1.2 network protocols has been improved
+
+The following issues have been Resolved
+Android
+[VBA-684] - Prefix selector in new topic screen uses rich text prefixes, but renders them as plain text
+[VBA-627] - Change Thread View List to display rich content (Web View) instead of plain text
+[VBA-676] - Relocate thread title in Post List View and replace with Navigation Menu
+[VBA-682] - Make Android app compatible with TLS1.1 & 1.2
+[VBA-688] - vB5 Private Message compatibility
+
+iOS
+[VBI-1299] - Replace Google Analytics library
+[VBI-1304] - Profile picture is not visible on "My Profile" section
+[VBI-1307] - Blog Post - "Publish On" date will look dark
+[VBI-1309] - Attach a video from library will throw an error 400 from youtube
+[VBI-1311] - Edit blog post will not show the original data
+[VBI-1312] - Bad error message when max character limit is exceeded on Private Messages
+[VBI-1315] - App will crash when posting a new visitor message
+[VBI-1318] - The "Add Content" recede from UITextView after nothing is typed
+[VBI-1321] - Thread List crashes sometimes when scrolling fast
+[VBI-1322] - Slow Load & Crash when open Threads with lots of special HTML entities
+[VBI-1324] - thumbnailimageattachment view & file attachment view are not aligned correctly
+[VBI-1301] - Bring Web View to display those posts under Thread View
+[VBI-1314] - vB5 PM compatibility - add PMThreadId
+[VBI-1328] - Improve the popup message after login via facebook

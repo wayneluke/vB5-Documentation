@@ -1,0 +1,16 @@
+Multifactor Authentication
+To enhance the security of your site, we have added Multifactor Authentication to the Administrator Sessions. This uses industry standard authentication methods and ties into a number of apps available on different smart phones.
+
+Calendar Module
+A calendar module has been added to display your upcoming events.
+
+
+                <!-- Remove this line for secure server redirection
+                <rule name="Redirect to https" stopProcessing="true">
+                    <match url=".*" />
+                    <conditions>
+                        <add input="{HTTPS}" pattern="off" ignoreCase="true" />
+                    </conditions>
+                    <action type="Redirect" url="https://{HTTP_HOST}{REQUEST_URI}" redirectType="Permanent" appendQueryString="false" />
+                </rule>
+                Remove this line for secure server redirection -->

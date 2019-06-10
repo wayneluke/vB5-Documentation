@@ -1,0 +1,72 @@
+Feature Request
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBV-2613]VBV-2613[/url]] -         Ajax edit thread title by doubleclick is missing
+[/list]
+        
+Improvement Request
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBV-242]VBV-242[/url]] -         When switching from 70/30 to 30/70 layouts, exisitng widgets should swap sides.
+[*][[url=http://tracker.vbulletin.com/browse/VBV-8075]VBV-8075[/url]] -         End of File indicator
+[*][[url=http://tracker.vbulletin.com/browse/VBV-9684]VBV-9684[/url]] -         Lightbox should open to full screen
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13438]VBV-13438[/url]] -         Who's Online: Please add avatars
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13980]VBV-13980[/url]] -         Improve wording for the &quot;No birthdays.&quot; message when the Today's Birthdays module is empty
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14090]VBV-14090[/url]] -         Update the filters in message center's notification folder
+[/list]
+
+Bug
+[list]
+[*][[url=http://tracker.vbulletin.com/browse/VBV-2335]VBV-2335[/url]] -         (Porting from vB4) console unintentionally disabled by vbulletin-core.js
+[*][[url=http://tracker.vbulletin.com/browse/VBV-2358]VBV-2358[/url]] -         (Porting from vB4) Empty Table Shown in Admin CP User Profile View
+[*][[url=http://tracker.vbulletin.com/browse/VBV-2375]VBV-2375[/url]] -         (Porting from vB4) $vbphrase not in the scope in includes/class_stylevar.php
+[*][[url=http://tracker.vbulletin.com/browse/VBV-2673]VBV-2673[/url]] -         No simple way to view a photo full-size
+[*][[url=http://tracker.vbulletin.com/browse/VBV-2899]VBV-2899[/url]] -         Maintenance: &quot;Rebuild Styles&quot; text is being displayed in blue
+[*][[url=http://tracker.vbulletin.com/browse/VBV-3186]VBV-3186[/url]] -         Contact Us &quot;reset fields&quot; buttons don't do anything
+[*][[url=http://tracker.vbulletin.com/browse/VBV-4291]VBV-4291[/url]] -         Modcp logo link broken
+[*][[url=http://tracker.vbulletin.com/browse/VBV-4511]VBV-4511[/url]] -         Quick style chooser not hidden for non-admins if &quot;Allow Users To Change Styles&quot; is set to No
+[*][[url=http://tracker.vbulletin.com/browse/VBV-4529]VBV-4529[/url]] -         Commenting on a reply sends two notifications to user
+[*][[url=http://tracker.vbulletin.com/browse/VBV-7392]VBV-7392[/url]] -         Notifications - &quot;1 others&quot; should be &quot;1 other&quot;, or just state the name of the other user who liked/replied to a post
+[*][[url=http://tracker.vbulletin.com/browse/VBV-9670]VBV-9670[/url]] -         Users can no longer be notified of new pm's via email
+[*][[url=http://tracker.vbulletin.com/browse/VBV-10540]VBV-10540[/url]] -         Smilies and Images not working in mobile editor
+[*][[url=http://tracker.vbulletin.com/browse/VBV-10912]VBV-10912[/url]] -         Message Center Display Broken and Unusable in Responsive iOS
+[*][[url=http://tracker.vbulletin.com/browse/VBV-11094]VBV-11094[/url]] -         Restore vBulletin php header/footer nodes, for diagnostic reasons
+[*][[url=http://tracker.vbulletin.com/browse/VBV-12255]VBV-12255[/url]] -         Attempting to upload smilie in Admin CP of vBCloud fails with Invalid File Path Specified error
+[*][[url=http://tracker.vbulletin.com/browse/VBV-12801]VBV-12801[/url]] -         ajax requests for the cron can hold connections open, slowing page load time down.
+[*][[url=http://tracker.vbulletin.com/browse/VBV-12811]VBV-12811[/url]] -         Link &quot;Add&quot; function displays Undefined index notice
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13091]VBV-13091[/url]] -         Lightbox/gallery display is ugly
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13275]VBV-13275[/url]] -         XSS on debug mode
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13437]VBV-13437[/url]] -         Who's Online: Entries are not aligned correctly
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13599]VBV-13599[/url]] -         Black video thumbnail with functional play button
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13611]VBV-13611[/url]] -         When Private messaging is disabled, notifications cannot be deleted
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13776]VBV-13776[/url]] -         Translating footer_current_time causes variables to be unparsed.
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13782]VBV-13782[/url]] -         Content slider - Improve responsive handling
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13790]VBV-13790[/url]] -         CSS files not written correctly when importing a style/theme and CSS is stored as files
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13824]VBV-13824[/url]] -         500 alpha 22 step 1 running out of memory
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13830]VBV-13830[/url]] -         Missing phrase for &quot;Log Actions&quot; on the Scheduled Task create/edit screen
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13864]VBV-13864[/url]] -         Inefficient query on channel creation.
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13894]VBV-13894[/url]] -         Remove obsolete unit tests
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13902]VBV-13902[/url]] -         Clean up unused functions
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13948]VBV-13948[/url]] -         RSS Feed Manager doesn't recognise user id that does the posting in notifications
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13976]VBV-13976[/url]] -         Remove text &quot;No user is online now&quot; at bottom of What's Going On module
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13977]VBV-13977[/url]] -         If the Top Active Users module is empty it displays the text &quot; No user is online now. &quot;
+[*][[url=http://tracker.vbulletin.com/browse/VBV-13996]VBV-13996[/url]] -         css_b_table_row.css missing in users online
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14019]VBV-14019[/url]] -         Add a console error if the current page being edited has a page template with no title
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14029]VBV-14029[/url]] -         ImageMagick is trying to resize/thumbnail .doc attachments
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14052]VBV-14052[/url]] -         Cannot instantiate abstract class vB_Database with Sphinx Search indexing file
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14055]VBV-14055[/url]] -         vB_StopForumSpam - Missing argument 1 for vB_vURL::vB_vURL()
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14059]VBV-14059[/url]] -         Incorrect help text for Add New Forum section in Admin CP
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14091]VBV-14091[/url]] -         Redundant &quot;others&quot; in two notification phrases
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14102]VBV-14102[/url]] -         Incorrect &quot;post-date&quot; field in notification detail
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14104]VBV-14104[/url]] -         Notification (&quot;Like&quot;) not formatted correctly anymore
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14132]VBV-14132[/url]] -         Notification about a 2nd comment displays the wrong username
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14142]VBV-14142[/url]] -         After upgrading ads disappear and need to re-saved to display again
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14165]VBV-14165[/url]] -         PHP Fatal error:  Call to undefined method vB_Library_BbCode::handle_bbcode_user() in .../core/vb/library/bbcode.php on line 1441
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14166]VBV-14166[/url]] -         Log Errors to a File is Broken
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14169]VBV-14169[/url]] -         PHP Fatal error:  Class 'vB' not found
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14181]VBV-14181[/url]] -         Quick user finder in modcp is broken
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14210]VBV-14210[/url]] -         Notification folder max page in the toolbar is incorrect
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14215]VBV-14215[/url]] -         Typo in x_and_one_other_rated_y and x_and_y_others_rated_z - &quot;likes&quot; rather than &quot;like&quot;
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14217]VBV-14217[/url]] -         &quot;See All Notifications&quot; button in message center's summary area broken
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14239]VBV-14239[/url]] -         Some new notification phrases contain the word &quot;thread&quot; rather than &quot;topic&quot;
+[*][[url=http://tracker.vbulletin.com/browse/VBV-14241]VBV-14241[/url]] -         Notifications older than today still displayed under &quot;Today&quot; in message center (regression)
+[/list]
+    
