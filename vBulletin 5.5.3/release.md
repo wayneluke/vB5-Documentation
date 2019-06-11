@@ -2,9 +2,66 @@
 
 ## Front End Changes
 
+### Group Icons
+
+We've resolved a few issues around Groups. These are:
+
+- Group Icons can now be removed. Previously you could only replace them with a new icon.
+- Icon management works properly on the Group Settings Page.
+- Items will no longer break out of the Conversation toolbar at different resolutions.
+- Topics and Replies will be properly moderated before displaying if this group option is set.
+
+### Facebook Connect
+
+A number of changes have been made to Facebook Connect to enable better operations due to changes in their API over the years. When a user registers with Facebook, the process is simplified. Facebook no longer allows the automated operations from vBulletin 4.X. We have worked to make the registration process as simple as possible. It is no longer possible to pre-fill custom profile fields with Facebook information. They have removed that functionality. We have also upgraded the Facebook API to the latest version.
+
+### Container Module
+
+You can now add additional modules to the Container Module in the Blog Channel Sidebar. An issue that could cause all modules to be deleted when doing this has been resolved.
+
+### Accessibility
+
+Code has been added to apply the aria-label attribute on form elements that currently do not have proper labels. This should improve general accessibility throughout the software. In addition to this, the jQuery Placeholder plugin has been removed from the system. The placeholder attribute is natively supported by browsers engines today. This workaround was no longer needed.
+
+### Breadcrumbs
+
+These have been reworked to display better on smaller screens. Breadcrumb text will no longer be abbreviated with the CSS .ellipsis class. Instead the breadcrumbs will wrap to the next line as necessary. In addition to this, the Home label has been replaced with an icon and appropriate label.
+
 ---
 
-## Back End / AdminCP Changes
+## Back End / AdminCP
+
+### Improved Search Engine Performance
+
+A number of performance issues relating to the search engine in vBulletin 5 have resolved. These changes can significantly speed up your search results when using either keyword based search or the JSON powered search modules placed on pages.
+
+### Moderation Permissions
+
+We have split the single "Skip Moderation Queue" permission into three different permissions. This was done to give you greater control over moderating new content similar to vBulletin 4.X. Setting these permissions to No will force content into moderation on a channel by channel basis. The three permissions are:
+
+- Skip Moderation for New Topics - This will enable you to moderate new topics started by different usergroups.
+- Skip Moderation for Replies -  This will enable to moderate replies and comments on approved topics.
+- Skip Moderation for Posts/Topics with Attachments - If set to no, this will automatically moderate any topic starter or post with attachments. This allows review of the attachments before they are made available to your users.
+
+### Proxy Support
+
+We have added support for Cloudflare and Securi proxies in the `/core/includes/config.php file. These directives are commented out in the default file. Uncomment the block that you wish to use. Uncommenting will make them active. Only one can be active at a time.
+
+### .htaccess
+
+Code has been added to the default .htaccess file to handle rewriting vBulletin 4.X Friendly URLs. This code is commented out by default.
+
+### AdminCP Home Page Statistics
+
+These statistics have been updated so they are more accurate. In addition to this, the obsolete Profile Picture Statistic has been removed.
+
+---
+
+## Mobile Apps
+
+### Push Notifications
+
+Changes have been made to make push notifications more reliable in the mobile apps a new option has been added to control the push notification timeout. 
 
 ---
 
@@ -44,7 +101,7 @@ For more information see [vBulletin Connect System Requirements](https://www.vbu
 
 ### Discussion
 
-If you have any questions about these changes you may discuss them here: [node]4413190[/node]
+If you have any questions about these changes you may discuss them here: [node]4416598[/node]
 
 If you find an issue with the software or wish to place a feature request please visit our [tracker](https://tracker.vbulletin.com).
 
