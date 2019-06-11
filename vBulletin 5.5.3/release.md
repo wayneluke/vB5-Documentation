@@ -40,12 +40,12 @@ A number of performance issues relating to the search engine in vBulletin 5 have
 We have split the single "Skip Moderation Queue" permission into three different permissions. This was done to give you greater control over moderating new content similar to vBulletin 4.X. Setting these permissions to No will force content into moderation on a channel by channel basis. The three permissions are:
 
 - Skip Moderation for New Topics - This will enable you to moderate new topics started by different usergroups.
-- Skip Moderation for Replies -  This will enable to moderate replies and comments on approved topics.
+- Skip Moderation for Replies - This will enable to moderate replies and comments on approved topics.
 - Skip Moderation for Posts/Topics with Attachments - If set to no, this will automatically moderate any topic starter or post with attachments. This allows review of the attachments before they are made available to your users.
 
 ### Proxy Support
 
-We have added support for Cloudflare and Securi proxies in the `/core/includes/config.php file. These directives are commented out in the default file. Uncomment the block that you wish to use. Uncommenting will make them active. Only one can be active at a time.
+We have added support for Cloudflare and Securi proxies in the `/core/includes/config.php` file. These directives are commented out in the default file. Uncomment the block that you wish to use. Uncommenting will make them active. Only one can be active at a time.
 
 ### .htaccess
 
@@ -61,7 +61,7 @@ These statistics have been updated so they are more accurate. In addition to thi
 
 ### Push Notifications
 
-Changes have been made to make push notifications more reliable in the mobile apps a new option has been added to control the push notification timeout. 
+Changes have been made to make push notifications more reliable in the mobile apps a new option has been added to control the push notification timeout. This option can be found in the AdminCP under Settings -> Options -> vBulletin API and Mobile Application Options.
 
 ---
 
@@ -93,6 +93,8 @@ Recommended System Requirements
 For more information see [vBulletin Connect System Requirements](https://www.vbulletin.com/forum/node/4391344).
 
 ### Current Version Support Schedule
+
+It is recommended to use the latest version of vBulletin at all times.
 
 - Active Version - 5.5.2
 - Security Patch - 5.5.1
