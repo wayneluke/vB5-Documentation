@@ -4,11 +4,11 @@
 
 ### Group Icons
 
-We've resolved a few issues around Groups. These are:
+We have resolved a few additional issues with Group Channels. These include:
 
 - Group Icons can now be removed. Previously you could only replace them with a new icon.
 - Icon management works properly on the Group Settings Page.
-- Items will no longer break out of the Conversation toolbar at different resolutions.
+- Items will no longer break out of the Conversation Toolbar at different resolutions.
 - Topics and Replies will be properly moderated before displaying if this group option is set.
 
 ### Facebook Connect
