@@ -21,7 +21,7 @@ You can now add additional modules to the Container Module in the Blog Channel S
 
 ### Accessibility
 
-Code has been added to apply the aria-label attribute on form elements that currently do not have proper labels. This should improve general accessibility throughout the software. In addition to this, the jQuery Placeholder plugin has been removed from the system. The placeholder attribute is natively supported by browsers engines today. This workaround was no longer needed.
+Code has been added to apply the aria-label attribute on form elements that currently do not have proper labels. This should improve general accessibility throughout the software. In addition to this, the jQuery Placeholder plugin has been removed from the system. The placeholder attribute is natively supported by browser engines today. This workaround was no longer needed.
 
 ### Breadcrumbs
 
@@ -33,19 +33,19 @@ These have been reworked to display better on smaller screens. Breadcrumb text w
 
 ### Improved Search Engine Performance
 
-A number of performance issues relating to the search engine in vBulletin 5 have resolved. These changes can significantly speed up your search results when using either keyword based search or the JSON powered search modules placed on pages.
+A number of performance issues relating to the search engine in vBulletin 5 have been resolved. These changes can significantly speed up your search results when using either keyword based search or the JSON powered search modules placed on pages.
 
 ### Moderation Permissions
 
 We have split the single "Skip Moderation Queue" permission into three different permissions. This was done to give you greater control over moderating new content similar to vBulletin 4.X. Setting these permissions to No will force content into moderation on a channel by channel basis. The three permissions are:
 
 - Skip Moderation for New Topics - This will enable you to moderate new topics started by different usergroups.
-- Skip Moderation for Replies - This will enable to moderate replies and comments on approved topics.
+- Skip Moderation for Replies - This will enable you to moderate replies and comments on approved topics.
 - Skip Moderation for Posts/Topics with Attachments - If set to no, this will automatically moderate any topic starter or post with attachments. This allows review of the attachments before they are made available to your users.
 
 ### Proxy Support
 
-We have added support for Cloudflare and Securi proxies in the `/core/includes/config.php` file. These directives are commented out in the default file. Uncomment the block that you wish to use. Uncommenting will make them active. Only one can be active at a time.
+We have added support for Cloudflare and Sucuri proxies in the `/core/includes/config.php` file. These directives are commented out in the default file. Uncomment the block that you wish to use. Uncommenting will make them active. Only one can be active at a time.
 
 ### .htaccess
 
@@ -61,7 +61,7 @@ These statistics have been updated so they are more accurate. In addition to thi
 
 ### Push Notifications
 
-Changes have been made to make push notifications more reliable in the mobile apps a new option has been added to control the push notification timeout. This option can be found in the AdminCP under Settings -> Options -> vBulletin API and Mobile Application Options.
+Changes have been made to make push notifications more reliable in the mobile apps. A new option has been added to control the push notification timeout. This option can be found in the AdminCP under Settings -> Options -> vBulletin API and Mobile Application Options.
 
 ---
 

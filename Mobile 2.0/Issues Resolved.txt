@@ -1,0 +1,109 @@
+
+Improvements
+VBI-1432	Modernize mobile app's UI	
+VBI-1511	Build iOS app with at least iOS 12.1 SDK & support all iOS devices.	
+VBI-1514	Port over the privacy feature set	
+VBI-1619	Resource downloading pop up occasionally	
+VBI-1376	Create an iPad friendly UI to make the app a truly UNIVERSAL app.	
+VBI-1516	Port over Push Notification feature	
+VBI-1518	Support RTL translations	
+VBI-1531	Splash screen support for customization	
+VBI-1536	Adjustments to Color customization	
+VBI-1607	Quote doesn't work	
+VBI-1612	Activity wont list out any more item if the first page is empty	
+VBI-1615	Some inline attachments can't be launched in image slide review mode	
+VBI-1616	Blog and Article reload many time when empty comment	
+VBI-1530	Messages: Sent list to use the correct array of recipients	
+VBI-1549	UI/UX - Buttons Accept/Decline require bottom margin/padding	
+VBI-1575	Error Message localization	
+VBI-1608	Hyperlink doesn't get rendered	
+VBI-1609	Internet connection check	
+VBI-1614	Localize string in search item	
+VBI-1620	Increase Title space	
+VBI-1429	Pull to reload the list of in-app notifications	
+VBI-1563	Blogs - Edit button is not displayed on a change of Enable/Disable comments checkbox	
+
+Tasks
+VBI-1377	App icon doesn't display properly on iPads.
+VBI-1532	Add support for Google Analystics	
+
+Bugs 
+VBI-1597	Resign embedded frameworks correctly	
+VBI-1334	Search - Search by tag is not working	
+VBI-1452	Crashes on notification checking	
+VBI-1463	App does not clarify to users how/when/why the Camera is used when access to the Camera is required	
+VBI-1473	iphone X compatibility	
+VBI-1508	Stop supporting iOS 8	
+VBI-1513	Sign-in with Facebook broken	
+VBI-1515	Support ads in iOS 2.0	
+VBI-1526	Subscribe star doesn't work	
+VBI-1527	User registration custom fields don't match web app	
+VBI-1534	App crashes after open push notification while the app was killed	
+VBI-1541	Activity screen doesn't work consistently	
+VBI-1543	App crashes when disable comment while creating new Blog & Articles	
+VBI-1544	App crashes - Guest user posting a New Blog	
+VBI-1547	IGNORE button from the list of friend displays an Invalid parameter error.	
+VBI-1548	BAN USER button from the list of friend is not functioning.	
+VBI-1557	Message Post View - Report page is not displaying	
+VBI-1558	Message Post View - Forward is not pre-filling the content of the message.	
+VBI-1559	Message Post View : NO (cancel) option isn't displayed on Delete confirmation	
+VBI-1560	Add Friend option disappeared	
+VBI-1561	Post content doesn't render BBcode correctly	
+VBI-1562	Post content & attached images are out of place	
+VBI-1576	App shows a blank screen loading particular Articles	
+VBI-1585	Inline attachments cut off in Thread's started	
+VBI-1586	Search keyword crashes de app	
+VBI-1591	Articles - Publish status 'draft' and 'scheduled' are publishing now	
+VBI-1592	sub-forums incorrectly load parent channel	
+VBI-1595	Articles - Publish status option on Edit	
+VBI-1598	Articles - Reloading the 'Categories' list preview crashes the app	
+VBI-1605	New Content - Attachment options are not prompted	
+VBI-1610	Inline attachments don't display in Forum's thread	
+VBI-1613	Attached Images don't display in slideshow view	
+VBI-1621	Youtube link doesn't show	
+VBI-1623	Blog content's bad format	
+VBI-1628	Long forum comment got cut off	
+VBI-1485	Post List - Subscribe button changes back after navigating away and back	
+VBI-1498	Blogs & Articles page displays +1 the current page	
+VBI-1525	Thread Prefix doesn't display	
+VBI-1533	Search doesn’t return results from Article content type	
+VBI-1535	Tapping on Avatar anywhere in the app should launch user profile	
+VBI-1537	Calendar List View shouldn't set endperiod	
+VBI-1538	Thread's colored Prefix doesn't show color	
+VBI-1539	Thread title needs to parse HTML entities	
+VBI-1545	Thread prefix doesn't show in Post list	
+VBI-1551	Blog Post with special HTML characters are not displayed correctly	
+VBI-1553	Title/Content Character Limits are not handled appropriately.	
+VBI-1564	Forum - Complete list of prefixes is not displayed on mobile	
+VBI-1566	Title of Forums, Articles, Blogs & Activities shouldn't parse HTML tags	
+VBI-1568	Discard message not appearing in Forums, Articles, Blogs	
+VBI-1569	Articles - min chars in title/content is not handled	
+VBI-1571	Forum & Thread list Pagination strange behavior	
+VBI-1572	Long thread titles overflow	
+VBI-1573	Forum Create Thread shouldn't have Publish status option	
+VBI-1580	Closed Posts - Reply of a Member user displays double errors.	
+VBI-1583	Inline attachments can't load for Articles	
+VBI-1584	Default (blank) avatar doesn't show for Forum comments	
+VBI-1587	extra semi colon in starter post that has no text content	
+VBI-1589	Forums - Tags of maximum chars is not handled properly	
+VBI-1590	Remove Publish status option for new Blogs	
+VBI-1593	Tags - Invalid prefix	
+VBI-1594	Trying to post an article without text content crashes the app	
+VBI-1602	UI/UX - Text content font size is not uniform on Ipad	
+VBI-1631	Create Account Page - Email validation giving incorrect error message	
+VBI-1401	Messages - Tapping Delete does not delete the message	
+VBI-1415	Deleted threads are not dark grey for admins/mods	
+VBI-1416	Thread author text cut off slightly	
+VBI-1422	Home - Default filter label is All Content but shows Forums	
+VBI-1491	Search Results - Articles icon too big	
+VBI-1496	Blog Comments - "Comments are not enabled" text does not appear	
+VBI-1528	Forum rules page (in registration) don't work correctly	
+VBI-1552	Reply restriction for minimum characters is not working properly	
+VBI-1574	Options are not cleared in Blogs & Articles	
+VBI-1577	UI/UX - Edit icon of Blogs, Articles is cut off slightly	
+VBI-1578	Registering a username with length for minimum/maximum characters is not working properly	
+VBI-1588	Forums - reply to post is not entering comments less than 10 chars	
+VBI-1600	Blogs - Mismatch on bubble comments count	
+VBI-1603	Friends - Ads are not positioned at the bottom	
+VBI-1604	Blogs - Missing content error is not displaying	
+VBI-1606	Notifications - User is not redirected to Visitor Message	
