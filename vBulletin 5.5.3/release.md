@@ -1,4 +1,6 @@
-# vBulletin 5.5.X Changes and Updates
+# vBulletin 5.5.3 Changes and Updates
+
+vBulletin 5.5.3 is now available for all vBulletin 5 Download customers. We will automatically update vBulletin Cloud sites. vBulletin Cloud users will receive an email with the scheduled time for their site's upgrade.
 
 ## Front End Changes
 
@@ -96,10 +98,10 @@ For more information see [vBulletin Connect System Requirements](https://www.vbu
 
 It is recommended to use the latest version of vBulletin at all times.
 
-- Active Version - 5.5.2
+- Active Version - 5.5.3
+- Security Patch - 5.5.2
 - Security Patch - 5.5.1
-- Security Patch - 5.5.0
-- No Patch Release - 5.4.5 or earlier.
+- No Patch Release - 5.5.0 or earlier.
 
 ### Discussion
 
