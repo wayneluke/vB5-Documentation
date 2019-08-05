@@ -2,21 +2,46 @@
 
 ## Front End Changes
 
-### CKEditor
-
-Updated to version 4.12.1
-
 ### Avatars as Status Icons
 
-You can specify to use the user's avatar in lieu of status icons in topic lists throughout the site.
+A new option has been added to show the user's avatar instead of the status icon in Topic Lists. This allows the system to be consistent with the responsive view when using small screen devices. All views will display the same icons based on this option. You can access the option in the AdminCP under `Settings -> Options -> Topic Display Options`
+
+### Semantic HTML
+
+By using semantic HTML tags, we can provide additional information to search engines and accessibility tools (e.g Screen Readers). Using these tags allows the system to signify which information is more important on the page.
+
+We have converted the header, footer, and Channel Navigation Modules to better use Semantic HTML tags. The system is now using the &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, and &lt;main&gt; tags where appropriate. Header elements are wrapped in the &lt;header&gt; tag instead of using the &lt;div&gt; tag. Footer elements on each page now use the &lt;footer&gt; tag. Menus and breadcrumbs are wrapped in the &lt;nav&gt; tag. The primary content of each page now uses the &lt;main&gt;. We have worked to make these changes backwards compatible and you should not see any difference in the rendering of your pages. However, if your custom CSS targets container.class (e.g. div.header) then you will need to update your CSS for these changes.
 
 ---
 
 ## Back End / AdminCP
 
+### Style Variable Validation
+
+As a security measure, we have applied a series of validation rules to CSS attributes entered as Style Variable values and in User Profile Customization. These rules limit the amount of CSS that can be added to a variable and prevent users from adding their own attributes using third-party software to alter the page. As an Administrator, you can apply more complex CSS using the css_additional.css template for your style.
+
+The following validation rules have been added to the system:
+
+1. Default
+2. URL
+3. Image
+4. Font Family
+
+### Frame Restrictions / Anti-Clickjacking
+
+We have added several options to control how your site can be embedded in frames. Embedding a website within another is a frequent method used to PHISH for user data. vBulletin now allows you to prevent this and control where your site appears. This security measure will help safeguard your user's information and your site overall.
+
+The options can be found in the AdminCP under `Settings -> Options -> Server Setttings and Optimization Options`
+
+Note: These options are not available to vBulletin Cloud Administrators. The vBulletin Cloud system already handles them.
+
 ### Content Notifications
 
-Administrators can specify words that will trigger notifications when they are used.
+Administrators can specify words that will trigger notifications when they are used. The system works similarly to the existing word censor options. After you have created your list of words, the system will monitor them. When a word is used, the site Administrators and Moderators will be notified via their message center and email based on their notification settings.
+
+The option for this is available in the AdminCP under `Settings -> Options -> User Banning Options`.
+
+### Imagick PHP Class
 
 ---
 
