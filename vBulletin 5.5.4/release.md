@@ -1,16 +1,20 @@
 # vBulletin 5.5.4 Changes and Updates
 
+The Preview Release of vBulletin 5.5.4 is now available to download customers. Preview Releases should not be used on production servers and are for testing purposes only.
+
 ## Front End Changes
 
 ### Avatars as Status Icons
 
-A new option has been added to show the user's avatar instead of the status icon in Topic Lists. This allows the system to be consistent with the responsive view when using small screen devices. All views will display the same icons based on this option. You can access the option in the AdminCP under `Settings -> Options -> Topic Display Options`
+A new option has been added to show the user's avatar instead of the status icon in Topic Lists. This allows the system to be consistent with the responsive view. All views will display the same icons based on this option. You can access the option in the AdminCP under `Settings -> Options -> Topic Display Options`
 
 ### Semantic HTML
 
-By using semantic HTML tags, we can provide additional information to search engines and accessibility tools (e.g Screen Readers). Using these tags allows the system to signify which information is more important on the page.
+By using semantic HTML tags, we can provide additional information to search engines and accessibility tools (e.g. Screen Readers). Using these tags allows the system to signify which information is more important on the page.
 
 We have converted the header, footer, and Channel Navigation Modules to better use Semantic HTML tags. The system is now using the &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, and &lt;main&gt; tags where appropriate. Header elements are wrapped in the &lt;header&gt; tag instead of using the &lt;div&gt; tag. Footer elements on each page now use the &lt;footer&gt; tag. Menus and breadcrumbs are wrapped in the &lt;nav&gt; tag. The primary content of each page now uses the &lt;main&gt;. We have worked to make these changes backwards compatible and you should not see any difference in the rendering of your pages. However, if your custom CSS targets container.class (e.g. div.header) then you will need to update your CSS for these changes.
+
+If you are using one of the provided styles, then you will not have to do anything to take advantage of this change.
 
 ---
 
@@ -22,18 +26,35 @@ As a security measure, we have applied a series of validation rules to CSS attri
 
 The following validation rules have been added to the system:
 
-1. Default
-2. URL
-3. Image
-4. Font Family
+1. **Default**
+    - Applies to all style variables unless specified below.
+    - Limited to less than 250 characters.
+    - Does not contain the characters "{}".
+2. **URL and Image**
+    - URLs must be quoted.
+    - Unescaped braces "{}" are not allowed.
+    - Base64 is allowed as long as there are no braces.
+3. **Font Family**
+    - No more than 20 font families listed.
+    - Font Family list is comma separated.
+    - Each font name is no more than 100 characters.
+    - Font names with spaces must be enclosed within quotation marks.
 
-### Frame Restrictions / Anti-Clickjacking
+### Security Headers / Anti-Clickjacking
 
 We have added several options to control how your site can be embedded in frames. Embedding a website within another is a frequent method used to PHISH for user data. vBulletin now allows you to prevent this and control where your site appears. This security measure will help safeguard your user's information and your site overall.
 
-The options can be found in the AdminCP under `Settings -> Options -> Server Setttings and Optimization Options`
+These HTTP Headers are sent to the browser for interpretation. Each browser may interpret these headers differently.
 
-Note: These options are not available to vBulletin Cloud Administrators. The vBulletin Cloud system already handles them.
+The options can be found in the AdminCP under `Settings -> Options -> Cookie and HTTP Header Options`.
+
+- **Anti-Clickjacking Headers**: This setting can be used to prevent your site from being included within HTML Frames. The default value will allow your site to be used in frames originating from the same URL. This will prevent sites that currently use frames from breaking. Setting this to Deny will prevent any framing. There are for options available:
+  - Allow all Framing. This is how vBulletin works today. This option provides no security.
+  - Deny all Framing. This is the most restrictive Option.
+  - Allow from Same Site. Allows the system to be embedded in frames on your site. This provides basic security but will not break current sites. This will allow your site to be embedded in Frames that share the same domain as your Forum URL. Note: Accessing via domain name and IP Address will be considered two different sites.
+  - Specify Raw Header Values. When this is selected, the system will not send headers unless specified in the next two options.
+- **X-Frame-Options Header Value**: This setting allows you to specify a custom value for this header. This header is primarily for Internet Explorer 11 support. Please view the inline help for more information. This option is for Advanced Users and Network Administrators.
+- **Content-Security-Policy Header Value**: This header is supported by all modern browsers and provides a robust framework for browser security. Please view the inline help for more information. This option is for Advanced Users and Network Administrators.
 
 ### Content Notifications
 
@@ -41,7 +62,11 @@ Administrators can specify words that will trigger notifications when they are u
 
 The option for this is available in the AdminCP under `Settings -> Options -> User Banning Options`.
 
-### Imagick PHP Class
+### PHP Imagick Support
+
+We have added support for the PECL imagick class available for PHP. Using this class can reduce server overhead and processing time when compared to the ImageMagick command line tools using the exec() function. Please see the [PHP Documentation](https://www.php.net/manual/en/book.imagick.php) for information on installing this class on your server. Once installed, the class can be selected within the AdminCP under `Settings -> Options -> Image Settings`.
+
+> Note: In a future version of vBulletin, we will be removing the older command line implementation of ImageMagick.
 
 ---
 
@@ -58,13 +83,13 @@ After upgrading your vBulletin system, you should delete any possible obsolete f
 
 ### System Requirements
 
-Minimum System Requirements
+#### Minimum System Requirements
 
 - PHP Version: 7.1.0
 - MySQL Version: 5.6.10
 - MariaDB Version: 10.0.0
 
-Recommended System Requirements
+#### Recommended System Requirements
 
 - PHP Version: 7.3 or higher
 - MySQL Version: 8.0 or higher
