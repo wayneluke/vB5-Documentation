@@ -52,9 +52,8 @@ The options can be found in the AdminCP under `Settings -> Options -> Cookie and
   - Allow all Framing. This is how vBulletin works today. This option provides no security.
   - Deny all Framing. This is the most restrictive Option.
   - Allow from Same Site. Allows the system to be embedded in frames on your site. This provides basic security but will not break current sites. This will allow your site to be embedded in Frames that share the same domain as your Forum URL. Note: Accessing via domain name and IP Address will be considered two different sites.
-  - Specify Raw Header Values. When this is selected, the system will not send headers unless specified in the next two options.
-- **X-Frame-Options Header Value**: This setting allows you to specify a custom value for this header. This header is primarily for Internet Explorer 11 support. Please view the inline help for more information. This option is for Advanced Users and Network Administrators.
-- **Content-Security-Policy Header Value**: This header is supported by all modern browsers and provides a robust framework for browser security. Please view the inline help for more information. This option is for Advanced Users and Network Administrators.
+- ~~X-Frame-Options Header Value: This setting allows you to specify a custom value for this header. This header is primarily for Internet Explorer 11 support. Please view the inline help for more information. This option is for Advanced Users and Network Administrators.~~ **(Removed in Beta)**
+- **Content-Security-Policy Header Value**: This header is supported by all modern browsers and provides a robust framework for browser security. Please view the inline help for more information. This option is for Advanced Users and Network Administrators. For best results, you should set the Anti-Clickjacking Header value to Allow All and then handle that within your Content Security Policy. This option is now a text area field for better accessibility.
 
 ### Content Notifications
 
@@ -67,6 +66,15 @@ The option for this is available in the AdminCP under `Settings -> Options -> Us
 We have added support for the PECL imagick class available for PHP. Using this class can reduce server overhead and processing time when compared to the ImageMagick command line tools using the exec() function. Please see the [PHP Documentation](https://www.php.net/manual/en/book.imagick.php) for information on installing this class on your server. Once installed, the class can be selected within the AdminCP under `Settings -> Options -> Image Settings`.
 
 > Note: In a future version of vBulletin, we will be removing the older command line implementation of ImageMagick.
+
+### Guest Permissions
+
+On new installations, several permissions for the Guest Users usergroup have been changed. The following permissions have been changed so that they default to No for guests:
+
+- Can view Member Info.
+- Skip Moderation for Topics.
+- Skip Moderation for Replies.
+- Skip Moderation for Posts/Topics With Attachments.
 
 ---
 
