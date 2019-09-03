@@ -6,7 +6,11 @@ The Preview Release of vBulletin 5.5.4 is now available to download customers. P
 
 ### Avatars as Status Icons
 
-A new option has been added to show the user's avatar instead of the status icon in Topic Lists. This allows the system to be consistent with the responsive view. All views will display the same icons based on this option. You can access the option in the AdminCP under `Settings -> Options -> Topic Display Options`
+A new option has been added to show the user's avatar instead of the status icon in Topic Lists. This allows the system to be consistent with the responsive view. All views will display the same icons based on this option. You can access the option in the AdminCP under `Settings -> Options -> Topic Display Options`.
+
+When displaying avatars as status icons, the avatar will link to the user's profile for consistency. Administrators and moderators will not be able to double-click on the status icon to open and close topics. If this functionality is important for your site, you will need to use the standard status icons.
+
+> Note: Previous versions of vBulletin 5 would always show avatars in Responsive View. In order to maintain consistency, Responsive View now follows this new setting.
 
 ### Semantic HTML
 
@@ -52,8 +56,7 @@ The options can be found in the AdminCP under `Settings -> Options -> Cookie and
   - Allow all Framing. This is how vBulletin works today. This option provides no security.
   - Deny all Framing. This is the most restrictive Option.
   - Allow from Same Site. Allows the system to be embedded in frames on your site. This provides basic security but will not break current sites. This will allow your site to be embedded in Frames that share the same domain as your Forum URL. Note: Accessing via domain name and IP Address will be considered two different sites.
-- ~~X-Frame-Options Header Value: This setting allows you to specify a custom value for this header. This header is primarily for Internet Explorer 11 support. Please view the inline help for more information. This option is for Advanced Users and Network Administrators.~~ **(Removed in Beta)**
-- **Content-Security-Policy Header Value**: This header is supported by all modern browsers and provides a robust framework for browser security. Please view the inline help for more information. This option is for Advanced Users and Network Administrators. For best results, you should set the Anti-Clickjacking Header value to Allow All and then handle that within your Content Security Policy. This option is now a text area field for better accessibility.
+- **Content-Security-Policy Header Value**: This header is supported by all modern browsers and provides a robust framework for browser security. Please view the inline help for more information. This option is for Advanced Users and Network Administrators. For best results, you should set the Anti-Clickjacking Header value to Allow All and then handle that within your Content Security Policy. 
 
 ### Content Notifications
 
