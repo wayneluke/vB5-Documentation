@@ -1,4 +1,4 @@
-# vBulletin 5.5.X Changes and Updates
+# vBulletin 5.5.5 Changes and Updates
 
 ## Front End Changes
 
@@ -16,13 +16,17 @@ You can try these new pages out on your site by clicking on Quick Setup within S
 
 In this release, we have resolved a number of issues with Inline Moderation functionality. These updates will allow the following functions to behave as expected:
 
+### Forum Status Icons
+
+These icons will now display at a larger 32 X 32 pixel size. This is for consistency with a new custom icon system for Forum Channels.
+
 ---
 
 ## Back End / AdminCP Changes
 
 ### File Scanning
 
-We have added new API routines to scan files when they are uploaded. The most common use of file scanning would be to check attachments for viruses before saving them to disk. In order to demonstrate this functionality, we have provided a package that would enable scanning files via ClamAV. ClamAV is a popular commandline tool used for virus checking.
+We have added new API routines to scan files when they are uploaded. The most common use of file scanning would be to check attachments for malware before saving them to disk. In order to demonstrate this functionality, we have provided a package that would enable scanning files via ClamAV. ClamAV is a popular commandline tool used for malware detection.
 
 #### Deprecrated Internet Explorer Code
 
@@ -43,7 +47,6 @@ Please see the forum topics below for the latest information on installing or up
 
 After upgrading your vBulletin system, you should delete any possible obsolete files. You can obtain more information on why this is needed and instructions on how to do this in this [**topic**](https://www.vbulletin.com/forum/node/4391346) in the vBulletin 5 Installs & Upgrades forum.
 
-
 ### System Requirements
 
 Minimum System Requirements
@@ -62,10 +65,10 @@ For more information see [vBulletin Connect System Requirements](https://www.vbu
 
 ### Current Version Support Schedule
 
-- Active Version - 5.5.2
-- Security Patch - 5.5.1
-- Security Patch - 5.5.0
-- No Patch Release - 5.4.5 or earlier.
+- Active Version - 5.5.5
+- Security Patch - 5.5.4
+- Security Patch - 5.5.3
+- No Patch Release - 5.5.2 or earlier.
 
 ### Discussion
 
