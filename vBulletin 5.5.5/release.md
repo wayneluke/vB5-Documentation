@@ -1,5 +1,7 @@
 # vBulletin 5.5.5 Changes and Updates
 
+> A preview release of vBulletin 5.5.5 is now available for download. This version should be used for internal testing. We do not recommend using preview releases on a live site.
+
 ## Front End Changes
 
 ### New Landing Pages
@@ -12,25 +14,55 @@ We have added two new page layouts that users can select from when using Site Bu
 
 You can try these new pages out on your site by clicking on Quick Setup within Site Builder and choosing one the one you like to be your site's home page.
 
+![Site Builder Menu](site_builder.png)
+![Select Home Page](select_homepage.png)
+
+### Forum Status Icons
+
+Forum Status icons are now larger and display at 32 X 32 pixels by default. In addition to this, we have added "OnHover" events that will display if the channel has been read or not. For information on additional changes see "Channel Status Icons" below.
+
+![Forum Icons](forum_icons.png)
+
 ### Inline Moderation
 
 In this release, we have resolved a number of issues with Inline Moderation functionality. These updates will allow the following functions to behave as expected:
 
-### Forum Status Icons
-
-These icons will now display at a larger 32 X 32 pixel size. This is for consistency with a new custom icon system for Forum Channels.
+- Moving multiple nodes now allows for redirects to be created.
+- Posts with Attachments can now be properly selected from the Inline Moderation menu.
+- Thread Redirects can now have their titles changed by double-clicking in the title area.
+- When selecting "View Topics" or "View Posts" when nothing is selected, an inline message is shown instead of redirecting to the search results page.
+- An updated message is displayed if you attempt to move a topic into a Category that doesn't accept posts.
+- Redirects are now deleted when the original node is deleted.
+- Blog Entries can now be selected for inline moderation if only Sticky Topics are displayed.
+- Channel Pagination should be calculated properly if you move nodes with redirects.
 
 ---
 
 ## Back End / AdminCP Changes
 
+### Channel Status Icons
+
+Administrators can now upload custom icons for individual Forum Channels. This is accomplished within the AdminCP under Channel Management -> Channel Manager. Forum icons will be resized to the value specified in the <<<< XXXXX >>>> style variable. The icon will be displayed at 50% opacity via CSS if the channel has been read by that user.
+
 ### File Scanning
 
-We have added new API routines to scan files when they are uploaded. The most common use of file scanning would be to check attachments for malware before saving them to disk. In order to demonstrate this functionality, we have provided a package that would enable scanning files via ClamAV. ClamAV is a popular commandline tool used for malware detection.
+We have added new API routines to scan files when they are uploaded. The most common use of file scanning would be to check attachments for malware before saving them to disk. In order to demonstrate this functionality, we have provided a package that would enable scanning files via ClamAV. ClamAV is a popular commandline tool used for malware detection. There is also a sample package in the `do_not_upload\development` directory of your download package if you wish to build your own file scanner.
 
-#### Deprecrated Internet Explorer Code
+### XML Sitemap Handling
 
-We have removed deprecated code supporting older versions of Internet Explorer from the software. Please make sure to follow the steps in the File Cleanup topic below. Please see the vBulletin [System Requirements](https://forum.vbulletin.com/forum/vbulletin-sales-and-feedback/vbulletin-pre-sales-questions/4387853-vbulletin-system-requirements) topic for a list of supported browsers.
+You can now exclude Pages from being included in the XML Sitemap that is generated for search engine indexing. This is accomplished in the AdminCP under `XML Sitemap -> Manage Content Priority`. Set the priority for Pages to "Exclude" in order to prevent them from being listing in the generated XML Sitemap.
+
+### Refactored URL Handling
+
+Handling and retrieving external URLs has been refactored in order to make the system more reliable and secure. We have merged the vB_Url class with vB_Utility_Url. vB_Url has been removed from the system. This change will simplify code maintainance and improve security over time. This code is used to retrieve external URLs used for various services within the vBulletin code. Examples would include ReCaptcha, Facebook, and attachment uploads.
+
+If you have third-party packages that rely on vB_Url, they will need to be updated to use the vB_Utility_Url class.
+
+### Deprecrated Internet Explorer Code
+
+Internet Explorer 11 is currently supported but should be considered deprecated. Previous versions of Internet Explorer are not supported. We have removed deprecated code that had been added to support these older versions of Internet Explorer from the software. Please make sure to follow the steps in the File Cleanup topic below. Please see the vBulletin [System Requirements](https://forum.vbulletin.com/node/4387853) topic for a list of supported browsers.
+
+Users that access your site with IE should be encouraged to upgrade to the beta version of [Microsoft's Edge Browser](https://www.microsoftedgeinsider.com/en-us/) based on Chromium. This new browser is available for Windows 7, 8, 8.1, 10 and MacOS.
 
 ---
 
