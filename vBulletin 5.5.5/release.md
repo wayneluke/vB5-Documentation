@@ -19,7 +19,7 @@ You can try these new pages out on your site by clicking on Quick Setup within S
 
 ### Forum Status Icons
 
-Forum Status icons are now larger and display at 32 X 32 pixels by default. In addition to this, we have added "OnHover" events that will display if the channel has been read or not. For information on additional changes see "Channel Status Icons" below.
+Forum Status icons are now larger and display at 32 X 32 pixels by default. In addition to this, we have added "OnHover" events that will display if the channel has been read or not. Custom Forum Icons will have their background filled in with a prominent color similar to Group Icons. For information on Custom Forum Icons see [Custom Status Icons](#custom-status-icons) below.
 
 ![Forum Icons](forum_icons.png)
 
@@ -40,13 +40,17 @@ In this release, we have resolved a number of issues with Inline Moderation func
 
 ## Back End / AdminCP Changes
 
-### Channel Status Icons
+### Custom Status Icons
 
-Administrators can now upload custom icons for individual Forum Channels. This is accomplished within the AdminCP under Channel Management -> Channel Manager. Forum icons will be resized to the value specified in the <<<< XXXXX >>>> style variable. The icon will be displayed at 50% opacity via CSS if the channel has been read by that user.
+Administrators can now upload custom icons for individual forum channels. Icon upload is available within the AdminCP under Channel Management -> Channel Manager. Custom channel icons will be displayed at 50% opacity via CSS if the channel has been read by that user.
+
+The display size of your channel icons is controlled by the value specified in the `icon_size_forum_icon` style variable. The default value is 32 X 32 pixels. A style variable was chosen so administrators can vary the value per style if necessary.
 
 ### File Scanning
 
-We have added new API routines to scan files when they are uploaded. The most common use of file scanning would be to check attachments for malware before saving them to disk. In order to demonstrate this functionality, we have provided a package that would enable scanning files via ClamAV. ClamAV is a popular commandline tool used for malware detection. There is also a sample package in the `do_not_upload\development` directory of your download package if you wish to build your own file scanner.
+We have added new API routines to scan files when they are uploaded. The most common use of file scanning would be to check attachments for malware before saving them to disk. In order to demonstrate this functionality, we have provided a package that would enable scanning files via ClamAV. ClamAV is a popular commandline tool used for malware detection. 
+
+If you wish to build your own file scanner, there is a sample package in the `do_not_upload\development` directory of your download package. The API is available in the vB_Utility_Filescanner class. The file for which is located at `core\vb\utility\filescanner.php`.
 
 ### XML Sitemap Handling
 
@@ -54,13 +58,13 @@ You can now exclude Pages from being included in the XML Sitemap that is generat
 
 ### Refactored URL Handling
 
-Handling and retrieving external URLs has been refactored in order to make the system more reliable and secure. We have merged the vB_Url class with vB_Utility_Url. vB_Url has been removed from the system. This change will simplify code maintainance and improve security over time. This code is used to retrieve external URLs used for various services within the vBulletin code. Examples would include ReCaptcha, Facebook, and attachment uploads.
+Handling and retrieving external URLs has been refactored in order to make the system more reliable and secure. Where necessary, we have merged the vB_Url class with the vB_Utility_Url class. After this, vB_Url has been removed from the system. This change will simplify code maintainance and improve security over time. This code is used to retrieve external URLs used for various services within the vBulletin code. Examples would include ReCaptcha, Facebook, and attachment uploads.
 
-If you have third-party packages that rely on vB_Url, they will need to be updated to use the vB_Utility_Url class.
+If you have third-party packages that rely on vB_Url, they will need to be updated to use the vB_Utility_Url class. Code for this class is located in `\core\vb\utility\url.php`
 
 ### Deprecrated Internet Explorer Code
 
-Internet Explorer 11 is currently supported but should be considered deprecated. Previous versions of Internet Explorer are not supported. We have removed deprecated code that had been added to support these older versions of Internet Explorer from the software. Please make sure to follow the steps in the File Cleanup topic below. Please see the vBulletin [System Requirements](https://forum.vbulletin.com/node/4387853) topic for a list of supported browsers.
+Internet Explorer 11 is currently supported but should be considered deprecated. Previous versions of Internet Explorer are not supported. We have removed some code specific to Internet Explorer from the system. This code had been added to support older versions of Internet Explorer. After upgrading, please make sure to follow the steps for [File Cleanup](https://www.vbulletin.com/forum/node/4391346). For more information on supported browsers please see the vBulletin [System Requirements](https://forum.vbulletin.com/node/4387853).
 
 Users that access your site with IE should be encouraged to upgrade to the beta version of [Microsoft's Edge Browser](https://www.microsoftedgeinsider.com/en-us/) based on Chromium. This new browser is available for Windows 7, 8, 8.1, 10 and MacOS.
 
