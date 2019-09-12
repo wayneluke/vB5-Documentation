@@ -12,7 +12,7 @@ We have added two new page layouts that users can select from when using Site Bu
 2. **Classic**: Provides a home page similar to older versions of vBulletin. This layout only contains the Activity Stream, Statistics, and What's Going On module in a single full width column. The Activity Stream defaults to the Forums tab.
 3. **Community**: A end user oriented Home Page. This includes a 30/70 layout. The left column includes the Channel Navigation Module, Friend's Activity, and Birthdays at 30% width. The Right column includes the Activity Stream, Statistics, and What's Going On module. The Activity Stream defaults to the Latest Activity tab in this view.
 
-You can try these new pages out on your site by clicking on Quick Setup within Site Builder and choosing one the one you like to be your site's home page.
+You can try these new pages out on your site by clicking on Quick Setup from the Site Builder menu and choosing the page you would like to be your site's home page. Your selection will take effect immediately.
 
 ![Site Builder Menu](site_builder.png)
 ![Select Home Page](select_homepage.png)
