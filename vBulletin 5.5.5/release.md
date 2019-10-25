@@ -60,7 +60,7 @@ Administrators can now upload custom icons for individual forum channels. Icon u
 
 ![AdminCP Set Icon](admincp_seticon.png)
 
-The display size of your channel icons is controlled by the value specified in the `icon_size_forum_icon` style variable. The default value is 32 X 32 pixels. A style variable was chosen so administrators can vary the value per style if necessary.
+The display size of your channel icons is controlled by the value specified in the `icon_size_forum_icon` style variable. The default value is 32 X 32 pixels. A style variable was implemented so administrators can vary the icon size per style if desired.
 
 ### Date Range for Notices
 
