@@ -1,6 +1,6 @@
 # vBulletin 5.5.5 Changes and Updates
 
-> A preview release of vBulletin 5.5.5 is now available for download. This version should be used for internal testing. We do not recommend using preview releases on a live site.
+vBulletin Connect 5.5.5 is now available for all download customers. vBulletin Cloud customers will have their sites upgraded automatically over the next couple of weeks.
 
 ## Front End Changes
 
@@ -27,9 +27,15 @@ Custom icons will have their background filled in with a prominent color similar
 
 ![Forum Icons](forum_icons.png)
 
-### Tagging
+### Content Tagging
 
-We have added an interface to allow users with permission of "Can Tag Other's Topics" to add tags. Users with this permission will be able to select "Tags" in the Topic Starter to add new tags. If the user owns the Topic and has permission to modify Tags, they can delete tags added by others.
+We have added an interface to allow users with permission of "Can Tag Other's Topics" to add tags. Users with this permission will be able to click on the word "Tags" in the Topic Starter. 
+
+![Tags Interface](tags1.png)
+
+This will open a dialog to add new tags. If the user owns the Topic and has permission to modify Tags, they can delete tags added by others.
+
+![Tags Interface](tags2.png)
 
 ### Inline Moderation
 
@@ -76,7 +82,7 @@ To enable this feature you must add a line to your config.php:
 
 `$config['Misc']['preserve_exif'] = true;`
 
-> Note: This feature is not currently available for vBulletin Cloud customers at this time.
+> Note: At this time, this feature is not available for vBulletin Cloud customers.
 
 ### User Management
 
@@ -110,7 +116,7 @@ We are currently in the process of merging Announcement and Notice functionality
 
 Calling the ImageMagick executable directly has been deprecated in favor of using the imagick PECL library. We will remove direct support for ImageMagick in a future release. The imagick library functionality was added in vBulletin 5.5.4. We suggest updating your PHP installation to support imagick. You can find instructions on doing this in the [PHP Documentation](https://www.php.net/manual/en/imagick.installation.php).
 
-### Internet Explorer Code
+### Internet Explorer Support
 
 Internet Explorer 11 is currently supported but should be considered deprecated. Previous versions of Internet Explorer are not supported. We have removed some code specific to Internet Explorer from the system. This code had been added to support older versions of Internet Explorer. After upgrading, please make sure to follow the steps for [File Cleanup](https://www.vbulletin.com/forum/node/4391346). For more information on supported browsers please see the vBulletin [System Requirements](https://forum.vbulletin.com/node/4387853).
 
