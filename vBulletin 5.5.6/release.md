@@ -20,7 +20,11 @@ You can now drag and drop allowed files within the editor window. This will give
 
 ### Suspect File Diagnostics
 
-This utility will now scan all vBulletin directories and warn the user if the hash files are writable. This will allow better knowledge of what is installed in your vBulletin directory.
+The suspect file diagnostics has been rewritten and expanded for greater security. Several changes have been implemented:
+
+1. The utility makes sure that the list of hashes is not writable on the server.
+2. It will scan all vBulletin Directories. If a directory is unknown, you will be informed of this fact.
+
 
 ---
 
