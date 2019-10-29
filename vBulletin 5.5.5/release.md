@@ -1,6 +1,6 @@
 # vBulletin 5.5.5 Changes and Updates
 
-vBulletin Connect 5.5.5 is now available for all download customers. vBulletin Cloud customers will have their sites upgraded automatically over the next couple of weeks.
+vBulletin Connect 5.5.5 is now available for all download customers. vBulletin Cloud customers will have their sites upgraded automatically over the next couple of weeks. All resolved issues can be viewed in our [Issue Tracker](https://tracker.vbulletin.com/vbulletin5/issues/find?fs%5Bproject_id%5D%5Bo%5D=%3D&fs%5Bproject_id%5D%5Bv%5D=1&fs%5Bissuetype%5D%5Bo%5D=%3D&fs%5Bissuetype%5D%5Bv%5D=&fs%5Bstatus%5D%5Bo%5D=%3D&fs%5Bstatus%5D%5Bv%5D=&fs%5Bcategory%5D%5Bo%5D=%3D&fs%5Bcategory%5D%5Bv%5D=&sortfields=issues.last_updated%3Dasc&fs%5Btext%5D%5Bo%5D=%3D&fs%5Btext%5D%5Bv%5D=&scs_current_template=&template=results_normal&template_parameter=&grouporder=asc&groupby=&issues_per_page=50&fs%5Bmilestone%5D%5Bo%5D=%3D&fs%5Bmilestone%5D%5Bv%5D=95&filters_milestone_value_95=95).
 
 ## Front End Changes
 
@@ -170,6 +170,6 @@ PHP 7.1.X will reach end of life on December 1st, 2019. It is recommended to upg
 
 If you have any questions about these changes you may discuss them here: [node]4423284[/node]
 
-If you find an issue with the software or wish to place a feature request please visit our [tracker](https://tracker.vbulletin.com).
+If you find an issue with the software or wish to place a feature request please visit our [issue tracker](https://tracker.vbulletin.com).
 
-In order to receive support for your vBulletin Product please visit our [community forums](https://www.vbulletin.com/forum/).
+In order to receive support for your vBulletin Product please visit our [community forums](https://forum.vbulletin.com).
