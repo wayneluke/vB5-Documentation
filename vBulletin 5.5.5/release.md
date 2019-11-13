@@ -29,7 +29,7 @@ Custom icons will have their background filled in with a prominent color similar
 
 ### Content Tagging
 
-We have added an interface to allow users with permission of "Can Tag Other's Topics" to add tags. Users with this permission will be able to click on the word "Tags" in the Topic Starter. 
+We have added an interface to allow users with permission of "Can Tag Other's Topics" to add tags. Users with this permission will be able to click on the word "Tags" in the Topic Starter.
 
 ![Tags Interface](tags1.png)
 
