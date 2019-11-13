@@ -8,6 +8,7 @@ The mobile publisher has been updated to build version 2.2 of the vBulletin Mobi
 - Parent/Guardian Support for COPPA has been added.
 - Added support for Firebase Analytics.
 - The Main menu can always be accessed by swiping left from the screen.
+- Features displayed in the Main Menu according to user's permissions.
 - The App Version will now display on the Login screen.
 
 ## General Bug Fixes
