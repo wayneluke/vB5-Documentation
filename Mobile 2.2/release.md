@@ -8,8 +8,12 @@ The mobile publisher has been updated to build version 2.2 of the vBulletin Mobi
 - Parent/Guardian Support for COPPA has been added.
 - Added support for Firebase Analytics.
 - The Main menu can always be accessed by swiping left from the screen.
-- Accessible features are now displayed in the Main Menu according to user's permissions.
+- Accessible features are now displayed in the Main Menu according to the user's permissions.
 - The App Version will now display on the Login screen.
+
+## Google Analytics
+
+Google is removing the ability to use Google Analytics for Mobile Apps. Due to this, you need to switch to the Firebase Analytics added in Mobile Suite 2.2. For more information please see the [announcement](https://support.google.com/firebase/answer/9167112?hl=en) from Google.
 
 ## General Bug Fixes
 
