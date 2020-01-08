@@ -1,6 +1,6 @@
 # vBulletin 5.5.6 Changes and Updates
 
-A preview release of vBulletin 5.5.6 is now available to download customers. This version contains updates to the content editor, security tools within the software. Pre-release software should not be used on production servers. It is made available for testing purposes only.
+A preview release of vBulletin 5.5.6 is now available to download customers. This version contains updates to the content editor and security tools within the software. Pre-release software should not be used on production servers. It is made available for testing purposes only.
 
 ## Front End Changes
 
@@ -29,7 +29,6 @@ A depth setting has been added to the Activity Stream module (Forum Home Page) a
 - Modules now scroll a page at a time in the Site Builder Page Editor.
 - Resolved an issue that resulted in large file sizes when resizing images.
 - Resolved an issue that resulted in images being rejected before resizing.
-- Rotated images may fail the maximum size check if one dimension is larger than the other.
 
 ---
 
@@ -41,44 +40,62 @@ To continue the merging of Notice and Announcement functionality, a number of en
 
 - Notices now support BBCode in addition to HTML.
 - Notices now support Smilie codes.
-- URLS within Notices will be automatically parsed as links when the Notice is saved.
+- URLs within Notices will be automatically parsed as links when the Notice is saved.
 - Notices can be assigned to the "Home Page" channel in order to appear only on the default home page.
 
 ### Suspect File Diagnostics
 
-The suspect file diagnostics has been rewritten and expanded to provide better file diagnostics. Several changes have been implemented:
+The suspect file diagnostics has been rewritten and expanded to provide better file diagnostics. This utility allows you to quickly search for altered, missing, or extra files within your vBulletin directory. With the output provided and your own personal deployment records, you can use the Suspect File Diagnostics to help secure your server and make sure vBulletin's files are up to date. Several changes have been implemented:
 
-1. The generation of the MD5 hash file has been updated.
-2. This utility will issue a warning is the list of MD5 hashes is writable on the server.
-3. It will scan all vBulletin Directories. If a directory is unknown, you will be informed of this fact.
-4. Problematic files will be listed at the top of the output.
-5. Safe directories will be collapsed to simplify the output.
-6. Additional file types will be checked. This includes .htaccess and image file extensions.
+1. A list of the checksum files used for comparison will be displayed at the top of the output.
+1. A warning will be displayed if any of the checksum files are writable.
+1. It will scan all vBulletin directories. If a directory is unknown, you will be informed of this fact.
+1. Static files (i.e images, javascript, and css files) will now be scanned.
+1. Problematic files will be listed at the top of the output.
+1. Safe directories will be collapsed to simplify the output.
+1. Additional file types will be checked. This includes .htaccess and image file extensions.
 
-In addition to these changes, the MD5 hash of the diagnostic file will be included in the vb5readme.html within your download. This hash can be used to verify that this file has not been tampered with. If you need asssistance with how to do this, please contact vBulletin Support.
+#### Known Limitations
 
-Known Issues:
+- Templates stored in the file system can trigger false positives. By default, these are stored in the `/core/cache/template` directory. You can move these out of the vBulletin directory if you wish.
+- Some optional directories will be ignored. Notably, the directories used when storing CSS as files. These directories should be inspected manually if you suspect issues.
+- Several files will not be checked. These include `/.htaccess`, `/config.php`, and `/core/includes/config.php`. You will need to manually inspect these files if you suspect changes.
 
-- Templates stored in the file system can trigger false positives. By default, these are stored in the `/core/cache/templates` directory. You can move these out of the vBulletin directory if you wish. Please contact vBulletin Support for help with moving these files.
-- Some optional directories will be ignored. Notably, the directories use when storing CSS as files.
+If you do not know how to manually inspect and update these files, the best course of action is to replace the files with new copies. If you need assistance please create a new topic in the appropriate forum.
 
-### Security
+### Style Variable Editor
 
-#### New Password Scheme
+The Style Variable Editor has been enhanced.
 
-Support for the Argon2ID password hashing algorithm has been added to the system. This will be utilized if the server supports it. The server must be using PHP 7.3 or higher. PHP must be [configured](https://www.php.net/manual/en/password.installation.php) to allow the Argon2ID algorithm. More information can be found [here](https://www.erianna.com/introducing-support-for-argon2id-in-php73/). If Argon2ID is not available, the system will continue to use the BCrypt (Blowfish) algorithm for password storage. The cost for BCrypt has been increased to 15 to account for newer processors.
+- The default view will only show variable groups. This simplifies the display and allows administrators to select a group of variables easier.
+- The system will expand and contract the groups as you use them.
+- When you search for one or more style variables, only the matches will be shown in a simplified list. Groups without a match will be hidden.
+
+### User Profile Fields
+
+An option has been added to the User Profile Field editor to show the field and its label in the User Info block of topic starters and replies. You can set this option by editing your existing User Profile Fields in the AdminCP. 
+
+> Note: If you are using template hooks to display these, you would need to inactivate/delete those hooks to prevent the double display of fields.
+
+## Security
+
+### New Password Scheme
+
+Support for the Argon2ID password hashing algorithm has been added to the system. This will be utilized if the server supports it. The server must be using PHP 7.3 or higher. PHP must be [configured](https://www.php.net/manual/en/password.installation.php) to allow the Argon2ID algorithm. More information can be found [here](https://www.erianna.com/introducing-support-for-argon2id-in-php73/). If Argon2ID is not available, the system will continue to use the BCrypt algorithm for password storage. The cost for BCrypt has been increased to account for newer processors.
+
+For more information on password hashing please see the [PHP documentation](https://www.php.net/manual/en/function.password-hash.php).
 
 These changes should be transparent to end users.
 
-#### Password Reset
+### Password Reset
 
-A tool to invalidate all user passwords has been added to the AdminCP. This will update the password of all users except the currently logged in Administrator. Users will not be able to log in until they create a new valid password. This tool is located under Maintenance -> General Update Tools.
+A tool to invalidate all user passwords has been added to the AdminCP. This will update the password of all users except the currently logged in Administrator. Users will not be able to log in until they create a new valid password. This tool is located under Maintenance -> General Update Tools. For security purposes, this will only appear while the site is in [Debug Mode](https://www.vbulletin.com/go/vb5debug).
 
-#### File Permissions
+### File Permissions
 
 We recommend making the vBulletin directories and files write-protected for security purposes. If you need assistance with this, please contact your hosting provider.
 
-#### .htaccess
+### .htaccess
 
 The .htaccess file has been rewritten to help improve security of the file system. The changes prevent direct access of PHP files in a number of directories. This will not affect normal operations of vBulletin. It is recommended to use this file if you're using shared hosting.
 
@@ -93,6 +110,8 @@ The `/admincp/` directory in the vBulletin root has been removed for new install
 ## Additional Information
 
 ### Install / Upgrade
+
+> Note: When upgrading to 5.5.6, make note of the changes to the file structure. Most notably, the /admincp directory has been removed. In addition to this, it is important to review the changes to the .htaccess file so that your site is as secure as possible.
 
 - [Installation Instructions](https://www.vbulletin.com/forum/node/4391348)
 - [Upgrade Instructions](https://www.vbulletin.com/forum/node/4391346)
@@ -119,14 +138,14 @@ For more information see [vBulletin Connect System Requirements](https://www.vbu
 
 #### PHP 7.1 End of Life
 
-Please note that PHP 7.1.X is now end of life. It is recommended that you upgrade to PHP 7.2 or higher as soon as possible.
+Please note that PHP 7.1.X is now end of life. It is recommended that you upgrade to PHP 7.2 or higher as soon as possible. 
 
 ### Current Version Support Schedule
 
-- Active Version - 5.5.5
+- Active Version - 5.5.6
+- Security Patch - 5.5.5
 - Security Patch - 5.5.4
-- Security Patch - 5.5.3
-- No Patch Release - 5.5.2 or earlier.
+- No Patch Release - 5.5.3 or earlier.
 
 ### Discussion
 
