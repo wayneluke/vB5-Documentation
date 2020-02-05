@@ -1,0 +1,131 @@
+<h1>vBulletin 5.5.6 Changes and Updates</h1>
+<p>vBulletin 5.5.6 is now available to download customers. This version contains updates to the content editor and security tools within the software.</p>
+<h2>Front End Changes</h2>
+<h3>CKEditor Update</h3>
+<p>The version of CKEditor distributed with vBulletin is now 4.13. This brings the editor up to date with the vendor's distributed version. While the visible functionality will not have changed much, a lot has changed behind the scenes. For more information on changes please see the CKEditor <a href="https://ckeditor.com/cke4/release-notes">changelog</a>.</p>
+<h4>Emoji Support</h4>
+<p>Emoji are similar to vBulletin's smilie functionality but are implemented via standard font characters instead of using images. When using a compatible database, you can enable UTF-8 Emoji within CKEditor. This allows over 1500 different emoji to be used by your users. Emoji can be selected from a panel in the Richtext Editor or by automatic lookup when the user is typing.</p>
+<blockquote>
+<p>Note: In order to use this feature, your database must use a UTF8MB4 character set and collation.</p>
+</blockquote>
+<h4>Drag and Drop Uploads</h4>
+<p>You can now drag and drop allowed files within the editor window. This will give users more control over images uploaded to their content. To use this feature, users simply need to drag their attachments over the editor and drop them on the attachment panel. If the attachment panel is not open during the drag, it will automatically open.</p>
+<h2>Forum Listing Depth</h2>
+<p>A depth setting has been added to the Activity Stream module (Forum Home Page) and the Sub-Channel Display module (used on individual channel pages). This setting allows a max depth of 1, 2, or 3 channels. The behavior varies depending on the use of Category channels at the top level. For example:</p>
+<ol>
+<li>The home page allows showing Category (1) =&gt; Forum  (2) =&gt; Subforum (3). If you don't use category channels and have it set to 3, it will still only show Forum =&gt; Subforum when depth is set to 3. This is due to current limitations in the template code. This can affect the display if you have a mix of Categories and Forums that are not in categories. Setting this value to 1 or 2 will  hide subforum listings.</li>
+<li>Forum channels typically show two levels as in Forum (1) =&gt; Subforum (2). At this time, the template system will limit this to a depth of 2 even if the value is set to 3.</li>
+</ol>
+<h2>Other Issues</h2>
+<ul>
+<li>Resolved an issue where the bread crumb links can be displayed off center in some themes.</li>
+<li>Modules now scroll a page at a time in the Site Builder Page Editor.</li>
+<li>Resolved an issue that resulted in large file sizes when resizing images.</li>
+<li>Resolved an issue that resulted in images being rejected before resizing.</li>
+</ul>
+<hr>
+<h2>Back End / AdminCP Changes</h2>
+<h3>Notices</h3>
+<p>To continue the merging of Notice and Announcement functionality, a number of enhancements have been made to editing Notices in the AdminCP. These include:</p>
+<ul>
+<li>Notices now support BBCode in addition to HTML.</li>
+<li>Notices now support Smilie codes.</li>
+<li>URLs within Notices will be automatically parsed as links when the Notice is saved.</li>
+<li>Notices can be assigned to the &quot;Home Page&quot; channel in order to appear only on the default home page.</li>
+</ul>
+<h3>Suspect File Diagnostics</h3>
+<p>The suspect file diagnostics has been rewritten and expanded to provide better file diagnostics. This utility allows you to quickly search for altered, missing, or extra files within your vBulletin directory. With the output provided and your own personal deployment records, you can use the Suspect File Diagnostics to help secure your server and make sure vBulletin's files are up to date. Several changes have been implemented:</p>
+<ol>
+<li>A list of the checksum files used for comparison will be displayed at the top of the output.</li>
+<li>A warning will be displayed if any of the checksum files are writable.</li>
+<li>It will scan all vBulletin directories. If a directory is unknown, you will be informed of this fact.</li>
+<li>Static files (i.e images, javascript, and css files) will now be scanned.</li>
+<li>Problematic files will be listed at the top of the output.</li>
+<li>Safe directories will be collapsed to simplify the output.</li>
+<li>Additional file types will be checked. This includes .htaccess and image file extensions.</li>
+</ol>
+<h4>Known Limitations</h4>
+<ul>
+<li>Templates stored in the file system can trigger false positives. By default, these are stored in the <code>/core/cache/template</code> directory. You can move these out of the vBulletin directory if you wish.</li>
+<li>Some optional directories will be ignored. Notably, the directories used when storing CSS as files. These directories should be inspected manually if you suspect issues.</li>
+<li>Several files will not be checked. These include <code>/.htaccess</code>, <code>/config.php</code>, and <code>/core/includes/config.php</code>. You will need to manually inspect these files if you suspect changes.</li>
+</ul>
+<p>If you do not know how to manually inspect and update these files, the best course of action is to replace the files with new copies. If you need assistance please create a new topic in the appropriate forum.</p>
+<h3>Style Variable Editor</h3>
+<p>The Style Variable Editor has been enhanced.</p>
+<ul>
+<li>The default view will only show variable groups. This simplifies the display and allows administrators to select a group of variables easier.</li>
+<li>The system will expand and contract the groups as you use them.</li>
+<li>When you search for one or more style variables, only the matches will be shown in a simplified list. Groups without a match will be hidden.</li>
+</ul>
+<h3>User Profile Fields</h3>
+<p>An option has been added to the User Profile Field editor to show the field and its label in the User Info block of topic starters and replies. You can set this option by editing your existing User Profile Fields in the AdminCP.</p>
+<blockquote>
+<p>Note: If you are using template hooks to display these, you would need to inactivate/delete those hooks to prevent the double display of fields.</p>
+</blockquote>
+<h2>Security</h2>
+<h3>New Password Scheme</h3>
+<p>Support for the Argon2ID password hashing algorithm has been added to the system. This will be utilized if the server supports it. The server must be using PHP 7.3 or higher. PHP must be <a href="https://www.php.net/manual/en/password.installation.php">configured</a> to allow the Argon2ID algorithm. More information can be found <a href="https://www.erianna.com/introducing-support-for-argon2id-in-php73/">here</a>. If Argon2ID is not available, the system will continue to use the BCrypt algorithm for password storage. The cost for BCrypt has been increased to account for newer processors.</p>
+<p>For more information on password hashing please see the <a href="https://www.php.net/manual/en/function.password-hash.php">PHP documentation</a>.</p>
+<p>These changes should be transparent to end users.</p>
+<h3>Password Reset</h3>
+<p>A tool to invalidate all user passwords has been added to the AdminCP. This will update the password of all users except the currently logged in Administrator. Users will not be able to log in until they create a new valid password. This tool is located under Maintenance -&gt; General Update Tools. For security purposes, this will only appear while the site is in <a href="https://www.vbulletin.com/go/vb5debug">Debug Mode</a>.</p>
+<h3>File Permissions</h3>
+<p>We recommend making the vBulletin directories and files write-protected for security purposes. If you need assistance with this, please contact your hosting provider.</p>
+<h3>.htaccess</h3>
+<p>The .htaccess file has been rewritten to help improve security of the file system. The changes prevent direct access of PHP files in a number of directories. This will not affect normal operations of vBulletin. It is recommended to use this file if you're using shared hosting.</p>
+<p>The use of .htaccess files within sub-directories has been changed. This has resulted in the removal of these files in some directories as well as the addition of .htaccess files in others.</p>
+<h4>AdminCP Directory</h4>
+<p>The <code>/admincp/</code> directory in the vBulletin root has been removed for new installations. This directory is not needed for vBulletin to function properly. If you use the new .htaccess file provided in 5.6.0, you will need to delete this directory when upgrading.</p>
+<hr>
+<h2>Additional Information</h2>
+<p>All resolved issues can be seen in the issue tracker <a href="https://tracker.vbulletin.com/vbulletin5/roadmap">roadmap</a>.</p>
+<h3>Install / Upgrade</h3>
+<blockquote>
+<p>Note: When upgrading to 5.5.6, make note of the changes to the file structure. Most notably, the /admincp directory has been removed. In addition to this, it is important to review the changes to the .htaccess file so that your site is as secure as possible.</p>
+</blockquote>
+<ul>
+<li><a href="https://www.vbulletin.com/forum/node/4391348">Installation Instructions</a></li>
+<li><a href="https://www.vbulletin.com/forum/node/4391346">Upgrade Instructions</a></li>
+</ul>
+<h3>File Cleanup</h3>
+<p>After upgrading your vBulletin system, you should delete any possible obsolete files. You can obtain more information on why this is needed and instructions on how to do this in this <a href="https://www.vbulletin.com/forum/node/4391346"><strong>topic</strong></a> in the vBulletin 5 Installs &amp; Upgrades forum.</p>
+<h3>System Requirements</h3>
+<p>Minimum System Requirements</p>
+<ul>
+<li>PHP Version: 7.1.0, See End of Life note below.</li>
+<li>MySQL Version: 5.6.10</li>
+<li>MariaDB Version: 10.0.0</li>
+</ul>
+<p>Recommended System Requirements</p>
+<ul>
+<li>PHP Version: 7.4 or higher</li>
+<li>MySQL Version: 8.0 or higher</li>
+<li>MariaDB Version: 10.3+</li>
+</ul>
+<p>For more information see <a href="https://www.vbulletin.com/forum/node/4391344">vBulletin Connect System Requirements</a>.</p>
+<h4>PHP 7.1 End of Life</h4>
+<p>Please note that PHP 7.1.X is now end of life. It is recommended that you upgrade to PHP 7.2 or higher as soon as possible.</p>
+<h3>Current Version Support Schedule</h3>
+<ul>
+<li>Active Version - 5.5.6</li>
+<li>Security Patch - 5.5.5</li>
+<li>Security Patch - 5.5.4</li>
+<li>No Patch Release - 5.5.3 or earlier.</li>
+</ul>
+<h3>Discussion</h3>
+<p>If you have any questions about these changes you may discuss them here: [node]4413190[/node]</p>
+<p>If you find an issue with the software or wish to place a feature request please visit our <a href="https://tracker.vbulletin.com">tracker</a>.</p>
+<p>In order to receive support for your vBulletin Product please visit our <a href="https://www.vbulletin.com/forum/">community forums</a>.</p>
+
+
+
+
+<h2>Deprecated</h2>
+<h3>Announcements</h3>
+<p>We are currently in the process of merging Announcement and Notice functionality. After this is completed in an upcoming version, we will remove Announcements from the system. Merging these similar features will simplify code maintenance and allow us to provide more features to the Notice system over time.</p>
+<h3>ImageMagick</h3>
+<p>Calling the ImageMagick executable directly has been deprecated in favor of using the imagick PECL library. We will remove direct support for ImageMagick in a future release. The imagick library functionality was added in vBulletin 5.5.4. We suggest updating your PHP installation to support imagick. You can find instructions on doing this in the <a href="https://www.php.net/manual/en/imagick.installation.php">PHP Documentation</a>.</p>
+<h3>Internet Explorer Support</h3>
+<p>Internet Explorer 11 is currently supported but should be considered deprecated. Previous versions of Internet Explorer are not supported. We have removed some code specific to Internet Explorer from the system. This code had been added to support older versions of Internet Explorer. After upgrading, please make sure to follow the steps for <a href="https://www.vbulletin.com/forum/node/4391346">File Cleanup</a>. For more information on supported browsers please see the vBulletin <a href="https://forum.vbulletin.com/node/4387853">System Requirements</a>.</p>
+<p>Users that access your site with IE should be encouraged to upgrade to the beta version of <a href="https://www.microsoftedgeinsider.com/en-us/">Microsoft's Edge Browser</a> based on Chromium. This new browser is available for Windows 7, 8, 8.1, 10 and MacOS.</p>

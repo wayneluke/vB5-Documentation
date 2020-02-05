@@ -1,6 +1,6 @@
 # vBulletin 5.5.6 Changes and Updates
 
-A preview release of vBulletin 5.5.6 is now available to download customers. This version contains updates to the content editor and security tools within the software. Pre-release software should not be used on production servers. It is made available for testing purposes only.
+vBulletin 5.5.6 is now available to download customers. This version contains updates to the content editor and security tools within the software.
 
 ## Front End Changes
 
@@ -11,6 +11,8 @@ The version of CKEditor distributed with vBulletin is now 4.13. This brings the 
 #### Emoji Support
 
 Emoji are similar to vBulletin's smilie functionality but are implemented via standard font characters instead of using images. When using a compatible database, you can enable UTF-8 Emoji within CKEditor. This allows over 1500 different emoji to be used by your users. Emoji can be selected from a panel in the Richtext Editor or by automatic lookup when the user is typing.
+
+> Note: In order to use this feature, your database must use a UTF8MB4 character set and collation.
 
 #### Drag and Drop Uploads
 
@@ -108,6 +110,8 @@ The `/admincp/` directory in the vBulletin root has been removed for new install
 ---
 
 ## Additional Information
+
+All resolved issues can be seen in the issue tracker [roadmap](https://tracker.vbulletin.com/vbulletin5/roadmap).
 
 ### Install / Upgrade
 
