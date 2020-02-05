@@ -1,42 +1,62 @@
 # vBulletin 5.6.0 Changes and Updates
 
+A preview release of vBulletin 5.6.0 is now available for download. Preview releases are for testing purposes only and are not for use on production servers.
+
 ## Front End Changes
 
 ### Login Refactor
 
-Eliminate the iFrame. Updated functionality uses AJAX and Javascript to login instead of an HTML form submission. Rename the login template. If you use the login template in a module, you need to update the template display module.
+The mechanics behind user login have changed. The system no long utilizes an iFrame tag. Eliminate the iFrame. The updated functionality uses AJAX and Javascript to login instead of an HTML form submission.
 
-### Password Security
-
-Administrators can define password settings to encourage more complex passwords.
+If you use the login template in a module, you need to update the template display module to use the login_main template.
 
 ### Event Highlights
 
-Site Administrators can define event highlights. These allow you to display events on the calendars with a different background color in order to categorize events. Event Highlights work similarly to Topic Prefixes and are selected when a new event is created or edited.
+Site Administrators can define Event Highlights. These allow you to display events on the calendars with a different background color in order to categorize events. Event Highlights work similarly to Topic Prefixes and are selected when a new event is created or edited.
 
 ### Member List
 
-- Layout has been simplified.
-- Private Message/vBulletin Messenger link has been standardized.
-- A search form has been added to the Member List module.
+A search form has been added to the Member List module. This will allow individuals to search the member list by username.
+
+In addition to this, the following changes have been made:
+
+- IPv6 display has been improved.
+- The Private Message column has been removed.
+- Private Message/vBulletin Messenger link has been standardized to be consistent with other locations in the software.
 
 ---
 
 ## Back End / AdminCP Changes
 
+### Node Tools - Close
+
+A new tool has been added to Node Tools in the AdminCP. This tool allows the mass closing of topics on your site.
+
+### Password Strength
+
+Settings in Settings -> Options -> User Registration Options.
+
 ### Style Variable Editor
 
 Variable inheritance has been improved while in debug mode. Now custom values will override the inherited value.
 
-### Password Strength
-
 ---
 
-## Tools
+## Miscellaneous
+
+### Sphinx Search
+
+SphinxSearch only supports "latin and cyrillic" (English, Russian) characters by default. If your forum is on utf8mb4 and you expect the searchable content to have characters outside of the default
+(e.g. German, Korean, Arabic) you have to tell Sphinx to treat those characters as characters instead of delimiters. This is done by setting the "charset_table" option within the vbulletin-sphinx.php file when generating the index. We have provided character sets in the /do_not_upload/sphinxsearchfiles. You will need to make these files accessible to Sphinx through the configuration file. Details are outlines in the /vbulletin-sphinx.php file.
+
+### File Structure
+
+- The /images and /css directories have been consolidated and merged. Unnecessary image files have been deleted from the file structure.
+- Unused images in the /core/images directory have been deleted from the download package.
 
 ### Database Converter
 
-A number of conversion issues have been found in the UTF-8 conversion scripts. These have been resolved.
+A number of conversion issues have been found in the database conversion scripts. These have been resolved.
 
 ---
 
@@ -61,7 +81,7 @@ Minimum System Requirements
 
 Recommended System Requirements
 
-- PHP Version: 7.3 or higher
+- PHP Version: 7.4 or higher
 - MySQL Version: 8.0 or higher
 - MariaDB Version: 10.3+
 
