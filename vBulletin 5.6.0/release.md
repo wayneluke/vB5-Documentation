@@ -1,6 +1,6 @@
 # vBulletin 5.6.0 Changes and Updates
 
-A preview release of vBulletin 5.6.0 is now available for download. Preview releases are for testing purposes only and are not for use on production servers.
+vBulletin 5.6.0 is now available for download customers. Owners of vBulletin Cloud sites will be notified about their upgrade soon.
 
 ## Front End Changes
 
@@ -23,6 +23,10 @@ In addition to this, the following changes have been made:
 - IPv6 display has been improved.
 - The Private Message column has been removed.
 - Private Message/vBulletin Messenger link is now consistent with other locations in the software.
+
+### Static HTML Module
+
+We have made the language shortcodes available for use in Static HTML Modules. These shortcodes will allow you to insert variables into your HTML. These variables include: {sitename}, {userid}, {username}, {musername}, {registerurl}, {activationurl}, {helpurl}, {contacturl}, {homeurl}, {date}.
 
 ---
 
@@ -63,6 +67,12 @@ Additional fixes have been applied to the code for better support with PHP 7.4.0
 
 ## Additional Information
 
+A list of all issues resolved can be viewed in the [Issue Tracker](https://tracker.vbulletin.com/vbulletin5/issues/find/saved_search/66/search/1).
+
+### Minimum PHP Version
+
+The minimum required PHP version for vBulletin 5.6.0 has been increased to PHP 7.2.0.
+
 ### Install / Upgrade
 
 - [Installation Instructions](https://www.vbulletin.com/forum/node/4391348)
@@ -92,18 +102,15 @@ For more information see [vBulletin Connect System Requirements](https://www.vbu
 
 ### Current Version Support Schedule
 
-- Active Version - 5.5.6
+- Active Version - 5.6.0
+- Security Patch - 5.5.6
 - Security Patch - 5.5.5
-- Security Patch - 5.5.4
-- No Patch Release - 5.5.3 or earlier.
+- No Patch Release - 5.5.4 or earlier.
 
 ### Discussion
 
-If you have any questions about these changes you may discuss them [here]().:
+If you have any questions about these changes you may discuss them [here](https://forum.vbulletin.com/node/4433818).
 
 If you find an issue with the software or wish to place a feature request please visit our [tracker](https://tracker.vbulletin.com).
 
 In order to receive support for your vBulletin Product please visit our [community forums](https://www.vbulletin.com/forum/).
-
-
-
