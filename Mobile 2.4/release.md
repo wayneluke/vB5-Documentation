@@ -10,7 +10,7 @@ The following improvements have been added to the Mobile Suite Apps.
 - When opening a push notification it sometimes doesn't reduce the subscription count
 - Notifications do not reload automatically
 - Hide Create Account button if registration is not allowed
-- Android X compatibility
+- Android 10 compatibility
 
 ## Bugs Resolved
 
