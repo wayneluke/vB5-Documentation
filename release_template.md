@@ -23,9 +23,9 @@ After upgrading your vBulletin system, you should delete any possible obsolete f
 
 Minimum System Requirements
 
-- PHP Version: 7.1.0
+- PHP Version: 7.2.0
 - MySQL Version: 5.6.10
-- MariaDB Version: 10.0.0
+- MariaDB Version: 10.1.0
 
 Recommended System Requirements
 
@@ -37,10 +37,10 @@ For more information see [vBulletin Connect System Requirements](https://www.vbu
 
 ### Current Version Support Schedule
 
-- Active Version - 5.5.2
-- Security Patch - 5.5.1
-- Security Patch - 5.5.0
-- No Patch Release - 5.4.5 or earlier.
+- Active Version - 5.6.0
+- Security Patch - 5.5.6
+- Security Patch - 5.5.6
+- No Patch Release - 5.5.4 or earlier.
 
 ### Discussion
 

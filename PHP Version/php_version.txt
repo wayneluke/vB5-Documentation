@@ -1,5 +1,5 @@
 PHP 5.4.X Support
 
-As of September 3rd, 2015, PHP 5.4.X was marked end of life by the PHP Group. The last version in the PHP 5.4 series is 5.4.45. Since this series is marked as End of Life it is no longer being developed, receiving bug fixes, or security patches. Due to this, we suggest that you upgrade to a minimum version of PHP 5.5.9. Using PHP 5.6.X is recommended for performance and security improvements.
+As of September 3rd, 2015, PHP 5.4.X was marked as end of life by the PHP Group. The last version in the PHP 5.4 series is 5.4.45. Since this series is marked as End of Life it is no longer being developed, receiving bug fixes, or security patches. Due to this, we suggest that you upgrade to a minimum version of PHP 5.5.9. Using PHP 5.6.X is recommended for performance and security improvements.
 
 At this time, we are not increasing the minimum required version of PHP. This will remain at PHP 5.4.0 for now. However we may be required to change this requirement in the future.
