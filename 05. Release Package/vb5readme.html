@@ -79,34 +79,7 @@ dl.faq > dd {padding-bottom: .6em;margin-left: 0px;}
 	<div class="wrap" id="system">
 		<h2>System Requirements</h2>
 		<section>
-			<p>In order to install vBulletin you need to have a web server meeting the qualifications below. In addition to this you need to have a fully qualified domain purchased through a Domain Name Registrar like <a href="http://namecheap.com">Namecheap</a>, <a href="http://www.enom.com">Enom</a> or your Hosting Provider. The Domain name should be pointed to your webserver via the registrar's provided DNS services. If you need assistance setting up Domain Name Services (DNS), your hosting provider can offer this to you.</p>
-			<div class="infobox" id="minimum">
-				<h3>Minimum System Requirements</h3>
-				<p>The following sofware is required to be installed on your server before vBulletin will function.</p>
-				<ul>
-					<li>Apache 2.2+, IIS 7+ or NGINX 1.4+</li>
-					<li>PHP 5.6.0</li>
-					<li>MySQL 5.5.9</li>
-					<li>mod_rewrite, URL Rewrite or equivalent.</li>
-					<li>Additional PHP Modules: MySQLi, cURL, OpenSSL Support, iconv, mbstring, JSON Support, XML Support</li>
-				</ul>
-			</div>
-			<div class="infobox" id="recommended">
-				<h3>Recommended System Requirements</h3>
-				<p>In addition to the minimum requirements, the following recommended software enhancements will improve performance.</p>
-				<ul>
-					<li>PHP 7.1+</li>
-					<li>MySQL 5.7.0+</li>
-					<li>MemcacheD</li>
-					<li>SSL Certificate - May be required for certain services.</li>
-				</ul>		
-			</div>
-		</section>
-		<section>
-			<dl class="faq">
-				<dt>How can I tell if my server meets the minimum requirements?</dt>
-				<dd>You can download a <a href="http://www.vbulletin.com/go/test/">server test script</a> from our site. 
-			</dl>
+			<p>vBulletin requires a properly configured web server with PHP and MySQL in order to run properly. In order to see an up to date list of all requirements please see <a href="https://forum.vbulletin.com/forum/vbulletin-sales-and-feedback/vbulletin-pre-sales-questions/4387853-vbulletin-system-requirements" target="_blank">this topic</a> in our community forums. You can download a <a href="http://www.vbulletin.com/go/test/">server test script</a> from our site to test your server. If you need help configuring your server, please discuss this with your hosting provider.</p>
 		    <div class="top"><a href="#top">Top</a></div><hr />
 		</section>
 	</div>
@@ -151,7 +124,7 @@ dl.faq > dd {padding-bottom: .6em;margin-left: 0px;}
 			<p>vBulletin stores all of its data in a MySQL database. To install the software you need to create a database for it to use. When creating your database, make note of the Database Server, Database Server Port, Database Name, Database User Name and Database Password. You will need these later. Contact your hosting provider's technical support if you need help with this step. Here are some common instructions to create a database:</p>
 			<ul>
 				<li><a href="http://dev.mysql.com/doc/refman/5.0/en/creating-database.html">Using SSH and the MySQL Command Prompt</a></li>
-				<li><a href="http://docs.cpanel.net/twiki/bin/view/AllDocumentation/CpanelDocs/MySQLDatabases#Create%20a%20Database">Using cPanel</li>
+				<li><a href="https://docs.cpanel.net/cpanel/databases/mysql-database-wizard/">Using cPanel</li>
 				<li><a href="http://download1.parallels.com/Plesk/PP11/11.5/Doc/en-US/online/plesk-customer-guide/index.htm?fileName=65157.htm">Using Parallel's Plesk</a></li>
 				<li><a href="http://doxfer.webmin.com/Webmin/MySQLDatabaseServer?sortcol=table;table=up#Creating_a_new_database">Using Webmin</a>
 			</ul>
@@ -221,6 +194,7 @@ dl.faq > dd {padding-bottom: .6em;margin-left: 0px;}
 				<dt>While installing, the wizard just stopped and hasn't progressed</dt>
 				<dd>Sometimes you might experience a server timeout. Refresh the page in your browser and the wizard will continue from where it left off.</dd>
 			</dl>	
+			<p>For additional help with installing vBulletin, please visit our <a href="https://forum.vbulletin.com/forum/vbulletin-5-connect/vbulletin-5-installations" target="_blank">Community Forums</a>.</p>
 		    <div class="top"><a href="#top">Top</a></div><hr />
 		</section>
 	</div>
@@ -270,7 +244,8 @@ dl.faq > dd {padding-bottom: .6em;margin-left: 0px;}
 				<dd>Visit the support forums and post the database error in order to receive support.</dd>
 				<dt>I am getting a message on the screen that the Upgrade has aborted. What do I do?</dt>
 				<dd>Visit the community forums to receive support with your issue.</dd>
-			</ol>
+			</dl>
+			<p>For additional help with installing vBulletin, please visit our <a href="https://forum.vbulletin.com/forum/vbulletin-5-connect/vbulletin-5-installations" target="_blank">Community Forums</a>.</p>
 		    <div class="top"><a href="#top">Top</a></div><hr />
 		</section>
 	</div>
@@ -333,7 +308,7 @@ dl.faq > dd {padding-bottom: .6em;margin-left: 0px;}
 				<li><b><a href="http://members.vBulletin.com/">The vBulletin Members Area</a>^</b> - Download area for vBulletin, private customer support tickets area, etc. </li>
 				<li><b><a href="http://www.vBulletin.com/forum/">The vBulletin Support Forums</a>*</b> - Free priority support forums, latest announcements with indepth release details, etc. </li>
 				<li><b><a href="https://members.vbulletin.com/changelog.php">vBulletin Release Changelog</a>^</b> - The changelog links to the release announcement for every version of vBulletin. Release announcements contain specific information about that release including updated files, updated templates, links to bug fix lists and more.</li>
-				<li><b><a href="http://tracker.vbulletin.com/browse/VBIV#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel">vBulletin JIRA Changelog</a>*</b> - Similar to the above but a concise list of bugs, enhancements and other issues applied to vBulletin 4 by version.</li>
+				<li><b><a href="http://tracker.vbulletin.com/vb5/">vBulletin Issue Tracker</a>*</b> - A list of all outstanding issues with the software.</li>
 			</ul>
 		    <div class="top"><a href="#top">Top</a></div><hr />
 		</section>
