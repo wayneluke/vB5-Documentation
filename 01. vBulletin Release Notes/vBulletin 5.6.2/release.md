@@ -1,12 +1,16 @@
 # vBulletin 5.6.2 Changes and Updates
 
-A Preview Release of vBulletin 5.6.2 is available for download and testing. Preview Releases should not be used in production environments.
+vBulletin Connect 5.6.2 is now available for download customers. vBulletin Cloud will be automatically upgraded in the upcoming days.
 
 ## Front End Changes
 
 ### Global Module Areas
 
 Two new module sections have been added to Site Builder Pages. Placing a module within the new sections will cause it to appear on all pages. The new sections appear above and below the content areas on the page.
+
+### Forum Listing Cleaned Up
+
+Removed the extraneous category backgrounds above top-level forums in the default presentation. This presents a clearer view of the forums to the end-user and brings the display in line with older versions of vBulletin.
 
 ### Moderator Notifications
 
@@ -20,10 +24,6 @@ New moderator notifications have been added to the User Settings -> Notification
 ### jQuery Update
 
 jQuery 3.41 is now used to power the web client. During the process of upgrading jQuery, many of the JavaScript functions have also been updated and refactored. During this refactor, we have switched the JavaScript compiler to a more efficient and up to date tool. This will allow JavaScript to be handled better by your browser.
-
-### Forum Listing Cleaned Up
-
-Removed the extraneous category backgrounds above top-level forums in the default presentation. This presents a clearer view of the forums to the end-user and brings the display in line with older versions of vBulletin.
 
 ### Additional Frontend Issues
 
@@ -107,14 +107,14 @@ For more information see [vBulletin Connect System Requirements](https://www.vbu
 
 ### Current Version Support Schedule
 
-- Active Version - 5.6.1
+- Active Version - 5.6.2
+- Security Patch - 5.6.1
 - Security Patch - 5.6.0
-- Security Patch - 5.5.6
-- No Patch Release - 5.5.5 or earlier.
+- No Patch Release - 5.5.6 or earlier.
 
 ### Discussion
 
-If you have any questions about these changes you may discuss them here: [node]4413190[/node]
+If you have any questions about these changes you may discuss them here: [node]4441630[/node]
 
 If you find an issue with the software or wish to place a feature request please visit our [tracker](https://tracker.vbulletin.com).
 

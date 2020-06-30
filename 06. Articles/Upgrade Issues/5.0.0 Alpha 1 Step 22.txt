@@ -1,0 +1,19 @@
+vBulletin 4 to 5 upgrade. 
+
+Alpha 1 step 22 - Duplicate entry on updating contenttype table. 
+
+There are a couple of things going on here that cause this error. The primary issue is that that primary key may not be an auto-increment field. The other is the the value may start at 0 on the primary key. Due to the 0, you can't simply add an auto-increment to the table and move on. You have to handle each part separately. 
+The query that triggers the error is:
+
+```
+INSERT INTO contenttype(class,
+			packageid,	canplace,	cansearch,	cantag,	canattach,	isaggregator)
+			SELECT 'Text', packageid, '0', '1', '1', '1', '0'  FROM package where class = 'vBForum';
+```
+
+To resolve, you need to drop the primary key, increment the values of contenttypeid +1, add the primary key back onto the table and then add an autoincrement value on contenttypeid.
+
+- Drop Primary Key: `ALTER TABLE contenttype DROP PRIMARY KEY;`
+- Update contenttypeid value if the sequence starts with 0: `UPDATE contenttype SET contenttypeid = contenttypeid +1;`
+- Add the auto-increment: `ALTER TABLE contenttype MODIFY contenttypeid INT NOT NULL AUTO_INCREMENT;`
+- Add the primary key index: `ALTER TABLE contenttype ADD PRIMARY KEY (contenttypeid);`
