@@ -1,0 +1,15 @@
+SELECT n.title, pm.* FROM privatemessage AS pm
+    LEFT JOIN node AS n ON (pm.nodeid = n.nodeid)
+    WHERE pm.msgtype='message' AND pm.deleted=0 
+        AND n.publishdate < 1530835200 AND n.userid=1 AND n.parentid=9;
+
+SELECT n.title, pm.* FROM privatemessage AS pm
+    LEFT JOIN node AS n ON (pm.nodeid = n.nodeid)
+    WHERE pm.msgtype='message' AND pm.deleted=0 
+        AND n.userid=1 AND n.parentid=9 AND n.publishdate < 1594166400;       
+
+
+SELECT * FROM `faq` 
+    ORDER BY 
+        FIELD(`faqparent`,'faqroot','community_overview','account_overview','content_overview','blog_overview','group_overview','albums_overview','bbcode_reference'),
+        `displayorder`
