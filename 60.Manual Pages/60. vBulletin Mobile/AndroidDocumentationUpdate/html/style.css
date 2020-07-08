@@ -1,0 +1,122 @@
+/*-----------------------------------------------------------------------------------------
+	vBulletin Mobile App Submission 
+	Documentation Styles
+-----------------------------------------------------------------------------------------*/
+
+.image-anchor img {
+    width: 260px !important;
+	height: 180px;
+    border: 3px solid #254966;
+	float: right;
+	margin-left: 1em;
+}
+
+#zoom_close {
+	position:absolute; 
+	top: 5px; 
+	left: 5px;
+}
+
+.mm {
+	background: transparent;
+}
+
+.scalable {
+	border: 10px solid #254966;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px black;
+}
+
+h2 {
+    padding: 10px 10px 10px 20px;
+    background: rgba(0,0,0,0.05) url('../images/plus.png') 920px no-repeat;
+    margin-bottom: 0 0 10px 0;
+	color: #254966;
+	border: 1px solid #254966;
+}
+
+
+h2.opened {  
+    background: rgba(0,0,0,0.1) url('../images/minus.png') 920px no-repeat;
+}
+
+body {
+	font-family: Helvetica, Arial, Verdana, Tahoma;
+}
+
+#mp_container {
+	width: 960px;
+	margin: 20px auto;
+}
+
+#header {
+	height: 160px;
+	color: #254966;
+	padding: 1px;
+}
+
+.title {
+	margin: 16px 0;
+	font-size: 28px;
+}
+
+.subtitle {
+	margin: 4px 0;
+}	
+
+#icon512 {
+	float: left;
+	width: 160px;
+	height: 160px;
+	margin-right: 30px;
+}
+
+ol {
+	padding: 0 30px;
+	margin-left: 30px;
+}
+
+li {
+	clear: both;
+	padding: 0.5em 0;
+}
+
+li, p {
+	font-size: 1.2em;
+}
+
+a, a:visited, a:active {
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+li a {
+	background: url(external.png) center right no-repeat;
+	padding-right: 15px;
+}
+
+p.notice, span.highlight {
+	margin: 20px 30px;
+	background: #254966;
+	border-radius: 10px;
+	padding: 20px 30px;
+	color: white;
+}
+
+ol p.notice, span.highlight {
+	margin-left: -1em !important;
+}
+
+span.highlight {
+	display: block !important;
+	width: 60% !important;
+	text-align: center;
+}
+
+li.last_with_image {
+	height: 180px;
+}
