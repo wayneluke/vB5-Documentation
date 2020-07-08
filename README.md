@@ -1,7 +1,9 @@
 # vB5-Documentation
 
-Various pieces of vBulletin Documentation including articles, release notes, changelogs, and patch notes.
+![Header](header.jpg)
+
+Various pieces of vBulletin Documentation including articles, manual pages, database documentation, release notes, changelogs, and patch notes.
 
 ---
 
-A historic record of ancillary vBulletin Documentation
+A historic record of vBulletin Documentation
