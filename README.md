@@ -1,6 +1,6 @@
 # vB5-Documentation
 
-Various pieces of vBulletin Documentation including articles, release notes, changelogs, and patch notes.
+Various pieces of vBulletin Documentation including articles, manual pages, database documentation, release notes, changelogs, and patch notes.
 
 ---
 
