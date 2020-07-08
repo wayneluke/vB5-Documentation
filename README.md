@@ -4,4 +4,4 @@ Various pieces of vBulletin Documentation including articles, manual pages, data
 
 ---
 
-A historic record of ancillary vBulletin Documentation
+A historic record of vBulletin Documentation
