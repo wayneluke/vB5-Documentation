@@ -1,0 +1,11 @@
+[quote]MySQL Error : Lock wait timeout exceeded; try restarting transaction[/quote]
+
+These are caused by the database getting into a state where it cannot finish the transaction of adding new nodes to the database. Unfortunately, this is extremely difficult to reproduce in testing. We've never actually been able to do so. This means we haven't found the queries that could put a database into the state. From past reports, the issue seems to occur more often on MariaDB installations than on MySQL installations. This could mean that it is due to an INNODB bug that didn't have its fix ported over to MariaDB.
+
+The recommendation here are: [LIST=1]
+[*]To increase the [URL="https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_lock_wait_timeout"]innodb_lock_wait_timeout[/URL] value to at least 120 seconds (the default value is 50).
+[*]Start your server with the --innodb-rollback-on-timeout option.
+[*]Increase the [URL="https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_wait_timeout"]wait_timeout[/URL] value to 120 seconds (default is much higher).
+[*]Make sure all vBulletin tables except language, phrase, and userfield are using INNODB if you're using MySQL 5.6 or MariaDB less than 10.3.
+[*]Delete your system cache regularly. There is a [URL="https://vbulletin.org/forum/showthread.php?t=327063"]Scheduled Task addon[/URL] over a www.vbulletin.org for this purpose.
+[/LIST]
