@@ -1,4 +1,4 @@
-# vBulletin 5.5.X Changes and Updates
+# vBulletin 5.6.X Changes and Updates
 
 ## Front End Changes
 
@@ -37,14 +37,14 @@ For more information see [vBulletin Connect System Requirements](https://www.vbu
 
 ### Current Version Support Schedule
 
-- Active Version - 5.6.0
-- Security Patch - 5.5.6
-- Security Patch - 5.5.6
-- No Patch Release - 5.5.4 or earlier.
+- Active Version - X.Y.Z
+- Security Patch - X.Y.Z - 1
+- Security Patch - X.Y.Z - 2
+- No Patch Release - X.Y.Z -3 and earlier
 
 ### Discussion
 
-If you have any questions about these changes you may discuss them here: [node]4413190[/node]
+If you have any questions about these changes you may discuss them here: [node]########[/node]
 
 If you find an issue with the software or wish to place a feature request please visit our [tracker](https://tracker.vbulletin.com).
 
