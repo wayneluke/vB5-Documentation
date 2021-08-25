@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "7789e4cfe6af7ffb",
+    "type": "split",
+    "children": [
+      {
+        "id": "d456d0ba10cc2ff0",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fc210962c26fe171",
+    "type": "split",
+    "children": [
+      {
+        "id": "8963c5f97f5a3305",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a11112c9f515ca1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d752fe88702d5c71",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "1c430b507173017d",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce85bd3accd30a2d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3958499c283540b8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d456d0ba10cc2ff0",
+  "lastOpenFiles": [
+    "02.getting_started/15.basic_terminology/article.md",
+    "01.introduction/vbulletin_5.png",
+    "01.introduction/article.md",
+    "images/admincp/announcements/adding-and-editing-announcements-01.png",
+    "error/error.md"
+  ]
+}
