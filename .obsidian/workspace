@@ -1,0 +1,142 @@
+{
+  "main": {
+    "id": "9aab29b7f179144b",
+    "type": "split",
+    "children": [
+      {
+        "id": "1c48e0f4bb86928b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "70. Articles/Tutorials/Template Syntax.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "fda708129e1559dd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "70. Articles/Tutorials/Template Syntax.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0c587750e88d9347",
+    "type": "split",
+    "children": [
+      {
+        "id": "2764e252fba978fb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0f6a6bef1a3b3d7e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "cd8e614e7199ce24",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a74e5fce411e8abe",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3e597bc1d2e64a46",
+    "type": "split",
+    "children": [
+      {
+        "id": "7bb4c4d67f345d1f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c45bbe92b9bf2c07",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "70. Articles/Tutorials/Template Syntax.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0a7717aafdbfc812",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "70. Articles/Tutorials/Template Syntax.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "45276c7121b90e26",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "1c48e0f4bb86928b",
+  "lastOpenFiles": [
+    "70. Articles/Tutorials/Template Syntax.md",
+    "70. Articles/Tutorials/ssl login.md",
+    "70. Articles/Tutorials/latest poll.md",
+    "70. Articles/Tutorials/JSON Search.md",
+    "70. Articles/Tutorials/# Template Syntax.md",
+    "10. vBulletin Release Notes/vBulletin 5.6.5/release.md",
+    "60.Manual Pages/20. vBulletin 5.4.X/01.introduction/article.md",
+    "10. vBulletin Release Notes/release_template.md"
+  ]
+}
