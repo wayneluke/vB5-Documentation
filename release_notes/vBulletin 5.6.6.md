@@ -40,6 +40,7 @@ A significant number of PHP Warnings that were being logged as a result of using
 - Updated the Trending Minimum Lifetime variable name so that it is now correct and will be used by the system.
 - The Instant Notification queue for vBulletin Mobile is no longer processed when not needed.
 - Resolved and issue that would prevent the site from operating if you stored templates as files.
+- Removed legacy bootstrap code from the system.
 
 ---
 
