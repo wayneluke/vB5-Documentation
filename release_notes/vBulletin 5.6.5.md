@@ -1,6 +1,6 @@
 # vBulletin 5.6.5 Changes and Updates
 
-The preview version of vBulletin 5.6.5 Alpha is now available for download. Preview versions should not be used on production servers and are released for testing purposes only.
+vBulletin 5.6.5 is now available for download. vBulletin Cloud sites will be scheduled for automatic updates in the coming days.
 
 ## Front End Changes
 
@@ -65,7 +65,7 @@ Group bans to work properly on individual channels on your forums.
 ## Deprecated
 
 ### ImageMagick
-Calling the ImageMagick executable directly has been deprecated in favor of using the imagick PECL library. We will remove direct support for ImageMagick in a future release. The imagick library functionality was added in vBulletin 5.5.4. We suggest updating your PHP installation to support imagick. You can find instructions on doing this in the [PHP Documentation](https://www.php.net/manual/en/imagick.setup.php).
+Calling the ImageMagick executable directly has been deprecated in favor of using the imagick PECL library. We will remove direct support for ImageMagick in the next release. The imagick library functionality was added in vBulletin 5.5.4. We suggest updating your PHP installation to support imagick. You can find instructions on doing this in the [PHP Documentation](https://www.php.net/manual/en/imagick.setup.php). If you do not switch to imagick, your image processing library will change to GD with the next release of vBulletin.
 
 ### PHP 7.2
 
@@ -124,14 +124,14 @@ For more information see: [vBulletin Connect System Requirements](https://www.vb
 
 ### Current Version Support Schedule
 
-- Active Version - 5.6.4
+- Active Version - 5.6.5
+- Security Patch - 5.6.4
 - Security Patch - 5.6.3
-- Security Patch - 5.6.2
-- No Patch Release - 5.6.1 and earlier
+- No Patch Release - 5.6.2 and earlier
 
 ### Discussion
 
-If you have any questions about these changes you may discuss them here: [node]########[/node]
+If you have any questions about these changes you may discuss them here: [node]4461758[/node]
 
 If you find an issue with the software or wish to place a feature request please visit our [tracker](https://tracker.vbulletin.com).
 

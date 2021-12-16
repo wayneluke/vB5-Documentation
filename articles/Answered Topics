@@ -1,0 +1,6 @@
+# Answered Topics
+
+Starting in vBulletin 5.6.5, you can mark topics as Answered. This feature will come in handy for anyone using vBulletin as a support platform. Unlike some features, this doesn't have an On/Off switch within the vBulletin Options. Instead it is controlled exclusively via permissions.
+
+## Permissions
+
