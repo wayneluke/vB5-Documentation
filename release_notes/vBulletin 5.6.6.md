@@ -1,12 +1,14 @@
 # vBulletin 5.6.6 Changes and Updates
 
-The preview version of vBulletin 5.6.5 Alpha is now available for download. Preview versions should not be used on production servers and are released for testing purposes only.
+vBulletin 5.6.6 is available for all download customers. vBulletin Cloud customers will be automatically scheduled to be upgraded soon. vBulletin Cloud customers will be emailed before their site upgrade starts.
 
 ## Front End Changes
 
 ### Photo Gallery
 
 When uploading images to a Photo Gallery topic, users can now enter a title for each image as well as the image description. This will enhance the searchability of images within these topics.
+
+> Note: There is a known issue that you cannot add a title when uploading images during the creation of a new Photo Album within the user profile. You can edit the Photo Album and add titles as a workaround.
 
 ### User Name Cards
 
@@ -53,7 +55,7 @@ A significant number of PHP Warnings that were being logged as a result of using
 
 ### PHP 7.3
 
-PHP 7.3 has reached End of Life status on December 6th, 2022.  It is recommended to upgrade your server to PHP 7.4 or higher.
+PHP 7.3 has reached End of Life status on December 6th, 2021.  It is recommended to upgrade your server to PHP 7.4 or higher.
 
 ### MySQL 5.6.X
 
@@ -90,14 +92,14 @@ Recommended System Requirements
 - MySQL Version: 8.0 or higher
 - MariaDB Version: 10.6+
 
-For more information see: [vBulletin Connect System Requirements](https://www.vbulletin.com/forum/node/4391344).
+For more information see: [vBulletin Connect System Requirements](https://www.vbulletin.com/forum/node/4387853).
 
 ### Current Version Support Schedule
 
-- Active Version - 5.6.5
-- Security Patch - 5.6.4
-- Security Patch - 5.6.3
-- No Patch Release - 5.6.2 and earlier
+- Active Version - 5.6.6
+- Security Patch - 5.6.5
+- Security Patch - 5.6.5
+- No Patch Release - 5.6.3 and earlier
 
 ### Discussion
 
