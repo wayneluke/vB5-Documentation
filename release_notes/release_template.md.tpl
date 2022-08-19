@@ -23,13 +23,13 @@ After upgrading your vBulletin system, you should delete any possible obsolete f
 
 Minimum System Requirements
 
-- PHP Version: 7.2.0
+- PHP Version: 7.4.0
 - MySQL Version: 5.6.10
 - MariaDB Version: 10.1.0
 
 Recommended System Requirements
 
-- PHP Version: 7.3 or higher
+- PHP Version:  8.0 or higher
 - MySQL Version: 8.0 or higher
 - MariaDB Version: 10.3+
 
