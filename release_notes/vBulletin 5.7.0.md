@@ -1,6 +1,6 @@
 # vBulletin 5.7.0 Changes and Updates
 
-A preview release of vBulletin 5.7.0 is available for download. Preview releases are to be used for testing purposes only.
+vBulletin 5.7.0 is available for download. 
 
 ## Front End Changes
 
@@ -72,10 +72,10 @@ For more information, see [vBulletin Connect System Requirements](https://www.vb
 
 ### Current Version Support Schedule
 
-- Active Version - 5.6.9
-- Security Patch - 5.6.8
-- Security Patch - 5.6.7
-- No Patch Release - 5.6.6 and earlier
+- Active Version - 5.7.0
+- Security Patch - 5.6.9 PL1
+- Security Patch - 5.6.8 PL1
+- No Patch Release - 5.6.7 PL1 and earlier
 
 ### Discussion
 
