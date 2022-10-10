@@ -4,9 +4,16 @@ A preview release of vBulletin Connect 5.7.1 is available for download customers
 
 ## Front End Changes
 
+### Terms of Service page
 
+A blank "Terms of Service" page has been added to hold this information. To add your terms to this new page, you can edit the terms_of_service_page phrase in the AdminCP. On new installations, this page will be automatically linked in the Footer navigation. 
 
-### Additional AdminCP Issues
+### Additional Issues
+
+- Resolved an issue that caused the Upload Attachments button to appear malformed.
+- The system will now remove the "Answered" status flag on topics where the answer is deleted.
+- Resolved an issue with extraneous Name Card data preventing JSON returns.
+- Private Messages will no longer be put into moderation automatically.
 
 ---
 
@@ -14,15 +21,37 @@ A preview release of vBulletin Connect 5.7.1 is available for download customers
 
 ### User Ranks
 
-user ranks have been updated to allow new selection criteria. The new critera are: Topics Started, Registration Time, Reputation Value, and Total Likes.
+user ranks have been updated to allow new selection criteria. The new criteria are Topics Started, Registration Time, Reputation Value, and Total Likes.
 
 #### User Rank Grouping
 
+Due to the new quantifiers available to define User Ranks, ad hoc grouping has been added. When creating a new rank, you can specify the group that you want it to be included within. User information will show the latest rank in the group only.
+
+More information on using the new Rank system will be posted soon.
+
+### Outgoing Email
+
+HTML Email for outgoing email has been improved. In addition to this, a new Option to control the length of post snippets included in emails has been added under Settings -> Options -> Email Options. The new option allows you to include the entire message, a specified snippet length, or no snippet at all. In addition to this, line breaks in snippets will be maintained for HTML display. 
+
 ### Paid Subscriptions
+
+#### Square
+
+Payment processing through Square has been added. Square currently allows one-off subscriptions to be purchased using their payment methods. It does not support renewable subscriptions. Information to enable the Square Payment API is available in the AdminCP under Paid Subscriptions -> Payment API Manager. Please read the information for each option carefully when enabling this payment provider. 
+
+Your end-users do not need a Square account to make purchases.
+
+#### Google Payments
+
+The implementation of Google Payments within vBulletin is no longer usable. Google has changed its payment methodology. This Payment API has been removed.
 
 
 ### Additional AdminCP Issues
 
+- Database logging options have been moved to the core configuration file (`/core/includes/config.php`).
+- Removed `/core/includes/functions_misc.php`. This file is no longer needed by the system.
+- Removed the front-end test API interface from the download package. This interface is not used in the distributed product.
+- Several issues that occurred when accessing the MAPI endpoints have been resolved and the code has been brought up to standards.
 
 ---
 
@@ -64,6 +93,6 @@ For more information, see [vBulletin Connect System Requirements](https://www.vb
 
 If you have any questions about these changes, you may discuss them here: [node][/node]
 
-If you find an issue with the software or wish to request  a new feature, please visit our [tracker](https://tracker.vbulletin.com).
+If you find an issue with the software or wish to request a new feature, please visit our [tracker](https://tracker.vbulletin.com).
 
 To receive support for your vBulletin Product, please visit our [community forums](https://www.vbulletin.com/forum/).
