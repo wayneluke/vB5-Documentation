@@ -1,12 +1,16 @@
 # vBulletin 5.7.1 Changes and Updates
 
-A preview release of vBulletin Connect 5.7.1 is available for download customers. Preview releases should not be used on production servers and are meant for testing purposes only.
+vBulletin Connect 5.7.1 is now available for download. vBulletin Cloud customers will be automatically upgraded in the upcoming weeks.
 
 ## Front End Changes
 
 ### Terms of Service page
 
-A blank "Terms of Service" page has been added to hold this information. To add your terms to this new page, you can edit the terms_of_service_page phrase in the AdminCP. On new installations, this page will be automatically linked in the Footer navigation. 
+A Terms of Service page is becoming necessary on modern websites. A blank "Terms of Service" page has been added to hold this information. To add your terms to this new page, you can edit the terms_of_service_page_text phrase in the AdminCP. On new installations, this page will be automatically linked in the Footer navigation. It can be accessed at `/terms-of-service`
+
+We cannot provide you with the text that should go on your own terms of service page. However, there are generators that can create these for you on the web. You can also consult your legal advisor about a terms of service page.
+
+If you already have a terms of service page, you can update the target of the footer link within the AdminCP under Settings -> Options -> Privacy Options.
 
 ### Additional Issues
 
@@ -21,7 +25,7 @@ A blank "Terms of Service" page has been added to hold this information. To add 
 
 ### User Ranks
 
-user ranks have been updated to allow new selection criteria. The new criteria are Topics Started, Registration Time, Reputation Value, and Total Likes.
+User ranks have been updated to allow new selection criteria. The new criteria are Topics Started, Registration Time, Reputation Value, and Total Likes.
 
 #### User Rank Grouping
 
@@ -84,10 +88,10 @@ For more information, see [vBulletin Connect System Requirements](https://www.vb
 
 ### Current Version Support Schedule
 
-- Active Version - 5.7.0
+- Active Version - 5.7.1
+- Security Patch - 5.7.0
 - Security Patch - 5.6.9 PL1
-- Security Patch - 5.6.8 PL1
-- No Patch Release - 5.6.7 PL1 and earlier
+- No Patch Release - 5.6.8 PL1 and earlier
 
 ### Discussion
 
