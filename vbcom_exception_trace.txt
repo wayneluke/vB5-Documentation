@@ -1,0 +1,25 @@
+Error 2: mysqli_real_connect(): (HY000/2002): Connection timed out
+
+Exception trace:
+## phar:///var/www/sites/forum.vbulletin.com/forum/core/vb/vb.phar/database.php(1133) Exception Thrown 
+#0 [internal function]: vB_Database->catch_db_error()
+#1 phar:///var/www/sites/forum.vbulletin.com/forum/core/vb/vb.phar/database/mysqli.php(85): mysqli_real_connect()
+#2 phar:///var/www/sites/forum.vbulletin.com/forum/core/vb/vb.phar/database.php(262): vB_Database_MySQLi->db_connect()
+#3 /var/www/sites/forum.vbulletin.com/forum/core/packages/vbsphinxsearch/core.php(110): vB_Database->connect()
+#4 /var/www/sites/forum.vbulletin.com/forum/core/packages/vbsphinxsearch/core.php(90): vBSphinxSearch_Core->connect()
+#5 /var/www/sites/forum.vbulletin.com/forum/core/packages/vbsphinxsearch/core.php(351): vBSphinxSearch_Core->initConnection()
+#6 phar:///var/www/sites/forum.vbulletin.com/forum/core/vb/vb.phar/library/search.php(57): vBSphinxSearch_Core->attributeChanged()
+#7 phar:///var/www/sites/forum.vbulletin.com/forum/core/vb/vb.phar/library/node.php(5908): vB_Library_Search->attributeChanged()
+#8 phar:///var/www/sites/forum.vbulletin.com/forum/core/vb/vb.phar/library/node.php(5431): vB_Library_Node->updateParentCountsList()
+#9 phar:///var/www/sites/forum.vbulletin.com/forum/core/vb/vb.phar/library/content.php(1842): vB_Library_Node->updateAddRemovedNodeParentCounts()
+#10 phar:///var/www/sites/forum.vbulletin.com/forum/core/vb/vb.phar/api/content/text.php(60): vB_Library_Content->delete()
+#11 phar:///var/www/sites/forum.vbulletin.com/forum/core/vb/vb.phar/library/node.php(535): vB_Api_Content_Text->delete()
+#12 phar:///var/www/sites/forum.vbulletin.com/forum/core/vb/vb.phar/api/node.php(382): vB_Library_Node->deleteNodes()
+#13 phar:///var/www/sites/forum.vbulletin.com/forum/core/vb/vb.phar/api/wrapper.php(205): vB_Api_Node->deleteNodes()
+#14 /var/www/sites/forum.vbulletin.com/forum/core/admincp/nodetools.php(841): vB_Api_Wrapper->__call()
+#15 /var/www/sites/forum.vbulletin.com/forum/core/admincp/nodetools.php(823): print_prune_nodes()
+#16 /var/www/sites/forum.vbulletin.com/forum/core/admincp/nodetools.php(771): print_node_action()
+#17 /var/www/sites/forum.vbulletin.com/forum/includes/api/interface/collapsed.php(147): require_once('/var/www/sites/...')
+#18 /var/www/sites/forum.vbulletin.com/forum/includes/vb5/frontend/controller/relay.php(33): Api_Interface_Collapsed->relay()
+#19 /var/www/sites/forum.vbulletin.com/forum/index.php(70): vB5_Frontend_Controller_Relay->admincp()
+#20 {main}

@@ -1,0 +1,3 @@
+Guide Users to New Options
+
+With over 400 options in the system, it can be difficult to find new options. I would like to suggest a system to guide users to new options as they are added to the system. This would require a `version` field on the `setting` table. This should match the version when the setting is added. If `setting.version` = current version, then highlight the setting in the list. This can be done with CSS that shows the setting name in Bold with a different color. It could be further highlighted by adding a :before rule to add the word `New:` before the setting title.

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Quick Start Guide</title>
+        <style>
+/* From extension vscode.markdown-math */
+@font-face{font-family:KaTeX_AMS;src:url(fonts/KaTeX_AMS-Regular.woff2) format("woff2"),url(fonts/KaTeX_AMS-Regular.woff) format("woff"),url(fonts/KaTeX_AMS-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Bold.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Bold.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Regular.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Regular.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Bold.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Bold.woff) format("woff"),url(fonts/KaTeX_Fraktur-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Regular.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Regular.woff) format("woff"),url(fonts/KaTeX_Fraktur-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Bold.woff2) format("woff2"),url(fonts/KaTeX_Main-Bold.woff) format("woff"),url(fonts/KaTeX_Main-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Main-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Main-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Italic.woff2) format("woff2"),url(fonts/KaTeX_Main-Italic.woff) format("woff"),url(fonts/KaTeX_Main-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Regular.woff2) format("woff2"),url(fonts/KaTeX_Main-Regular.woff) format("woff"),url(fonts/KaTeX_Main-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Math-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Math-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-Italic.woff2) format("woff2"),url(fonts/KaTeX_Math-Italic.woff) format("woff"),url(fonts/KaTeX_Math-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Bold.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Bold.woff) format("woff"),url(fonts/KaTeX_SansSerif-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Italic.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Italic.woff) format("woff"),url(fonts/KaTeX_SansSerif-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Regular.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Regular.woff) format("woff"),url(fonts/KaTeX_SansSerif-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Script;src:url(fonts/KaTeX_Script-Regular.woff2) format("woff2"),url(fonts/KaTeX_Script-Regular.woff) format("woff"),url(fonts/KaTeX_Script-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size1;src:url(fonts/KaTeX_Size1-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size1-Regular.woff) format("woff"),url(fonts/KaTeX_Size1-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size2;src:url(fonts/KaTeX_Size2-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size2-Regular.woff) format("woff"),url(fonts/KaTeX_Size2-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size3;src:url(fonts/KaTeX_Size3-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size3-Regular.woff) format("woff"),url(fonts/KaTeX_Size3-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size4;src:url(fonts/KaTeX_Size4-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size4-Regular.woff) format("woff"),url(fonts/KaTeX_Size4-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Typewriter;src:url(fonts/KaTeX_Typewriter-Regular.woff2) format("woff2"),url(fonts/KaTeX_Typewriter-Regular.woff) format("woff"),url(fonts/KaTeX_Typewriter-Regular.ttf) format("truetype");font-weight:400;font-style:normal}.katex{font:normal 1.21em KaTeX_Main,Times New Roman,serif;line-height:1.2;text-indent:0;text-rendering:auto;border-color:currentColor}.katex *{-ms-high-contrast-adjust:none!important}.katex .katex-version:after{content:"0.13.0"}.katex .katex-mathml{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}.katex .katex-html>.newline{display:block}.katex .base{position:relative;white-space:nowrap;width:-webkit-min-content;width:-moz-min-content;width:min-content}.katex .base,.katex .strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathnormal{font-family:KaTeX_Math;font-style:italic}.katex .mathit{font-family:KaTeX_Main;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-weight:700;font-style:italic}.katex .amsrm,.katex .mathbb,.katex .textbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak,.katex .textfrak{font-family:KaTeX_Fraktur}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr,.katex .textscr{font-family:KaTeX_Script}.katex .mathsf,.katex .textsf{font-family:KaTeX_SansSerif}.katex .mathboldsf,.katex .textboldsf{font-family:KaTeX_SansSerif;font-weight:700}.katex .mathitsf,.katex .textitsf{font-family:KaTeX_SansSerif;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{display:inline-table;table-layout:fixed;border-collapse:collapse}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;vertical-align:bottom;position:relative}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;vertical-align:bottom;font-size:1px;width:2px;min-width:2px}.katex .vbox{display:inline-flex;flex-direction:column;align-items:baseline}.katex .hbox{width:100%}.katex .hbox,.katex .thinbox{display:inline-flex;flex-direction:row}.katex .thinbox{width:0;max-width:0}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline,.katex .hline,.katex .mfrac .frac-line,.katex .overline .overline-line,.katex .rule,.katex .underline .underline-line{min-height:1px}.katex .mspace{display:inline-block}.katex .clap,.katex .llap,.katex .rlap{width:0;position:relative}.katex .clap>.inner,.katex .llap>.inner,.katex .rlap>.inner{position:absolute}.katex .clap>.fix,.katex .llap>.fix,.katex .rlap>.fix{display:inline-block}.katex .llap>.inner{right:0}.katex .clap>.inner,.katex .rlap>.inner{left:0}.katex .clap>.inner>span{margin-left:-50%;margin-right:50%}.katex .rule{display:inline-block;border:0 solid;position:relative}.katex .hline,.katex .overline .overline-line,.katex .underline .underline-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline{display:inline-block;width:100%;border-bottom-style:dashed}.katex .sqrt>.root{margin-left:.27777778em;margin-right:-.55555556em}.katex .fontsize-ensurer.reset-size1.size1,.katex .sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .sizing.reset-size2.size1{font-size:.83333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .sizing.reset-size2.size3{font-size:1.16666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .sizing.reset-size2.size4{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .sizing.reset-size2.size6{font-size:1.66666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .sizing.reset-size2.size10{font-size:3.45666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .sizing.reset-size2.size11{font-size:4.14666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .sizing.reset-size3.size1{font-size:.71428571em}.katex .fontsize-ensurer.reset-size3.size2,.katex .sizing.reset-size3.size2{font-size:.85714286em}.katex .fontsize-ensurer.reset-size3.size3,.katex .sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .sizing.reset-size3.size4{font-size:1.14285714em}.katex .fontsize-ensurer.reset-size3.size5,.katex .sizing.reset-size3.size5{font-size:1.28571429em}.katex .fontsize-ensurer.reset-size3.size6,.katex .sizing.reset-size3.size6{font-size:1.42857143em}.katex .fontsize-ensurer.reset-size3.size7,.katex .sizing.reset-size3.size7{font-size:1.71428571em}.katex .fontsize-ensurer.reset-size3.size8,.katex .sizing.reset-size3.size8{font-size:2.05714286em}.katex .fontsize-ensurer.reset-size3.size9,.katex .sizing.reset-size3.size9{font-size:2.46857143em}.katex .fontsize-ensurer.reset-size3.size10,.katex .sizing.reset-size3.size10{font-size:2.96285714em}.katex .fontsize-ensurer.reset-size3.size11,.katex .sizing.reset-size3.size11{font-size:3.55428571em}.katex .fontsize-ensurer.reset-size4.size1,.katex .sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .sizing.reset-size5.size1{font-size:.55555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .sizing.reset-size5.size2{font-size:.66666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .sizing.reset-size5.size3{font-size:.77777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .sizing.reset-size5.size4{font-size:.88888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .sizing.reset-size5.size6{font-size:1.11111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .sizing.reset-size5.size7{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .sizing.reset-size5.size10{font-size:2.30444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .sizing.reset-size5.size11{font-size:2.76444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .sizing.reset-size7.size1{font-size:.41666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .sizing.reset-size7.size3{font-size:.58333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .sizing.reset-size7.size4{font-size:.66666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .sizing.reset-size7.size6{font-size:.83333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .sizing.reset-size7.size10{font-size:1.72833333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .sizing.reset-size7.size11{font-size:2.07333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .sizing.reset-size8.size1{font-size:.34722222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .sizing.reset-size8.size2{font-size:.41666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .sizing.reset-size8.size3{font-size:.48611111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .sizing.reset-size8.size4{font-size:.55555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .sizing.reset-size8.size6{font-size:.69444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .sizing.reset-size8.size7{font-size:.83333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .sizing.reset-size8.size10{font-size:1.44027778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .sizing.reset-size8.size11{font-size:1.72777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .sizing.reset-size9.size1{font-size:.28935185em}.katex .fontsize-ensurer.reset-size9.size2,.katex .sizing.reset-size9.size2{font-size:.34722222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .sizing.reset-size9.size3{font-size:.40509259em}.katex .fontsize-ensurer.reset-size9.size4,.katex .sizing.reset-size9.size4{font-size:.46296296em}.katex .fontsize-ensurer.reset-size9.size5,.katex .sizing.reset-size9.size5{font-size:.52083333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .sizing.reset-size9.size6{font-size:.5787037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .sizing.reset-size9.size7{font-size:.69444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .sizing.reset-size9.size8{font-size:.83333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .sizing.reset-size9.size10{font-size:1.20023148em}.katex .fontsize-ensurer.reset-size9.size11,.katex .sizing.reset-size9.size11{font-size:1.43981481em}.katex .fontsize-ensurer.reset-size10.size1,.katex .sizing.reset-size10.size1{font-size:.24108004em}.katex .fontsize-ensurer.reset-size10.size2,.katex .sizing.reset-size10.size2{font-size:.28929605em}.katex .fontsize-ensurer.reset-size10.size3,.katex .sizing.reset-size10.size3{font-size:.33751205em}.katex .fontsize-ensurer.reset-size10.size4,.katex .sizing.reset-size10.size4{font-size:.38572806em}.katex .fontsize-ensurer.reset-size10.size5,.katex .sizing.reset-size10.size5{font-size:.43394407em}.katex .fontsize-ensurer.reset-size10.size6,.katex .sizing.reset-size10.size6{font-size:.48216008em}.katex .fontsize-ensurer.reset-size10.size7,.katex .sizing.reset-size10.size7{font-size:.57859209em}.katex .fontsize-ensurer.reset-size10.size8,.katex .sizing.reset-size10.size8{font-size:.69431051em}.katex .fontsize-ensurer.reset-size10.size9,.katex .sizing.reset-size10.size9{font-size:.83317261em}.katex .fontsize-ensurer.reset-size10.size10,.katex .sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .sizing.reset-size10.size11{font-size:1.19961427em}.katex .fontsize-ensurer.reset-size11.size1,.katex .sizing.reset-size11.size1{font-size:.20096463em}.katex .fontsize-ensurer.reset-size11.size2,.katex .sizing.reset-size11.size2{font-size:.24115756em}.katex .fontsize-ensurer.reset-size11.size3,.katex .sizing.reset-size11.size3{font-size:.28135048em}.katex .fontsize-ensurer.reset-size11.size4,.katex .sizing.reset-size11.size4{font-size:.32154341em}.katex .fontsize-ensurer.reset-size11.size5,.katex .sizing.reset-size11.size5{font-size:.36173633em}.katex .fontsize-ensurer.reset-size11.size6,.katex .sizing.reset-size11.size6{font-size:.40192926em}.katex .fontsize-ensurer.reset-size11.size7,.katex .sizing.reset-size11.size7{font-size:.48231511em}.katex .fontsize-ensurer.reset-size11.size8,.katex .sizing.reset-size11.size8{font-size:.57877814em}.katex .fontsize-ensurer.reset-size11.size9,.katex .sizing.reset-size11.size9{font-size:.69453376em}.katex .fontsize-ensurer.reset-size11.size10,.katex .sizing.reset-size11.size10{font-size:.83360129em}.katex .fontsize-ensurer.reset-size11.size11,.katex .sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .accent>.vlist-t,.katex .op-limits>.vlist-t{text-align:center}.katex .accent .accent-body{position:relative}.katex .accent .accent-body:not(.accent-full){width:0}.katex .overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;min-width:1px}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{display:block;position:absolute;width:100%;height:inherit;fill:currentColor;stroke:currentColor;fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1}.katex svg path{stroke:none}.katex img{border-style:none;min-width:0;min-height:0;max-width:none;max-height:none}.katex .stretchy{width:100%;display:block;position:relative;overflow:hidden}.katex .stretchy:after,.katex .stretchy:before{content:""}.katex .hide-tail{width:100%;position:relative;overflow:hidden}.katex .halfarrow-left{position:absolute;left:0;width:50.2%;overflow:hidden}.katex .halfarrow-right{position:absolute;right:0;width:50.2%;overflow:hidden}.katex .brace-left{position:absolute;left:0;width:25.1%;overflow:hidden}.katex .brace-center{position:absolute;left:25%;width:50%;overflow:hidden}.katex .brace-right{position:absolute;right:0;width:25.1%;overflow:hidden}.katex .x-arrow-pad{padding:0 .5em}.katex .cd-arrow-pad{padding:0 .55556em 0 .27778em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox,.katex .fcolorbox{box-sizing:border-box;border:.04em solid}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap{margin-left:-.2em;margin-right:-.2em}.katex .sout{border-bottom-style:solid;border-bottom-width:.08em}.katex .angl{box-sizing:border-content;border-top:.049em solid;border-right:.049em solid;margin-right:.03889em}.katex .anglpad{padding:0 .03889em}.katex .eqn-num:before{counter-increment:katexEqnNo;content:"(" counter(katexEqnNo) ")"}.katex .mml-eqn-num:before{counter-increment:mmlEqnNo;content:"(" counter(mmlEqnNo) ")"}.katex .mtr-glue{width:50%}.katex .cd-vert-arrow{display:inline-block;position:relative}.katex .cd-label-left{display:inline-block;position:absolute;right:calc(50% + .3em);text-align:left}.katex .cd-label-right{display:inline-block;position:absolute;left:calc(50% + .3em);text-align:right}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:block;text-align:center;white-space:nowrap}.katex-display>.katex>.katex-html{display:block;position:relative}.katex-display>.katex>.katex-html>.tag{position:absolute;right:0}.katex-display.leqno>.katex>.katex-html>.tag{left:0;right:auto}.katex-display.fleqn>.katex{text-align:left;padding-left:2em}body{counter-reset:katexEqnNo mmlEqnNo}
+
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.katex-error {
+	color: var(--vscode-editorError-foreground);
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="quick-start-guide">Quick Start Guide</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#introduction">Introduction</a>
+<ol>
+<li><a href="#basic-terms">Basic Terms</a></li>
+</ol>
+</li>
+<li><a href="#quick-setup">Quick Setup</a>
+<ol>
+<li><a href="#style">Style</a></li>
+<li><a href="#upload-logo">Upload Logo</a></li>
+<li><a href="#select-home-page-layout">Select Home Page layout</a></li>
+<li><a href="#add-forums">Add Forums</a></li>
+<li><a href="#invite-members">Invite Members</a></li>
+</ol>
+</li>
+<li><a href="#site-builder">Site Builder</a>
+<ol>
+<li><a href="#editing-and-creating-pages">Editing and Creating Pages</a></li>
+<li><a href="#linking-to-the-a-new-page">Linking to the a New Page</a></li>
+<li><a href="#creating-your-first-forum-and-subforum">Creating Your First Forum and Subforum</a></li>
+</ol>
+</li>
+<li><a href="#admincp-tutorials">AdminCP Tutorials</a>
+<ol>
+<li><a href="#navigation">Navigation</a></li>
+<li><a href="#accessing-inline-help">Accessing Inline Help</a></li>
+<li><a href="#setting-up-user-registration">Setting Up User Registration</a></li>
+<li><a href="#creating-a-private-forum">Creating a Private Forum</a></li>
+<li><a href="#setting-up-human-verification">Setting Up Human Verification</a></li>
+</ol>
+</li>
+<li><a href="#content-moderation">Content Moderation</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p>Congratulations on successfully installing your new vBulletin site! If this is your first time using one of our products (or vBulletin 5), this guide will help you get things set up.</p>
+<p>When you first install your vBulletin, your site loads with the preset style and page like so:</p>
+<p>As you can see, your new installation already been pre-populated with a variety of default pages and a few channels. If you upgraded from a previous version of vBulletin, you should see all of your forums and their content as well. A page is exactly that, a page. It displays your site to users and is a container for modules. Modules are pieces of functionality that you can add, customize, and, sometimes, remove from a page. These modules can cover such functionality as displaying ads, to announcements, to videos and even videos.</p>
+<h3 id="basic-terms">Basic Terms</h3>
+<p>Before we proceed, it is prudent to talk about a few basic terms.</p>
+<ul>
+<li><strong>Site Builder</strong>: A page tool that allows the creation of new custom pages and editing existing pages.</li>
+<li><strong>AdminCP</strong>: Short for Administration Control Panel. This tool provides access to many settings to control vBulletin.</li>
+<li><strong>Page</strong>: A combination of layout and modules that build the display for the end-user.
+<ul>
+<li><strong>Page Layout</strong> - A grid of columns used to define the base of the page.</li>
+<li><strong>Modules</strong> - Individual blocks of content that can be placed within a layout.</li>
+<li><strong>Page Template</strong> - The combination of page layout and module used to define one or more pages.</li>
+</ul>
+</li>
+<li><strong>Style</strong>: The look and feel of the rendered page. Styles control the underlying HTML, fonts, colors, and so forth. The style is applied via CSS after the page is sent to the browser.</li>
+<li><strong>Channel</strong>: Content containers. Examples of channels are forums, article categories, blogs, and social groups. The most commonly used type of channel are forums.</li>
+<li><strong>Topic</strong> - Used to reference content on the system. This term is used interchangeable with Topic, Article, Discussion, Entry, and Message.</li>
+<li><strong>Post</strong> - At the fundamental level, the Topic is a conversation among users. Posts refer to the components of those topics. Posts include starter (first post), replies, and comments.</li>
+</ul>
+<p>Now that we have the basic terms down for vBulletin 5, we’ll move on to the how they work and how you can use them.</p>
+<h2 id="quick-setup">Quick Setup</h2>
+<p>Quick Setup is one of the tools provided by Site Builder. With this tool, you can easily get your site opened to the public in 15 minutes or less.</p>
+<blockquote>
+<p>All options set using Quick Setup are enabled immediately.</p>
+</blockquote>
+<p>To access the Quick Setup tool, log into your site and then click the &quot;Edit Site&quot; button to the right of your user name. You will see the Quick Setup link in Site Builder's menu once it appears above the header.</p>
+<h3 id="style">Style</h3>
+<p>vBulletin includes 17 different styles to choose from. Each theme provides an example of how you can customize vBulletin using Style Variables, CSS, and Fonts. If you choose, you can pick one to use as your default style here.</p>
+<h3 id="upload-logo">Upload Logo</h3>
+<p>Allows you to upload a custom image to be used as the logo for your website.</p>
+<h3 id="select-home-page-layout">Select Home Page layout</h3>
+<p>vBulletin 5 allows you to set any page as the home page for your site. Here you can choose between three layouts provided with the software.</p>
+<ul>
+<li>Default: This is the two-column layout that you see immediately after installing vBulletin 5.</li>
+<li>Classic: This home page is designed to mimic the layout of older versions of vBulletin.</li>
+<li>Community: A variation of a homepage that is geared more towards users and building a community by having them interact with each other.</li>
+</ul>
+<h3 id="add-forums">Add Forums</h3>
+<p>This is a simplified version of the Channel manager built into Site Builder. It will allow you to create a few forums to get started.</p>
+<h3 id="invite-members">Invite Members</h3>
+<p>A community site needs users in order to build content and grow. This mini-tool allows you to invite a list of email addresses to visit and register on your site to get it going.</p>
+<h2 id="site-builder">Site Builder</h2>
+<h3 id="editing-and-creating-pages">Editing and Creating Pages</h3>
+<p>You can edit all default pages in addition to adding more pages to meet the needs of your site. In order to edit an existing page, activate the Site Builder by click on the the Off button in the upper right hand corner of your navigation bar.</p>
+<blockquote>
+<p>When selecting a Site Builder option, you may be asked to re-enter your password for security purposes. Using Site Builder allows an administrator to change the look and feel of your site dramatically and this is to ensure that only authorized users can do this.</p>
+</blockquote>
+<p>Once you’ve activated the Site Builder function, navigate to the page that you want to edit and click Edit Page button. This opens a form like the one below.</p>
+<h4 id="add-modules-tab">Add Modules Tab</h4>
+<p>There are four tabs in the form. The first (the Add Modules) is a catalogue of modules that you can add to the selected page to customize the look and feel of it.</p>
+<p>Everything displayed within vBulletin 5 is a module of some type. There are two types of modules: normal modules and system modules. The main difference between the two is that you’re unable to delete system modules. System modules provide critical functionality that you wouldn’t want removed from your site to begin with, such as private messages, advanced search and registration forms.</p>
+<p>Each, as we mentioned, has a different function. Here’s a short list of some of them:</p>
+<ul>
+<li>Activity Stream - A module that tracks and displays the activity on your board. Also contains the directory for any channels created on the page.</li>
+<li>Ad - A module that organizes and rotates the ads on a site.</li>
+<li>Announcement - A module that manages and displays announcements and notices to
+your users.</li>
+<li>Display Template - Allows you to display the output of any template on the page.</li>
+<li>Online Users - A modules that displays the number of users online at any given time.</li>
+<li>Search - A module that displays a customized set of search results as a feed.</li>
+<li>Static HTML - A module that displays custom HTML.</li>
+<li>Tag Cloud - A module that displays a clickable list of tags used on the site.</li>
+<li>Today’s Birthday - A module that displays the usernames of user’s with birthdays on
+any given day.</li>
+<li>Top Active Users - A module that displays a list of the top active users.</li>
+<li>Video - A module that embeds a video on to a page.</li>
+</ul>
+<p>To put a module on a page, click and drag it from the menu onto the page itself. You can use the same method to rearrange the order of the modules on a page. To delete a module, click on the trash can icon to the right of the module title. To edit the module, click on the pencil. A form will open similar to the one below:</p>
+<p>A number of fields will be available in the form for you to edit and change. To save the changes you have made for the module, click on the Save button at the bottom of the page.</p>
+<h4 id="change-layout-tab">Change Layout Tab</h4>
+<p>The Change Layout Tab is the second of the four tabs. This controls the number of columns on a page and the percentage of space each column takes up.</p>
+<h4 id="select-template-tab">Select Template Tab</h4>
+<p>Templates are the saved designs for the default pages and any pages that you create. This can be especially helpful when you have several pages using the same template that requires a change that affects them all.</p>
+<h4 id="saving-the-changes">Saving the Changes</h4>
+<p>Once you’re finished modifying the page, click on the Save Page button to the right of the tabs. It opens a confirmation form where you have the option of saving the page as a new Template or overwriting the existing Template.</p>
+<p>If you choose to overwrite the existing Template, you won’t be able to retrieve the old design if you want to switch back at a later time.</p>
+<h4 id="adding-a-page">Adding a Page</h4>
+<p>To add a page to your site, follow the same steps as we listed at the top of this section, but instead of clicking on the Edit Page link, click on the New Page link instead.</p>
+<h3 id="linking-to-the-a-new-page">Linking to the a New Page</h3>
+<p>To link your newly created page in the navigation bar, navigate to the page and copy the address to your clipboard. Click on the Navigation Bar button. A form like the one below will open:</p>
+<p>Decide if you want the link to be a main navigation item or a sub-navigation item. If the link is a sub-navigation item, click on the carat to the far right of the main navigation item you want it nested beneath. Click either the New Navigation Item or the New Sub Navigation Item.</p>
+<p>Enter in the name of the link in the Navigation Item Name field and then paste the address your copied into the Target URL before clicking the Save button. Once that’s one, your link will appear in column it was added to. To change it’s position, click and drag it to its new location.
+Finally, click Save Changes and confirm your changes. If you do not take this step, the changes will be lost.</p>
+<h3 id="creating-your-first-forum-and-subforum">Creating Your First Forum and Subforum</h3>
+<p>Your vBulletin installation comes with a pre-generated forum. To add more forums, turn on your Site Builder and click on the Channels link. This opens a form like the one below:</p>
+<h4 id="adding-a-forum">Adding a Forum</h4>
+<p>From here, enter the name of the of forum you want to create in the New Forum text box and click Add. It will appear beneath the pre-generated Main Forum. You can change it’s position by clicking on the dotted strip to the left of the forum name and dragging it to its new location.
+If you want to delete the forum, click the red x icon to the right of the plus symbol. A confirmation popup will appear. Clicking Yes will complete the deletion. Be careful of which forums you delete, since any threads, posts, and replies in that forum will be removed along with its parent.</p>
+<h4 id="creating-a-category">Creating a Category</h4>
+<p>A category is a container for forums and largely used to organize the forums into, well, different categories. To make a category, click on the Make Category link to the right of the forum you wish to be a category. It will be instantly changed to a category. If you want to change it back, just click the Make Forum link that has taken it’s place. It’s that simple.</p>
+<h4 id="adding-a-sub-forum">Adding a Sub-Forum</h4>
+<p>Sub-forums are forums that are nested in parent forums. Usually, this is used to create an area for specific aspects of the topic covered by the larger forum to be discussed. If you want to create sub-forum, click on the plus symbol between the Make Category link and the red x icon. A field such as as the one below will appear:</p>
+<p>Enter the name of the new forum in the field that reads New Channel before clicking away from the sub-forum. It’s that simple.</p>
+<h2 id="admincp-tutorials">AdminCP Tutorials</h2>
+<h3 id="navigation">Navigation</h3>
+<h3 id="accessing-inline-help">Accessing Inline Help</h3>
+<h3 id="setting-up-user-registration">Setting Up User Registration</h3>
+<p>With everything set up for your site, it’s now time to take a look at your User Registration settings. Stay in the AdminCP and double-click on the Settings header, followed by the Options link.</p>
+<p>Once the vBulletin Options form loads, select the User Registration Options from the scrolling list and click the Edit Settings button:</p>
+<p>The following form will load:</p>
+<p>This controls every aspect of user registration for your site. It includes everything from whether or not it’s turned on, to COPPA Registration, to Welcome Messages. For a full list of options and what they do, go to:
+<a href="https://www.vbulletin.com/docs/html/main/acp_settings_options_userregistration">https://www.vbulletin.com/docs/html/main/acp_settings_options_userregistration</a></p>
+<h3 id="creating-a-private-forum">Creating a Private Forum</h3>
+<p>Now that you have your forums set up, you might want to change the permissions on them. Permissions tell the system which users get to see what. By using permissions, you can create a private forum for your users to use.</p>
+<p>To do this, click on the AdminCP button in the upper right hand corner of the Site Builder menu.</p>
+<blockquote>
+<p>Please note, you may be asked to log in again for the same reasons that you had to provide your password a second time. The window will reload to a page similar to this:</p>
+</blockquote>
+<p>Scroll down to the Channel Management header and doubl click it to open the section. Find the Channel Permissions option and click it.</p>
+<p>For a more thorough explanation of permissions, go here: <a href="https://www.vbulletin.com/docs/html/main/acp_permission_overview_overview">https://www.vbulletin.com/docs/html/main/acp_permission_overview_overview</a></p>
+<p>This will reload the frame to the right with a form like this:</p>
+<p>This will list all your channels by display order. Underneath each channel name will be a list of usergroups.</p>
+<p>Select the Edit link beside the usergroup you want to hide the forum from. This will open another form with several options:</p>
+<p>Find the Channel Permissions header and change the Can View Channel setting to No before clicking Save. A popup will appear asking to confirm that you want to use custom permissions. Once saved, the usergroup that you selected will no longer be able to see that forum.</p>
+<h3 id="setting-up-human-verification">Setting Up Human Verification</h3>
+<p>There are some sections of the site and its functionality that you’ll want to have human verification for. To turn on Human Verification, click on the Settings header in the AdminCP, followed by the Human Verification Manager link.</p>
+<p>This reloads the frame with the following form:</p>
+<p>Checking an option will activate it, while unchecking the option will deactivate it. This means that any usergroup that has the option Require Human Verification on Configure Actions activated will need to verify that they’re human when interacting with the selected options. Once you’re done, click Save and the changes you’ve made will be applied to the site.</p>
+<h2 id="content-moderation">Content Moderation</h2>
+<p>Managing the content on your site is important. This management should be as easy as possible. To do this, a number of tools have been added to vBulletin.</p>
+<h2 id="faq">FAQ</h2>
+<ul>
+<li>
+<p><strong>How do I change my username?</strong>
+To change your username, login to the AdminCP and double click on the Users header. In the menu, click on Search for Users. In the new form in the frame to the right, enter your current username in to the User Name field and click the Exact Match button. In the User Form, change the username in the User Name field and click Save.</p>
+</li>
+<li>
+<p><strong>How do I change my password?</strong>
+On your Site Home Page, click on the Profile tab. Find the Edit Settings button beneath your user picture and click on it. This will reload the page with the Profile Settings page. Click on the Account tab and scroll down to the Password fields. Enter your current password in the field with the words ‘Enter current password’ and your new password in both the fields below that. Click Save Changes and your password will be set to the new password.</p>
+</li>
+<li>
+<p><strong>How do I change my logo?</strong>
+To change the logo of your site, make sure that Site Builder is turned on and click the Header button in the menu. Find the vBulletin logo and click the Edit button in the upper left hand corner. This will open an upload form which you can use to replace the current logo with another of your liking. Once you’ve uploaded the new logo, click on the Save Changes button. Your vBulletin page will reload with the new logo.</p>
+</li>
+<li>
+<p><strong>How do I change the default style?</strong>
+You can set the default style using two different methods.</p>
+<ul>
+<li>Site Builder: After turning Site Builder on, click on Style to open the tool. Scroll through the styles that you see and click on the one you want to be your default style. Close the Style tool</li>
+<li>Admin CP: Go to Settings -&gt; Options -&gt; Style &amp; Language Options. Look for Default Style and select the style that you want to use from the drop down.</li>
+</ul>
+</li>
+<li>
+<p><strong>How do I add my own ads?</strong>
+To add your own ads, turn on the Site Builder option and add the Ad Module to the page you want the ads to appear on. Click on the Edit button for the module and fill out the form before clicking Attach. This will take you to a new form where you can arrange the order in which the ads appear or add new ads. Once you’re done, click the Save button on the Ad form and confirm the changes on the page by clicking the Save Page button. The ads should now appear where you placed them.</p>
+</li>
+</ul>
+
+    </body>
+    </html>
