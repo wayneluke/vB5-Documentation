@@ -1,5 +1,3 @@
-While management has it in their mind that themes are a totally new and amazing thing, you've probably noticed that its just a fancy UI to set the default style -- since the functionality they wanted has mostly been in the product since vb3, they just aren't very familiar with it.  
-
 Introducing Themese
 
 What are Themes? 
