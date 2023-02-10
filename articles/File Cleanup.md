@@ -5,7 +5,8 @@ During normal development processes, files are often refactored and/or removed f
 1. Delete rollup javascript files that do not include your version number in the file name. 
 
 2. Use the Suspect File Version tool in the AdminCP to delete all obsolete PHP files.
-  - In the AdminCP go to Maintenance → Diagnostics.
-  - Run the Suspect File Versions tool.
-  -  It will scan the vBulletin directories and list all files not part of vBulletin.
-  -  Review these files to make sure they aren't part of a customization. If they aren't needed, then delete them with your SFTP client.
+   1. In the AdminCP go to Maintenance → Diagnostics.
+   2. Run the Suspect File Versions tool.
+   3. It will scan the vBulletin directories and list all files not part of vBulletin.
+   4. Review these files to make sure they aren't part of a customization. If they aren't needed, then delete them with your SFTP client.
+
