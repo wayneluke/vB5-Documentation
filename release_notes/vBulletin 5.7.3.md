@@ -4,16 +4,25 @@ A preview release of vBulletin Connect 5.7.3 is now available to download.
 
 ## Third-Party Logins
 
-- Google Authentication has been refactored. New routines to allow users to login via Google Accounts using OATH2 have been implemented.  
-- Twitter Authentication has been repaired so that it works with the current version of Twitter's APIs. However, registration via Twitter Authentication does not work at this time.
+- Google Authentication has been refactored. The routines have been updated to Google's new APIs and use OATH2.
+- Twitter Authentication has been repaired with the current Twitter v2 APIs. However, registration via Twitter Authentication does not work at this time.
 
 ## RSS Module
 
-An RSS Module has been added. This will allow you to show RSS feeds on pages within your sites. RSS Feeds will be cached between updates. As an option, you're allowed to specify how frequently a feed is updated. Due to the nature of gathering external data, there can be a delay in page rendering when the feed is updated. Using many RSS feed modules on the same page could cause a significant delay during updates.
+A new RSS Module is available for custom pages. RSS Feeds will be cached between updates. An option is available to specify how frequently a feed is updated. Due to the nature of gathering external data, page rendering can be delayed when the feed is updated. When using many RSS feed modules on the same page, there can be a significant delay when the cache is updated.
 
-## PHP 7.4.X Deprecation
+## URL Previews
 
-With the release of the next version of vBulletin, we will no longer support PHP 7.4.X. As of November 28th, 2022, PHP 7.4.X is EOL (End Of Life). Due to this, it is recommended that all customers upgrade to PHP 8.0 or higher as soon as possible.
+Several issues reported with URL Previews have been corrected:
+
+- URL Preview Caching will now work correctly.
+- Better image processing has been added for invalid images on some URLs.
+- A memory leak that occurred with many URLs in a post has been resolved.
+- Image scaling has been updated to provide a better presentation.
+
+## PHP 8.0+ Required
+
+With this release , we will no longer support PHP 7.4.X. As of November 28th, 2022, PHP 7.4.X is EOL (End Of Life). Due to this, it is recommended that all customers upgrade to PHP 8.0 or higher as soon as possible.
 
 ---
 
@@ -29,7 +38,7 @@ With each version release, some files become obsolete. These files are mainly th
 #### Files to Delete
 These are files known to be unnecessary in the current version of the software. 
 
-- In the `/js` directory delete all files with 572 in their file name.
+- In the `/js` directory, delete all files with 572 in their file name.
 - The directory `/core/packages/googlelogin/vendor` should be deleted.
 
 
