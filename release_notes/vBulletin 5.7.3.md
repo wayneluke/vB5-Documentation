@@ -1,6 +1,6 @@
 # vBulletin 5.7.3 Changes and Updates
 
-A preview release of vBulletin Connect 5.7.3 is now available to download. 
+vBulletin Connect 5.7.3 is now available to download. vBulletin Cloud sites will be automatically updated in the coming weeks.
 
 ## Third-Party Logins
 
@@ -60,14 +60,14 @@ For more information, see [vBulletin Connect System Requirements](https://www.vb
 
 ### Current Version Support Schedule
 
-- Active Version - 5.7.2
+- Active Version - 5.7.3
+- Security Patch - 5.7.2
 - Security Patch - 5.7.1
-- Security Patch - 5.7.0
-- No Patch Release - 5.6.9 PL1 and earlier
+- No Patch Release - 5.7.0 and earlier
 
 ### Discussion
 
-If you have any questions about these changes, you may discuss them here: [node]4477009[/node]
+If you have any questions about these changes, you may discuss them here: [node]4478815[/node]
 
 If you find an issue with the software or request a new feature, please visit our [tracker](https://tracker.vbulletin.com).
 
