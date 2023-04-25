@@ -1,6 +1,6 @@
 # vBulletin 5.7.4 Changes and Updates
 
-A preview release of vBulletin Connect 5.7.4 is now available to download. 
+vBulletin Connect 5.7.4 is now available to download. vBulletin Cloud sites will be upgraded automatically in the next 7-14 days.
 
 ## Page Manager
 
