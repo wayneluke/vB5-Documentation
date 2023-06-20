@@ -1,6 +1,6 @@
 # Changes and Updates in vBulletin 5.7.5
 
-You can now download a preview release of vBulletin Connect 5.7.5. We do not recommend installing preview releases on production servers.
+vBulletin Connect 5.7.5 is now available to download. vBulletin Cloud sites will be upgraded automatically in the next 7-14 days.
 
 ## Notifications
 
@@ -12,7 +12,7 @@ We have moved more inline Javascript to external files to enhance security handl
 
 ## NoIndex
 
-In previous versions, when using a query string (e.g., domain.com/?post=1234), the system a noindex meta tag could be placed on the rendered page. We have removed these tags from the content pages. The system will continue to add the canonical URL to prevent duplicate content warnings.
+In previous versions, when using a query string (e.g., domain.com/?post=1234), a noindex meta tag could be placed on the rendered page. We have removed these tags from the content pages. The system will continue to add the canonical URL to prevent duplicate content warnings.
 
 ## Rebuild Thread Information
 
@@ -74,14 +74,14 @@ For more information, see [vBulletin Connect System Requirements](https://www.vb
 
 ### Current Version Support Schedule
 
-- Active Version - 5.7.4
+- Active Version - 5.7.5
+- Security Patch - 5.7.4
 - Security Patch - 5.7.3
-- Security Patch - 5.7.2
-- No Patch Release - 5.7.1 and earlier
+- No Patch Release - 5.7.2 and earlier
 
 ### Discussion
 
-If you have any questions about these changes, you may discuss them here: [node][/node]
+If you have any questions about these changes, you may discuss them here: [node]4481544[/node]
 
 If you find an issue with the software or request a new feature, please visit our [tracker](https://tracker.vbulletin.com).
 
