@@ -12,7 +12,7 @@ We have moved more inline Javascript to external files to enhance security handl
 
 ## NoIndex
 
-In previous versions, when using a query string (e.g., domain.com/?post=1234), a noindex meta tag could be placed on the rendered page. We have removed these tags from the content pages. The system will continue to add the canonical URL to prevent duplicate content warnings.
+In previous versions, a noindex meta tag could be placed on the rendered page when using a query string (e.g., domain.com/?post=1234). We have removed these tags from the content pages. The system will continue to add the canonical URL to prevent duplicate content warnings.
 
 ## Rebuild Thread Information
 
@@ -42,12 +42,12 @@ The General Update tools now include the Rebuild Topic Information tool, which w
 
 ## Install / Upgrade Information
 
-- [Installation Instructions](https://www.vbulletin.com/forum/node/4391348)
-- [Upgrade Instructions](https://www.vbulletin.com/forum/node/4391346)
+- [Installation Instructions](https://forum.vbulletin.com/node/4391348)
+- [Upgrade Instructions](https://forum.vbulletin.com/node/4391346)
 
 ### File Cleanup
 
-With each version release, some files become obsolete. These files are mainly the Javascript Rollup files which are version stamped. However, we occasionally refactor PHP files and remove them from the distribution package. After upgrading your vBulletin system, you should delete any possible obsolete files. You can obtain more information on why this is needed and instructions on how to do this in this [**topic**](https://www.vbulletin.com/forum/node/4391346) in the vBulletin 5 Installs & Upgrades forum.
+With each version release, some files become obsolete. These files are mainly the Javascript Rollup files which are version stamped. However, we occasionally refactor PHP files and remove them from the distribution package. After upgrading your vBulletin system, you should delete any possible obsolete files. You can obtain more information on why this is needed and instructions on how to do this in this [**topic**](https://forum.vbulletin.com/node/4391346) in the vBulletin 5 Installs & Upgrades forum.
 
 #### Files to Delete
 These are the files known to be unnecessary in the current version of the software. 
