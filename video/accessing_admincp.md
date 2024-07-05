@@ -29,9 +29,9 @@ vBulletin has a lot of settings, options, and controls within the AdminCP. This 
 
 << Show one of the sections under Settings -> Options. Highlight inline description and show the popup help. >>
 
-## Adding additional administrators.
+## Adding additional administrators
 
-If needed, you can create multiple administrators on your site. These administrators can help you run your site. 
+If needed, you can create multiple administrators on your site. These administrators can help you run your site.
 
 1. To add a new administrator, you would need to search for the user that you want to promote.
 2. To do this today, I am going to use the quick search on the AdminCP home page.

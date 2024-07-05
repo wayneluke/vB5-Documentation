@@ -47,7 +47,7 @@ The General Update tools now include the Rebuild Topic Information tool, which w
 
 ### File Cleanup
 
-With each version release, some files become obsolete. These files are mainly the Javascript Rollup files which are version stamped. However, we occasionally refactor PHP files and remove them from the distribution package. After upgrading your vBulletin system, you should delete any possible obsolete files. You can obtain more information on why this is needed and instructions on how to do this in this [**topic**](https://forum.vbulletin.com/node/4391346) in the vBulletin 5 Installs & Upgrades forum.
+With each version release, some files become obsolete. These files are mainly the Javascript Rollup files which are version stamped. However, we occasionally refactor PHP files and remove them from the distribution package. After upgrading your vBulletin system, deleting any possible obsolete files is recommended. You can obtain more information on why this is needed and instructions on how to do this in this [**topic**](https://forum.vbulletin.com/node/4391346) in the vBulletin 5 Installs & Upgrades forum.
 
 #### Files to Delete
 These are the files known to be unnecessary in the current version of the software. 
